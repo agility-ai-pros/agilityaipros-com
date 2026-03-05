@@ -16,15 +16,8 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section
-        className="hero-section navy-section relative overflow-hidden"
-        style={{
-          backgroundImage: `url(${HERO_IMAGE})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-navy/20" />
+      <section className="hero-section navy-section relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy/80" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -182,8 +175,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Creation Feature */}
+      {/* AI Neural Network Feature */}
       <section className="section-padding bg-white">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-dark-text mb-6">
+                AI-Powered Intelligence
+              </h2>
+              <p className="text-gray-600 text-lg mb-4 leading-relaxed">
+                Every project I build leverages frontier AI systems working in parallel. Neural networks, deep research, and multi-LLM analysis power everything from copywriting to architecture.
+              </p>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                This isn't just about using AI tools — it's about architecting solutions that scale.
+              </p>
+            </div>
+            <div>
+              <img src={HERO_IMAGE} alt="Neural Network" className="rounded-xl shadow-lg w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Creation Feature */}
+      <section className="section-padding gray-section">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-bold text-dark-text mb-6 text-center">
             Yes, I Can Build Your Brand Images Too.
