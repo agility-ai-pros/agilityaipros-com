@@ -139,35 +139,7 @@
   }
   
   /* PatrickDanielAi Custom Components */
-  .nav-sticky {
-    @apply sticky top-0 z-50 bg-white shadow-sm;
-  }
-  
-  .hero-section {
-    @apply py-20 md:py-32;
-  }
-  
-  .section-padding {
-    @apply py-16 md:py-24;
-  }
-  
-  .cta-primary {
-    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 bg-[#0D9488] text-white hover:bg-[#0D9488]/90;
-  }
-  
-  .cta-outline {
-    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 border-2 border-white text-white hover:bg-white/10;
-  }
-  
   .service-card {
     @apply bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow;
-  }
-  
-  .navy-section {
-    @apply bg-[#1B3A6B] text-white;
-  }
-  
-  .gray-section {
-    @apply bg-[#F9FAFB];
   }
 }
