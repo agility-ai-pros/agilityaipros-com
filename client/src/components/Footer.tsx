@@ -1,6 +1,8 @@
 import { Link } from 'wouter';
 import { Linkedin } from 'lucide-react';
 
+const LOGO_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/logo_v3_circuit_9d608489.png';
+
 export default function Footer() {
   return (
     <footer className="navy-section py-12 md:py-16">
@@ -8,12 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-teal rounded-lg flex items-center justify-center">
-                <div className="text-navy text-sm font-bold">◆</div>
-              </div>
-              <span className="font-bold text-white">PatrickDaniel<span className="text-teal">Ai</span></span>
-            </div>
+            <img src={LOGO_IMAGE} alt="PatrickDanielAi" className="h-10 w-auto mb-4" />
             <p className="text-white/70 text-sm">AI Business Services</p>
           </div>
 

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'wouter';
 
+const LOGO_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/logo_v3_circuit_9d608489.png';
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,12 +16,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <div className="w-10 h-10 bg-navy rounded-lg flex items-center justify-center">
-                <div className="text-teal text-lg font-bold">◆</div>
-              </div>
-              <span className="font-bold text-lg text-dark-text hidden sm:inline">
-                Patrick<span className="text-teal">Daniel</span>
-              </span>
+              <img src={LOGO_IMAGE} alt="PatrickDanielAi" className="h-12 w-auto" />
             </div>
           </Link>
 
