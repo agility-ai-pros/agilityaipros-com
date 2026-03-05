@@ -22,8 +22,8 @@ export default function Navigation() {
           {/* Logo - Text Based */}
           <Link href="/">
             <div className="cursor-pointer" style={{fontSize: '18px', fontWeight: 'bold'}}>
-              <span style={{color: '#1B3A6B'}}>Patrick</span>
-              <span style={{color: '#0D9488'}}>Daniel</span>
+              <span style={{color: '#1B3A6B'}}>PatrickDaniel</span>
+              <span style={{color: '#0D9488'}}>Ai</span>
             </div>
           </Link>
 
