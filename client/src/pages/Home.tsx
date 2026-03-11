@@ -15,7 +15,7 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="text-white py-24 md:py-32 relative overflow-hidden" style={{backgroundColor: '#1B3A6B'}}>
+      <section className="text-white py-12 md:py-32 relative overflow-hidden" style={{backgroundColor: '#1B3A6B'}}>
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl" style={{backgroundColor: '#0D9488'}} />
           <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl" style={{backgroundColor: '#0D9488'}} />
@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* Services Grid */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white py-16 md:py-32">
         <div className="container">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{color: '#1f2937'}}>What I Do</h2>
