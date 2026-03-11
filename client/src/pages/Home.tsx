@@ -266,13 +266,13 @@ export default function Home() {
               <X size={24} />
             </button>
             {selectedProject === 0 && (
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_2026-03-11_18-10-56_2875-J8xQpK2mN9vL5qRsT3wY2P.webp" alt="LexiUSD" className="w-full h-auto" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_2026-03-11_18-10-56_2875_139dcaf2.webp" alt="LexiUSD" className="w-full h-auto" />
             )}
             {selectedProject === 1 && (
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/legacyaviationfi_2026-03-11_18-12-17_3122-K7mN4pQrS9uV2wXyZ1aB3C.webp" alt="Legacy Aviation FI" className="w-full h-auto" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/legacyaviationfi_2026-03-11_18-12-17_3122_11750452.webp" alt="Legacy Aviation FI" className="w-full h-auto" />
             )}
             {selectedProject === 2 && (
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/agilityaiinnercircle_2026-03-11_18-12-38_4948-D5eF6gH7iJ8kL9mN0oP1qR.webp" alt="Agility AI Inner Circle" className="w-full h-auto" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/agilityaiinnercircle_2026-03-11_18-12-38_4948_8f431570.webp" alt="Agility AI Inner Circle" className="w-full h-auto" />
             )}
           </div>
         </div>
