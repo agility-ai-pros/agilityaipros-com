@@ -21,7 +21,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo - Brain Icon with Text */}
           <Link href="/">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/39988e50-1da3-11f1-b583-373c1aaf1f7a_9c284c6b.png" alt="Agility AI Pros" style={{height: '90px', width: 'auto', cursor: 'pointer'}} />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/39988e50-1da3-11f1-b583-373c1aaf1f7a_9c284c6b.png" alt="Agility AI Pros" style={{height: '180px', width: 'auto', cursor: 'pointer'}} />
           </Link>
 
           {/* Desktop Navigation */}
