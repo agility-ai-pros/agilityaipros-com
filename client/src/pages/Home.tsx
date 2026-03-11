@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* Image Creation */}
-      <section className="py-24 md:py-32" style={{backgroundColor: '#f9fafb'}}>
+      <section className="py-16 md:py-32" style={{backgroundColor: '#f9fafb'}}>
         <div className="container">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{color: '#1f2937'}}>
             Yes, I Can Build Your Brand Images Too.
