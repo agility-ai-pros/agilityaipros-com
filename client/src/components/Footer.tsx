@@ -19,8 +19,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{fontSize: '16px', fontWeight: 'bold', marginBottom: '24px'}}>
-              <span style={{color: '#ffffff'}}>PatrickDaniel</span>
-              <span style={{color: '#0D9488'}}>Ai</span>
+              <span style={{color: '#ffffff'}}>Agility</span>
+              <span style={{color: '#0D9488'}}>AiPros</span>
             </div>
             <p className="text-sm leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>
               AI Business Services. Fast, focused, and built to deliver real results.
