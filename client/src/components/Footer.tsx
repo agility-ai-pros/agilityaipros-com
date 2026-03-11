@@ -78,7 +78,7 @@ export default function Footer() {
 
         <div style={{borderTop: '1px solid rgba(255,255,255,0.1)'}} className="pt-8">
           <p className="text-sm text-center" style={{color: 'rgba(255,255,255,0.5)'}}>
-            © 2026 Patrick Daniel. All rights reserved.
+            © 2026 Agility AI Pros. All rights reserved.
           </p>
         </div>
       </div>
