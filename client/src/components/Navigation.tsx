@@ -22,7 +22,7 @@ export default function Navigation() {
           {/* Logo - Brain Icon with Text */}
           <Link href="/">
             <div className="cursor-pointer flex items-center gap-2">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/agility_ai_pros_logo_clean-be6YM3Ye5rpR3Bs3SQmwbq.webp" alt="Agility AI Pros" style={{height: '45px', width: 'auto'}} />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/agility_ai_pros_logo_large-Lzv4h8kYHSebaxHCjJmq5W.webp" alt="Agility AI Pros" style={{height: '60px', width: 'auto'}} />
             </div>
           </Link>
 
