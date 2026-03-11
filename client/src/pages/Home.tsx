@@ -27,7 +27,7 @@ export default function Home() {
               Cut Through the AI Noise. <span style={{color: '#0D9488'}}>I'll Teach You.</span>
             </h1>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-2xl" style={{color: 'rgba(255,255,255,0.9)'}}>
-              You know your business needs AI. You're drowning in conflicting advice and information overload. I cut through the noise and teach you and your team how to actually use AI — no jargon, no fluff. Real strategies that work.
+              You know your business needs AI. You're drowning in conflicting advice and information overload. I'll either do it for you or teach you how — no jargon, no fluff. Real strategies that work. Pick what fits your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/services">
