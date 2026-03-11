@@ -40,7 +40,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-dark-text mb-12 text-center">A Few Things I've Built</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {[
-              { name: 'LexiusD.com', description: 'Stablecoin platform with fintech infrastructure' },
+              { name: 'LexiUSD.com', description: 'Stablecoin platform with fintech infrastructure' },
               { name: 'LegacyAviationFI.com', description: 'Global aviation finance and operations' },
               { name: 'AgilityAIInnerCircle.com', description: 'AI membership site with affiliate marketing' },
             ].map((project, idx) => (

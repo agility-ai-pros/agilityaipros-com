@@ -119,7 +119,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: 'LexiusD.com',
+                name: 'LexiUSD.com',
                 category: 'Stablecoin Platform',
                 description: 'Fintech infrastructure and tokenomics for a 2026 launch.',
               },
