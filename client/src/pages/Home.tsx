@@ -199,6 +199,17 @@ export default function Home() {
             <img src={CODE_IMAGE} alt="Web Builder" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
           </div>
           <p className="text-center text-lg italic" style={{color: '#6b7280'}}>All images on this site were generated using AI.</p>
+          <div className="text-center mt-12">
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
+              style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
+            >
+              Reach Out for a Site Build Quote — Starting at $450
+            </a>
+          </div>
         </div>
       </section>
 
