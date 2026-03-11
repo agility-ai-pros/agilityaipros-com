@@ -24,7 +24,7 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Cut Through the AI Noise. Start Being <span style={{color: '#0D9488'}}>Effective.</span>
+              Cut Through the AI Noise. Start Using It <span style={{color: '#0D9488'}}>Effectively.</span>
             </h1>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-2xl" style={{color: 'rgba(255,255,255,0.9)'}}>
               I'll do it for you. Or show you how. Either way, you'll actually know how to use AI in your business — no confusion, no wasted time. Let's get you effective.
