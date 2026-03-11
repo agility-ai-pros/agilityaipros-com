@@ -1,5 +1,6 @@
 import { Link } from 'wouter';
-import { Brain, Code, Cpu, Zap } from 'lucide-react';
+import { Brain, Code, Cpu, Zap, X } from 'lucide-react';
+import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -10,6 +11,7 @@ const CODE_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnr
 const whatsappLink = 'https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20connect%20about%20AI%20services.';
 
 export default function Home() {
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -140,6 +142,13 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3">{project.name}</h3>
                 <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>{project.description}</p>
+                <button
+                  onClick={() => setSelectedProject(idx)}
+                  className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
+                  style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
+                >
+                  View Project
+                </button>
               </div>
             ))}
           </div>
@@ -244,6 +253,30 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* Project Modal */}
+      {selectedProject !== null && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" onClick={() => setSelectedProject(null)}>
+          <div className="relative max-w-4xl w-full max-h-[90vh] overflow-auto rounded-2xl" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={() => setSelectedProject(null)}
+              className="absolute top-4 right-4 z-10 p-2 rounded-full" 
+              style={{backgroundColor: 'rgba(0,0,0,0.7)', color: 'white', cursor: 'pointer'}}
+            >
+              <X size={24} />
+            </button>
+            {selectedProject === 0 && (
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_2026-03-11_18-10-56_2875-J8xQpK2mN9vL5qRsT3wY2P.webp" alt="LexiUSD" className="w-full h-auto" />
+            )}
+            {selectedProject === 1 && (
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/legacyaviationfi_2026-03-11_18-12-17_3122-K7mN4pQrS9uV2wXyZ1aB3C.webp" alt="Legacy Aviation FI" className="w-full h-auto" />
+            )}
+            {selectedProject === 2 && (
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/agilityaiinnercircle_2026-03-11_18-12-38_4948-D5eF6gH7iJ8kL9mN0oP1qR.webp" alt="Agility AI Inner Circle" className="w-full h-auto" />
+            )}
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
