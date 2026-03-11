@@ -19,11 +19,10 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-white" style={{borderBottom: '1px solid #e5e7eb'}}>
       <div className="container">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo - Text Based */}
+          {/* Logo - Brain Icon with Text */}
           <Link href="/">
-            <div className="cursor-pointer" style={{fontSize: '18px', fontWeight: 'bold'}}>
-              <span style={{color: '#1B3A6B'}}>Agility</span>
-              <span style={{color: '#0D9488'}}>AiPros</span>
+            <div className="cursor-pointer flex items-center gap-3">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/pasted_file_4wni5b_image_b91d4d24.png" alt="Agility AI Pros" style={{height: '40px', width: 'auto'}} />
             </div>
           </Link>
 
