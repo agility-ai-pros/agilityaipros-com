@@ -149,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* Manus AI Offer */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white py-16 md:py-32">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
