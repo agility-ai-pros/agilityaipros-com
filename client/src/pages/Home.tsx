@@ -17,7 +17,7 @@ export default function Home() {
       <Navigation />
 
       {/* Yellow Banner */}
-      <div className="relative h-20 md:h-24 overflow-hidden" style={{backgroundColor: '#FFD700'}}>
+      <div className="relative h-32 md:h-40 overflow-hidden" style={{backgroundColor: '#FFD700'}}>
         <div 
           className="absolute inset-0 flex items-center justify-end pr-8 md:pr-16"
           style={{
@@ -25,7 +25,7 @@ export default function Home() {
             transformOrigin: 'right',
           }}
         >
-          <div className="text-white font-bold text-lg md:text-2xl whitespace-nowrap" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
+          <div className="text-white font-bold text-4xl md:text-6xl lg:text-7xl whitespace-nowrap" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
             <span>AI Audit: </span>
             <span style={{textDecoration: 'line-through', opacity: 0.8}}>$997</span>
             <span style={{marginLeft: '0.5rem'}}>→ $497</span>
@@ -63,19 +63,6 @@ export default function Home() {
               >
                 Connect on WhatsApp
               </a>
-            </div>
-            <div className="mt-8">
-              <p style={{color: 'rgba(255,255,255,0.8)', fontSize: '1rem', marginBottom: '0.5rem'}}>
-                AI Audit
-              </p>
-              <div className="flex items-center gap-3">
-                <span style={{color: 'rgba(255,255,255,0.6)', fontSize: '1.2rem', textDecoration: 'line-through'}}>
-                  $997
-                </span>
-                <span style={{color: '#0D9488', fontSize: '2rem', fontWeight: 'bold'}}>
-                  $497
-                </span>
-              </div>
             </div>
           </div>
         </div>
