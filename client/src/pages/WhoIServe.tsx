@@ -327,8 +327,7 @@ export default function WhoIServe() {
           position: relative;
           overflow: hidden;
           transition: transform 0.3s, box-shadow 0.3s;
-          opacity: 0;
-          animation: wis-fadeUp 0.5s forwards;
+          animation: wis-fadeUp 0.6s both;
         }
         .wis-card:hover {
           transform: translateY(-4px);
@@ -344,18 +343,7 @@ export default function WhoIServe() {
           transition: opacity 0.3s;
         }
         .wis-card:hover::before { opacity: 1; }
-        .wis-card:nth-child(1)  { animation-delay: 0.10s; }
-        .wis-card:nth-child(2)  { animation-delay: 0.15s; }
-        .wis-card:nth-child(3)  { animation-delay: 0.20s; }
-        .wis-card:nth-child(4)  { animation-delay: 0.25s; }
-        .wis-card:nth-child(5)  { animation-delay: 0.30s; }
-        .wis-card:nth-child(6)  { animation-delay: 0.35s; }
-        .wis-card:nth-child(7)  { animation-delay: 0.40s; }
-        .wis-card:nth-child(8)  { animation-delay: 0.45s; }
-        .wis-card:nth-child(9)  { animation-delay: 0.50s; }
-        .wis-card:nth-child(10) { animation-delay: 0.55s; }
-        .wis-card:nth-child(11) { animation-delay: 0.60s; }
-        .wis-card:nth-child(12) { animation-delay: 0.65s; }
+        /* animation-delay set inline per card via style prop */
       `}</style>
     </div>
   );
