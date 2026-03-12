@@ -67,33 +67,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Tier 2: Manus AI */}
-      <section className="section-padding navy-section">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-white mb-2">Tier 2: Manus AI — The One-Session Offer</h2>
-          <p className="text-white/80 mb-8">After one session, you won't need me. That's the point.</p>
-          <div className="max-w-4xl mb-8">
-            {[
-              { package: 'Manus AI Intro Session', price: '$250', details: '90-min live walkthrough — your first use case built together' },
-              { package: 'Manus AI + Website Build', price: '$497–$797', details: 'Session + I build your first Manus AI site (1–3 days)' },
-              { package: 'Affiliate Site Build', price: '$797–$1,200', details: 'Full Manus AI site with affiliate marketing infrastructure' },
-            ].map((item, idx) => (
-              <div key={idx} className="pb-6 border-b border-white/20 last:border-b-0">
-                <div className="flex justify-between items-center gap-4 mb-3">
-                  <h3 className="text-lg font-bold text-white">{item.package}</h3>
-                  <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
-                </div>
-                <p className="text-gray-300 text-sm leading-relaxed">{item.details}</p>
-              </div>
-            ))}
-          </div>
-          <div className="bg-white/10 rounded-lg p-6 border border-white/20 max-w-4xl">
-            <p className="text-white">
-              <span className="font-semibold">Bonus:</span> I also teach image generation inside Manus AI — you'll leave knowing how to create professional brand visuals without a designer.
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       {/* Tier 3: Website & Vibe Coding */}
       <section className="section-padding bg-white">
