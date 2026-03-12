@@ -34,7 +34,7 @@ export const appRouter = router({
         z.object({
           name: z.string().min(1).max(200),
           email: z.string().email().max(320),
-          phone: z.string().max(30).optional(),
+          phone: z.string().min(7).max(30),
           interest: z.enum(['ai-audit', 'manus-website', 'multi-llm-research', 'ai-training', 'other']),
           smsConsent: z.boolean().default(false),
         })
@@ -48,7 +48,7 @@ export const appRouter = router({
           await db.insert(contactSubmissions).values({
             name: input.name,
             email: input.email,
-            phone: input.phone ?? null,
+            phone: input.phone,
             interest: input.interest,
             smsConsent: input.smsConsent,
           });
@@ -59,7 +59,7 @@ export const appRouter = router({
         const contentLines = [
           `Name: ${input.name}`,
           `Email: ${input.email}`,
-          input.phone ? `Phone: ${input.phone}` : `Phone: (not provided)`,
+          `Phone: ${input.phone}`,
           `Interested in: ${interestLabel}`,
           `SMS Consent: ${input.smsConsent ? 'Yes ✓' : 'No'}`,
           ``,

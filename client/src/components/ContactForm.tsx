@@ -37,14 +37,14 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-    if (!name.trim() || !email.trim() || !interest) {
-      setError('Please fill in your name, email, and area of interest.');
+    if (!name.trim() || !email.trim() || !phone.trim() || !interest) {
+      setError('Please fill in all required fields.');
       return;
     }
     submitContact.mutate({
       name: name.trim(),
       email: email.trim(),
-      phone: phone.trim() || undefined,
+      phone: phone.trim(),
       interest: interest as InterestValue,
       smsConsent,
     });
@@ -155,17 +155,14 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Phone (optional) */}
+        {/* Phone */}
         <div>
           <label
             htmlFor="contact-phone"
             className="block text-sm font-semibold mb-2"
             style={{ color: 'rgba(255,255,255,0.9)' }}
           >
-            Phone{' '}
-            <span style={{ color: 'rgba(255,255,255,0.45)', fontWeight: 400, fontSize: '0.85rem' }}>
-              (optional)
-            </span>
+            Phone <span style={{ color: '#0D9488' }}>*</span>
           </label>
           <input
             id="contact-phone"
