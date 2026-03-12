@@ -60,7 +60,7 @@ export default function Services() {
                   <h3 className="text-lg font-bold text-dark-text min-w-0">{item.service}</h3>
                   <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
                 </div>
-                <p className="text-gray-600 text-sm">{item.details}</p>
+                <p className="text-dark-text text-sm">{item.details}</p>
               </div>
             ))}
           </div>
@@ -83,7 +83,7 @@ export default function Services() {
                   <h3 className="text-lg font-bold text-white min-w-0">{item.package}</h3>
                   <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
                 </div>
-                <p className="text-white/80 text-sm">{item.details}</p>
+                <p className="text-gray-700 text-sm">{item.details}</p>
               </div>
             ))}
           </div>
@@ -111,7 +111,7 @@ export default function Services() {
                   <h3 className="text-lg font-bold text-dark-text min-w-0">{item.service}</h3>
                   <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
                 </div>
-                <p className="text-gray-600 text-sm">{item.details}</p>
+                <p className="text-dark-text text-sm">{item.details}</p>
               </div>
             ))}
           </div>
@@ -134,7 +134,7 @@ export default function Services() {
                   <h3 className="text-lg font-bold text-dark-text">{item.package}</h3>
                   <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
                 </div>
-                <p className="text-gray-600 text-sm">{item.details}</p>
+                <p className="text-dark-text text-sm">{item.details}</p>
               </div>
             ))}
           </div>
