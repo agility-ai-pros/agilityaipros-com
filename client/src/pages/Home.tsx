@@ -17,18 +17,12 @@ export default function Home() {
       <Navigation />
 
       {/* Yellow Banner */}
-      <div className="relative h-32 md:h-40 overflow-hidden" style={{backgroundColor: '#FFD700'}}>
-        <div 
-          className="absolute inset-0 flex items-center justify-end pr-8 md:pr-16"
-          style={{
-            transform: 'skewX(-20deg)',
-            transformOrigin: 'right',
-          }}
-        >
-          <div className="text-white font-bold text-4xl md:text-6xl lg:text-7xl whitespace-nowrap" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
+      <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
+        <div className="px-4 md:px-8 flex items-center justify-center md:justify-end">
+          <div className="text-white font-bold text-xl md:text-3xl lg:text-5xl text-center md:text-right" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
             <span>AI Audit: </span>
             <span style={{textDecoration: 'line-through', opacity: 0.8}}>$997</span>
-            <span style={{marginLeft: '0.5rem'}}>→ $497</span>
+            <span style={{marginLeft: '0.25rem'}}>→ $497</span>
           </div>
         </div>
       </div>
