@@ -54,16 +54,22 @@ export default function Home() {
       {/* AI Audit Section */}
       <section className="bg-white py-16 md:py-32">
         <div className="container">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{color: '#1B3A6B'}}>
+            AI Audit
+          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left Column */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{color: '#1B3A6B'}}>
-                Audit YOUR Business to See How Best To Use AI
-              </h2>
-              <h3 className="text-xl font-semibold mb-6" style={{color: '#0D9488'}}>
-                Guaranteed to save you a minimum 5 hours a week or your money back.
+              <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight" style={{color: '#1B3A6B'}}>
+                5 Hours Back. Per Week. <span style={{color: '#0D9488'}}>Guaranteed.</span>
               </h3>
+              <p className="text-xl font-semibold mb-8" style={{color: '#0D9488'}}>
+                I'll Show You Exactly Where AI Can Save Your Business Time and Money
+              </p>
               <div className="space-y-6 mb-8">
+                <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
+                  Most South Florida businesses are either ignoring AI or using it wrong. Either way, they're losing 5–10 hours a week.
+                </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
                   We start with a 45-minute discovery call. You walk me through how your business operates — the tools, the bottlenecks, the tasks your team runs on autopilot. I take it from there.
                 </p>
