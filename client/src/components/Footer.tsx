@@ -8,6 +8,8 @@ export default function Footer() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/services', label: 'Services' },
+    { href: '/case-studies', label: 'Case Studies' },
+    { href: '/who-i-serve', label: 'Who I Serve' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
   ];
@@ -31,7 +33,7 @@ export default function Footer() {
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
                   <span
-                    className="cursor-pointer text-sm transition-colors"
+                    className="block cursor-pointer text-sm transition-colors"
                     style={{
                       color: hoveredLink === link.href ? '#0D9488' : 'rgba(255,255,255,0.7)',
                     }}

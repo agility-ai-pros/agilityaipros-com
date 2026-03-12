@@ -24,3 +24,4 @@
 - [x] Update App.tsx routes and navigation for new pages
 - [x] Add Family Office / Due Diligence card to homepage portfolio section after G-Force Token card
 - [x] Fix all Book Your AI Audit CTA buttons to reliably navigate to /#contact form
+- [x] Fix footer navigation: add spacing between links, add Who I Serve and Case Studies, ensure correct destinations
