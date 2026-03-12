@@ -69,10 +69,10 @@ export default function Services() {
 
 
 
-      {/* Tier 3: Website & Vibe Coding */}
+      {/* Tier 2: Website & Vibe Coding */}
       <section className="section-padding bg-white">
         <div className="container">
-          <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 3: Website & Vibe Coding</h2>
+          <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 2: Website & Vibe Coding</h2>
           <div className="max-w-4xl">
             {[
               { service: 'Simple Landing Page', price: '$497', details: '1-page site, copy included, fully launched' },
@@ -92,10 +92,10 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Tier 4: Multi-LLM Research */}
+      {/* Tier 3: Multi-LLM Research */}
       <section className="section-padding gray-section">
         <div className="container">
-          <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 4: Multi-LLM Deep Research Intelligence</h2>
+          <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 3: Multi-LLM Deep Research Intelligence</h2>
           <div className="max-w-4xl">
             {[
               { package: 'Research Sprint', price: '$350–$500', details: 'One question, 3–4 LLMs, synthesis report — 48–72 hrs' },
