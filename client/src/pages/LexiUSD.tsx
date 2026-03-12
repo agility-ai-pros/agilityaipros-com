@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 const SCREENSHOT_1 = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_screenshot_1_59f36311.webp';
 const SCREENSHOT_2 = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_screenshot_2_deee9dfb.webp';
-const PLACEHOLDER_3 = 'https://placehold.co/800x500/1B3A6B/0D9488?text=Screenshot+Coming+Soon';
+const SCREENSHOT_3 = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_screenshot_3_converter_2905d3c6.webp';
 
 export default function LexiUSD() {
   return (
@@ -78,8 +78,8 @@ export default function LexiUSD() {
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src={PLACEHOLDER_3}
-                  alt="LexiUSD platform screenshot 3"
+                  src={SCREENSHOT_3}
+                  alt="LexiUSD currency converter"
                   className="w-full h-56 object-cover"
                 />
               </div>
