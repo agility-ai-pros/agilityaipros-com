@@ -23,3 +23,4 @@
 - [x] Create /case-studies index page with cards for G-Force Token and Due Diligence
 - [x] Update App.tsx routes and navigation for new pages
 - [x] Add Family Office / Due Diligence card to homepage portfolio section after G-Force Token card
+- [x] Fix all Book Your AI Audit CTA buttons to reliably navigate to /#contact form

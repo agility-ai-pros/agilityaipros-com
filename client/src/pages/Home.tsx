@@ -47,7 +47,7 @@ export default function Home() {
                 </button>
               </Link>
               <a
-                href="#contact"
+                href="/#contact"
                 className="px-8 py-4 rounded-lg font-bold text-lg text-center" 
                 style={{border: '2px solid white', color: 'white', cursor: 'pointer'}}
               >
@@ -88,7 +88,7 @@ export default function Home() {
                 </p>
               </div>
               <a
-                href="#contact"
+                href="/#contact"
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-4"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
@@ -280,7 +280,7 @@ export default function Home() {
                 That's the offer. I'll show you how to use Manus AI to build websites, generate professional AI images, run automations, and grow your business — live, in one session. Most clients walk away and never look back. A few hire me to do it for them. Either way, you win.
               </p>
               <a
-                href="#contact"
+                href="/#contact"
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
@@ -310,7 +310,7 @@ export default function Home() {
           <p className="text-center text-lg italic" style={{color: '#6b7280'}}>All images on this site were generated using AI.</p>
           <div className="text-center mt-12">
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
               style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
             >
