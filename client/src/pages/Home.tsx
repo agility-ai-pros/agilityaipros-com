@@ -67,49 +67,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="bg-white py-16 md:py-32">
-        <div className="container">
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1B3A6B'}}>What I Do</h2>
-            <p className="text-xl max-w-2xl" style={{color: '#4b5563'}}>
-              Four core services, each designed to deliver real, measurable results for your business.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                icon: <Brain size={32} style={{color: '#0D9488'}} />,
-                title: 'Market Research & Copy',
-                description: 'AI-powered research, competitor analysis, and copy that converts. Delivered in 48 hours.',
-              },
-              {
-                icon: <Code size={32} style={{color: '#0D9488'}} />,
-                title: 'Manus AI Websites',
-                description: 'Full websites built and launched in days, including affiliate marketing infrastructure.',
-              },
-              {
-                icon: <Cpu size={32} style={{color: '#0D9488'}} />,
-                title: 'Multi-LLM Deep Research',
-                description: 'Your question run through 4 frontier AI systems and synthesized into one clear decision brief.',
-              },
-              {
-                icon: <Zap size={32} style={{color: '#0D9488'}} />,
-                title: 'Manus AI Training',
-                description: 'One 90-minute session. You\'ll know exactly how to build with Manus AI yourself.',
-              },
-            ].map((service, idx) => (
-              <div key={idx} className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: '#f9fafb', borderLeft: '4px solid #0D9488'}}>
-                <div className="mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-bold mb-3" style={{color: '#1f2937'}}>{service.title}</h3>
-                <p className="text-lg leading-relaxed" style={{color: '#4b5563'}}>{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* AI Audit Section */}
       <section className="bg-white py-16 md:py-32">
         <div className="container">
@@ -117,10 +74,10 @@ export default function Home() {
             {/* Left Column */}
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{color: '#1B3A6B'}}>
-                Find Out Exactly Where AI Is Costing You Time and Money — In 48 Hours.
+                Audit YOUR Business to See How Best To Use AI
               </h2>
-              <h3 className="text-xl font-semibold mb-6" style={{color: '#4b5563'}}>
-                Most South Florida businesses are either ignoring AI or using it wrong. Either way, they're losing 5–10 hours a week. This audit tells you exactly what to fix.
+              <h3 className="text-xl font-semibold mb-6" style={{color: '#0D9488'}}>
+                Guaranteed to save you a minimum 5 hours a week or your money back.
               </h3>
               <div className="space-y-6 mb-8">
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
@@ -172,6 +129,49 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section className="bg-white py-16 md:py-32">
+        <div className="container">
+          <div className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1B3A6B'}}>What I Do</h2>
+            <p className="text-xl max-w-2xl" style={{color: '#4b5563'}}>
+              Four core services, each designed to deliver real, measurable results for your business.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                icon: <Brain size={32} style={{color: '#0D9488'}} />,
+                title: 'Market Research & Copy',
+                description: 'AI-powered research, competitor analysis, and copy that converts. Delivered in 48 hours.',
+              },
+              {
+                icon: <Code size={32} style={{color: '#0D9488'}} />,
+                title: 'Manus AI Websites',
+                description: 'Full websites built and launched in days, including affiliate marketing infrastructure.',
+              },
+              {
+                icon: <Cpu size={32} style={{color: '#0D9488'}} />,
+                title: 'Multi-LLM Deep Research',
+                description: 'Your question run through 4 frontier AI systems and synthesized into one clear decision brief.',
+              },
+              {
+                icon: <Zap size={32} style={{color: '#0D9488'}} />,
+                title: 'Manus AI Training',
+                description: 'One 90-minute session. You\'ll know exactly how to build with Manus AI yourself.',
+              },
+            ].map((service, idx) => (
+              <div key={idx} className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: '#f9fafb', borderLeft: '4px solid #0D9488'}}>
+                <div className="mb-4">{service.icon}</div>
+                <h3 className="text-2xl font-bold mb-3" style={{color: '#1f2937'}}>{service.title}</h3>
+                <p className="text-lg leading-relaxed" style={{color: '#4b5563'}}>{service.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
