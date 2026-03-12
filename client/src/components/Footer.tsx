@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663309158428/ginTGkHljHgOanTg.png" alt="Agility AI Pros" style={{height: '260px', width: 'auto', marginBottom: '24px'}} />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/agility_ai_pros_logo_white_v2_ec09ed28.png" alt="Agility AI Pros" className="w-full max-w-[240px]" style={{height: 'auto', marginBottom: '16px'}} />
             <p className="text-sm leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>
               AI Business Services. Fast, focused, and built to deliver real results.
             </p>
