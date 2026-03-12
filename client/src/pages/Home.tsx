@@ -214,6 +214,23 @@ export default function Home() {
               </button>
             </div>
 
+            {/* Family Office / Due Diligence Card */}
+            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
+              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
+                Family Office / Private Capital
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-3">AI Due Diligence System</h3>
+              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>47+ public sources. Hours, not months. $106M deal protected.</p>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI-powered vetting that catches credential fraud before the first meeting.</p>
+              <button
+                onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies/due-diligence'; }}
+                className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
+                style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
+              >
+                View Project
+              </button>
+            </div>
+
             {/* Legacy Aviation FI Card */}
             <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
               <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
