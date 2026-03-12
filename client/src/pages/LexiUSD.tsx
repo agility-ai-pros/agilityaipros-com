@@ -50,7 +50,7 @@ export default function LexiUSD() {
                 The result is <a href="https://lexiusd.com" target="_blank" rel="noopener noreferrer" style={{ color: '#0D9488', fontWeight: 600 }}>LexiUSD.com</a> — a live site with a fully functional demo exchange built right inside it, scheduled to launch in Q2 2026. Real fintech infrastructure, built at a fraction of what the quote demanded, by the person who understands the vision better than any outside dev shop ever could.
               </p>
               <p>
-                That's what I do. I don't just tell you AI can help. I sit next to you — literally or virtually — and help you use it to do things that used to cost millions.
+                That's how I prefer to work. Not as a vendor handing you a deliverable — but as a thinking partner in the trenches with you, helping you see what's possible and make smart moves in real time. And when you're ready, I can show you exactly how to do it yourself — or just build it for you. Either way, you win.
               </p>
             </div>
           </div>
