@@ -173,6 +173,8 @@ const verticals = [
 export default function WhoIServe() {
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#f8f6f1' }}>
+      {/* Navy brand bar at top for congruence */}
+      <div style={{ height: '4px', background: 'linear-gradient(90deg, #1B3A6B 0%, #0D9488 100%)' }} />
       <Navigation />
 
       {/* Hero */}
@@ -198,7 +200,7 @@ export default function WhoIServe() {
             animation: 'wis-fadeUp 0.6s 0.2s both',
           }}
         >
-          South Florida AI Consulting
+          <span style={{ color: '#0D9488' }}>●</span>{' '}South Florida AI Consulting
         </div>
         <h1
           style={{
@@ -213,7 +215,8 @@ export default function WhoIServe() {
           }}
         >
           Get back{' '}
-          <em style={{ fontStyle: 'italic', color: '#c9553a' }}>10–20 hours a week</em> without
+          <em style={{ fontStyle: 'italic', color: '#c9553a' }}>10–20 hours a week</em>{' '}
+          <span style={{ color: '#0D9488' }}>without</span>
           hiring a single person
         </h1>
         <p
@@ -286,7 +289,7 @@ export default function WhoIServe() {
             style={{
               display: 'inline-block',
               padding: '16px 44px',
-              background: '#c9553a',
+              background: '#0D9488',
               color: '#fff',
               fontFamily: "'DM Sans', sans-serif",
               fontSize: '15px',
@@ -298,11 +301,11 @@ export default function WhoIServe() {
               transition: 'background 0.3s, transform 0.2s',
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLButtonElement).style.background = '#e8734f';
+              (e.currentTarget as HTMLButtonElement).style.background = '#0a7a6e';
               (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)';
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLButtonElement).style.background = '#c9553a';
+              (e.currentTarget as HTMLButtonElement).style.background = '#0D9488';
               (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)';
             }}
           >
@@ -338,7 +341,7 @@ export default function WhoIServe() {
           position: absolute;
           top: 0; left: 0; right: 0;
           height: 4px;
-          background: linear-gradient(90deg, #c9553a, #e8734f);
+          background: linear-gradient(90deg, #1B3A6B, #0D9488);
           opacity: 0;
           transition: opacity 0.3s;
         }
@@ -364,12 +367,12 @@ function VerticalCard({
           fontFamily: "'Playfair Display', serif",
           fontWeight: 900,
           fontSize: '48px',
-          color: '#f8f6f1',
+          color: 'rgba(13, 58, 107, 0.08)',
           position: 'absolute',
           top: '12px',
           right: '20px',
           lineHeight: 1,
-          WebkitTextStroke: '1px #e2dfd8',
+          WebkitTextStroke: '1px rgba(13, 148, 136, 0.15)',
           userSelect: 'none',
         }}
       >
