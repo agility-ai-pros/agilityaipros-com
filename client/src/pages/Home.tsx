@@ -177,10 +177,10 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Portfolio</h2>
           <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#0D9488'}}>Built With AI. Launched for Real Businesses.</h3>
           <p className="text-lg mb-12 max-w-2xl" style={{color: 'rgba(255,255,255,0.8)'}}>
-            Three live projects showcasing what's possible when you combine AI intelligence with strategic execution.
+            Four live projects showcasing what's possible when you combine AI intelligence with strategic execution.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
             {/* LexiUSD Card — links to internal case study page */}
             <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
               <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
@@ -190,6 +190,23 @@ export default function Home() {
               <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>AI helped my client save $1.6M in development costs.</p>
               <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Fintech infrastructure and tokenomics for a 2026 launch.</p>
               <Link href="/portfolio/lexiusd">
+                <button
+                  className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
+                  style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
+                >
+                  View Project
+                </button>
+              </Link>
+            </div>
+
+            {/* G-Force Token Card — links to internal case study page */}
+            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
+                Finance &amp; Deal Flow
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-3">GForceToken.com</h3>
+              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>Deal registration &amp; NCNDA protection platform — live and raising capital.</p>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI-assisted iteration turned a real-world frustration into a live deal lifecycle system.</p>
+              <Link href="/portfolio/gforcetoken">
                 <button
                   className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
                   style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}

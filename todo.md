@@ -14,3 +14,6 @@
 - [x] Add pre-checked SMS consent checkbox to contact form
 - [x] Store contact form submissions in database
 - [x] Update vitest for new schema and router
+- [x] Capture 3 screenshots from gforcetoken.com
+- [x] Build /portfolio/gforcetoken case study page matching LexiUSD style
+- [x] Link GForce Token case study from homepage portfolio section
