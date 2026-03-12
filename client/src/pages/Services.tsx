@@ -51,7 +51,7 @@ export default function Services() {
       </section>
 
       {/* Tier 1: Copy & Research */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white pt-20">
         <div className="container">
           <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 1: Copy & Research</h2>
           <div className="space-y-4">
