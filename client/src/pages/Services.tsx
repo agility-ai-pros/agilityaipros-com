@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
-const whatsappLink = 'https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20discuss%20services.';
+
 
 export default function Services() {
   return (
@@ -120,15 +120,13 @@ export default function Services() {
         <div className="container">
           <h2 className="text-3xl font-bold text-white mb-4">Not sure which service you need?</h2>
           <p className="text-white/90 text-lg mb-8">
-            Connect on WhatsApp and we'll figure it out together.
+            Fill out the form below and we'll figure it out together.
           </p>
           <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/#contact"
             className="cta-primary inline-block"
           >
-            Connect on WhatsApp
+            Let's Talk
           </a>
         </div>
       </section>

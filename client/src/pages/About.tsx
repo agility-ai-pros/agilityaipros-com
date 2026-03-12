@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import { Link } from 'wouter';
 import { CheckCircle } from 'lucide-react';
 
-const whatsappLink = 'https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20learn%20more.';
+
 
 export default function About() {
   return (
@@ -92,15 +92,13 @@ export default function About() {
         <div className="container">
           <h2 className="text-3xl font-bold text-white mb-4">Let's Talk.</h2>
           <p className="text-white/90 text-lg mb-8">
-            Connect on WhatsApp. No pitch. Just a conversation about what AI can do for your business.
+            No pitch. Just a conversation about what AI can do for your business.
           </p>
           <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/#contact"
             className="cta-primary inline-block"
           >
-            Connect on WhatsApp
+            Send a Message
           </a>
         </div>
       </section>

@@ -3,15 +3,15 @@ import { Brain, Code, Cpu, Zap, X } from 'lucide-react';
 import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
 
 const ROBOT_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/ai_robot_figure-2vKeEbfmGQUYFMJMfibq5N.webp';
 const RESEARCH_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/research_data_screens-guZTcenqbebJoxz6XyUcoy.webp';
 const CODE_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/website_code_building_new-Mk22PxCjcdDLQdwZqMK7qp.webp';
 
-const whatsappLink = 'https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20connect%20about%20AI%20services.';
-
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -49,13 +49,11 @@ export default function Home() {
                 </button>
               </Link>
               <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contact"
                 className="px-8 py-4 rounded-lg font-bold text-lg text-center" 
                 style={{border: '2px solid white', color: 'white', cursor: 'pointer'}}
               >
-                Connect on WhatsApp
+                Let's Talk
               </a>
             </div>
           </div>
@@ -92,9 +90,7 @@ export default function Home() {
                 </p>
               </div>
               <a
-                href="https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20book%20an%20AI%20Audit."
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contact"
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-4"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
@@ -237,9 +233,7 @@ export default function Home() {
                 That's the offer. I'll show you how to use Manus AI to build websites, generate professional AI images, run automations, and grow your business — live, in one session. Most clients walk away and never look back. A few hire me to do it for them. Either way, you win.
               </p>
               <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contact"
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
@@ -269,9 +263,7 @@ export default function Home() {
           <p className="text-center text-lg italic" style={{color: '#6b7280'}}>All images on this site were generated using AI.</p>
           <div className="text-center mt-12">
             <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
               style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
             >
@@ -330,22 +322,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-24 md:py-32 text-center text-white" style={{backgroundColor: '#1B3A6B'}}>
+      {/* Contact Form Section */}
+      <section id="contact" className="py-24 md:py-32 text-white" style={{backgroundColor: '#1B3A6B'}}>
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Move Fast?</h2>
-          <p className="text-xl mb-10 max-w-2xl mx-auto" style={{color: 'rgba(255,255,255,0.9)'}}>
-            Connect on WhatsApp. No pitch. Just a conversation about what AI can do for your business right now.
-          </p>
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
-            style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
-          >
-            Connect on WhatsApp
-          </a>
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">Ready to Move Fast?</h2>
+            <p className="text-xl mb-12 text-center" style={{color: 'rgba(255,255,255,0.85)'}}>
+              No pitch. Just a conversation about what AI can do for your business right now.
+            </p>
+            <ContactForm />
+          </div>
         </div>
       </section>
 
