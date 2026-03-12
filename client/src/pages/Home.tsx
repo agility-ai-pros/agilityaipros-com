@@ -16,6 +16,23 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
+      {/* Yellow Banner */}
+      <div className="relative h-20 md:h-24 overflow-hidden" style={{backgroundColor: '#FFD700'}}>
+        <div 
+          className="absolute inset-0 flex items-center justify-end pr-8 md:pr-16"
+          style={{
+            transform: 'skewX(-20deg)',
+            transformOrigin: 'right',
+          }}
+        >
+          <div className="text-white font-bold text-lg md:text-2xl whitespace-nowrap" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
+            <span>AI Audit: </span>
+            <span style={{textDecoration: 'line-through', opacity: 0.8}}>$997</span>
+            <span style={{marginLeft: '0.5rem'}}>→ $497</span>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="text-white py-12 md:py-32 relative overflow-hidden" style={{backgroundColor: '#1B3A6B'}}>
         <div className="absolute inset-0 opacity-5">
