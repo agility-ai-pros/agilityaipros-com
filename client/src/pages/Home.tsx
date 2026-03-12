@@ -183,38 +183,55 @@ export default function Home() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'LexiUSD.com',
-                category: 'Stablecoin Platform',
-                description: 'Fintech infrastructure and tokenomics for a 2026 launch.',
-              },
-              {
-                name: 'LegacyAviationFI.com',
-                category: 'Aviation Finance',
-                description: 'Global aviation finance & operations platform.',
-              },
-              {
-                name: 'AgilityAIInnerCircle.com',
-                category: 'AI Membership',
-                description: 'AI membership site with full affiliate marketing infrastructure.',
-              },
-            ].map((project, idx) => (
-              <div key={idx} className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
-                <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
-                  {project.category}
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-3">{project.name}</h3>
-                <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>{project.description}</p>
+            {/* LexiUSD Card — links to internal case study page */}
+            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
+              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
+                Stablecoin Platform
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-3">LexiUSD.com</h3>
+              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>AI helped my client save $1.6M in development costs.</p>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Fintech infrastructure and tokenomics for a 2026 launch.</p>
+              <Link href="/portfolio/lexiusd">
                 <button
-                  onClick={() => setSelectedProject(idx)}
                   className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
                   style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
                 >
                   View Project
                 </button>
+              </Link>
+            </div>
+
+            {/* Legacy Aviation FI Card */}
+            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
+              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
+                Aviation Finance
               </div>
-            ))}
+              <h3 className="text-2xl font-bold text-white mb-3">LegacyAviationFI.com</h3>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Global aviation finance & operations platform.</p>
+              <button
+                onClick={() => setSelectedProject(1)}
+                className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
+                style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
+              >
+                View Project
+              </button>
+            </div>
+
+            {/* Agility AI Inner Circle Card */}
+            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
+              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
+                AI Membership
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-3">AgilityAIInnerCircle.com</h3>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI membership site with full affiliate marketing infrastructure.</p>
+              <button
+                onClick={() => setSelectedProject(2)}
+                className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
+                style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
+              >
+                View Project
+              </button>
+            </div>
           </div>
           
           <p className="text-center mt-8 text-base" style={{color: 'rgba(255,255,255,0.6)'}}>Additional projects available under NDA — ask on a call.</p>

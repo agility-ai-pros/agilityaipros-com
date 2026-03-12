@@ -1,0 +1,120 @@
+import { Link } from 'wouter';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+
+// Placeholder images — replace with actual CDN URLs when provided
+const PLACEHOLDER_1 = 'https://placehold.co/800x500/1B3A6B/0D9488?text=LexiUSD+Screenshot+1';
+const PLACEHOLDER_2 = 'https://placehold.co/800x500/1B3A6B/0D9488?text=LexiUSD+Screenshot+2';
+const PLACEHOLDER_3 = 'https://placehold.co/800x500/1B3A6B/0D9488?text=LexiUSD+Screenshot+3';
+
+export default function LexiUSD() {
+  return (
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
+      <Navigation />
+
+      {/* Hero */}
+      <section className="py-20 md:py-32 text-white" style={{ backgroundColor: '#1B3A6B' }}>
+        <div className="container">
+          <div className="max-w-3xl">
+            <div
+              className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-6 uppercase tracking-wide"
+              style={{ backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488' }}
+            >
+              Case Study — Stablecoin Platform
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              $1.6 Million Saved.{' '}
+              <span style={{ color: '#0D9488' }}>Built by the Founder Himself.</span>
+            </h1>
+            <p className="text-xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.85)' }}>
+              How AI-powered vibe coding turned a seven-figure development quote into a founder-built fintech platform.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Body Copy */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="space-y-6 text-lg leading-relaxed" style={{ color: '#374151' }}>
+              <p>
+                My client came to me in the early stages of building LexiUSD, a stablecoin and fintech platform set for a 2026 launch. Before we connected, he had done what most founders do — he went out and got a quote from a reputable, seven-year-established exchange development firm. The number they came back with: <strong style={{ color: '#1B3A6B' }}>$1.6 million.</strong>
+              </p>
+              <p>
+                That's a real quote. From a real company. For work that, with the right tools and guidance, didn't require a seven-figure budget.
+              </p>
+              <p>
+                We sat down together and I walked him through what's now possible with today's AI-powered vibe coding platforms — tools that let a motivated, non-technical founder actually build production-level infrastructure without a full dev team. He built it himself. I was there every step of the way — helping him make decisions, avoid mistakes, and move fast without breaking things.
+              </p>
+              <p>
+                The result is <a href="https://lexiusd.com" target="_blank" rel="noopener noreferrer" style={{ color: '#0D9488', fontWeight: 600 }}>LexiUSD.com</a> — a live site with a fully functional demo exchange built right inside it, scheduled to launch in Q2 2026. Real fintech infrastructure, built at a fraction of what the quote demanded, by the person who understands the vision better than any outside dev shop ever could.
+              </p>
+              <p>
+                That's what I do. I don't just tell you AI can help. I sit next to you — literally or virtually — and help you use it to do things that used to cost millions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery */}
+      <section className="py-12 md:py-16" style={{ backgroundColor: '#f9fafb' }}>
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={PLACEHOLDER_1}
+                  alt="LexiUSD platform screenshot 1"
+                  className="w-full h-56 object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={PLACEHOLDER_2}
+                  alt="LexiUSD platform screenshot 2"
+                  className="w-full h-56 object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={PLACEHOLDER_3}
+                  alt="LexiUSD platform screenshot 3"
+                  className="w-full h-56 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 md:py-28 text-white text-center" style={{ backgroundColor: '#1B3A6B' }}>
+        <div className="container">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to find out what's possible for your business?
+            </h2>
+            <Link href="/#contact">
+              <button
+                className="px-10 py-4 text-white rounded-lg font-bold text-lg transition-all"
+                style={{ backgroundColor: '#0D9488', cursor: 'pointer' }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#0f766e';
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#0D9488';
+                }}
+              >
+                Book Your AI Audit — $497
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}
