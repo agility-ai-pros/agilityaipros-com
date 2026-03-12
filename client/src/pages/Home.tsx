@@ -51,22 +51,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="bg-white py-12" style={{borderBottom: '1px solid #e5e7eb'}}>
-        <div className="container">
-          <p className="text-center text-sm font-semibold mb-8 uppercase tracking-wide" style={{color: '#6b7280'}}>
-            Trusted by businesses across AI platforms
-          </p>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
-            {['Manus AI', 'Claude', 'Grok', 'Perplexity', 'Gemini'].map((platform) => (
-              <div key={platform} className="text-sm font-bold" style={{color: '#1f2937'}}>
-                {platform}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* AI Audit Section */}
       <section className="bg-white py-16 md:py-32">
         <div className="container">
@@ -308,6 +292,22 @@ export default function Home() {
                 Get a Research Sprint — Starting at $350
               </button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="bg-white py-12" style={{borderBottom: '1px solid #e5e7eb'}}>
+        <div className="container">
+          <p className="text-center text-sm font-semibold mb-8 uppercase tracking-wide" style={{color: '#6b7280'}}>
+            Trusted by businesses across AI platforms
+          </p>
+          <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
+            {['Manus AI', 'Claude', 'Grok', 'Perplexity', 'Gemini'].map((platform) => (
+              <div key={platform} className="text-sm font-bold" style={{color: '#1f2937'}}>
+                {platform}
+              </div>
+            ))}
           </div>
         </div>
       </section>
