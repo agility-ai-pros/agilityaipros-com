@@ -47,7 +47,7 @@ export default function Services() {
       <section className="section-padding bg-white pt-20">
         <div className="container">
           <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 1: Copy & Research</h2>
-          <div className="max-w-4xl space-y-6">
+          <div className="max-w-4xl">
             {[
               { service: 'Market Research Sprint', price: '$250–$350', details: 'Competitor landscape, positioning gaps & audience intel — 48 hrs' },
               { service: 'Homepage Copy Rewrite', price: '$250', details: 'Hero section, above-the-fold, and CTA — AI-drafted, human-polished' },
@@ -55,12 +55,14 @@ export default function Services() {
               { service: 'Pitch Deck Copy', price: '$350–$500', details: 'Slide-by-slide narrative for a 10–12 slide investor or sales deck' },
               { service: 'Landing Page Copy', price: '$350', details: 'Full landing page: headline, body, proof, CTA sections' },
             ].map((item, idx) => (
-              <div key={idx} className="pb-6 border-b border-gray-200 last:border-b-0">
-                <div className="flex justify-between items-start gap-4 mb-2">
-                  <h3 className="text-lg font-bold text-dark-text">{item.service}</h3>
-                  <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
+              <div key={idx} className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-6 border-b border-gray-200 last:border-b-0 md:items-start">
+                <div className="md:col-span-2">
+                  <h3 className="text-lg font-bold text-dark-text mb-2">{item.service}</h3>
+                  <p className="text-gray-600 text-sm">{item.details}</p>
                 </div>
-                <p className="text-gray-600">{item.details}</p>
+                <div className="md:text-right">
+                  <p className="text-xl font-bold text-teal">{item.price}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -72,18 +74,20 @@ export default function Services() {
         <div className="container">
           <h2 className="text-3xl font-bold text-white mb-2">Tier 2: Manus AI — The One-Session Offer</h2>
           <p className="text-white/80 mb-8">After one session, you won't need me. That's the point.</p>
-          <div className="max-w-4xl space-y-6 mb-8">
+          <div className="max-w-4xl mb-8">
             {[
               { package: 'Manus AI Intro Session', price: '$250', details: '90-min live walkthrough — your first use case built together' },
               { package: 'Manus AI + Website Build', price: '$497–$797', details: 'Session + I build your first Manus AI site (1–3 days)' },
               { package: 'Affiliate Site Build', price: '$797–$1,200', details: 'Full Manus AI site with affiliate marketing infrastructure' },
             ].map((item, idx) => (
-              <div key={idx} className="pb-6 border-b border-white/20 last:border-b-0">
-                <div className="flex justify-between items-start gap-4 mb-2">
-                  <h3 className="text-lg font-bold text-white">{item.package}</h3>
-                  <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
+              <div key={idx} className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-6 border-b border-white/20 last:border-b-0 md:items-start">
+                <div className="md:col-span-2">
+                  <h3 className="text-lg font-bold text-white mb-2">{item.package}</h3>
+                  <p className="text-white/80 text-sm">{item.details}</p>
                 </div>
-                <p className="text-white/80">{item.details}</p>
+                <div className="md:text-right">
+                  <p className="text-xl font-bold text-teal">{item.price}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -99,19 +103,21 @@ export default function Services() {
       <section className="section-padding bg-white">
         <div className="container">
           <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 3: Website & Vibe Coding</h2>
-          <div className="max-w-4xl space-y-6">
+          <div className="max-w-4xl">
             {[
               { service: 'Simple Landing Page', price: '$497', details: '1-page site, copy included, fully launched' },
               { service: 'Multi-page Website', price: '$997–$1,500', details: '3–5 pages, copy + build' },
               { service: 'Affiliate Feature Add-on', price: '$400–$600', details: 'Add affiliate infrastructure to an existing site' },
               { service: 'Custom Automation', price: '$500+', details: 'Specific workflow or integration, built to your specs' },
             ].map((item, idx) => (
-              <div key={idx} className="pb-6 border-b border-gray-200 last:border-b-0">
-                <div className="flex justify-between items-start gap-4 mb-2">
-                  <h3 className="text-lg font-bold text-dark-text">{item.service}</h3>
-                  <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
+              <div key={idx} className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-6 border-b border-gray-200 last:border-b-0 md:items-start">
+                <div className="md:col-span-2">
+                  <h3 className="text-lg font-bold text-dark-text mb-2">{item.service}</h3>
+                  <p className="text-gray-600 text-sm">{item.details}</p>
                 </div>
-                <p className="text-gray-600">{item.details}</p>
+                <div className="md:text-right">
+                  <p className="text-xl font-bold text-teal">{item.price}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -122,19 +128,21 @@ export default function Services() {
       <section className="section-padding gray-section">
         <div className="container">
           <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 4: Multi-LLM Deep Research Intelligence</h2>
-          <div className="max-w-4xl space-y-6">
+          <div className="max-w-4xl">
             {[
               { package: 'Research Sprint', price: '$350–$500', details: 'One question, 3–4 LLMs, synthesis report — 48–72 hrs' },
               { package: 'New Business Launch Validation', price: '$750–$1,200', details: 'Full market + viability analysis, decision brief + risk flags' },
               { package: 'Competitive Intelligence Report', price: '$500–$800', details: 'Your product vs. the market, moat analysis included' },
               { package: 'Investor-Ready Research Package', price: '$1,200–$2,000', details: 'Multi-LLM verified market data for pitch decks and due diligence' },
             ].map((item, idx) => (
-              <div key={idx} className="pb-6 border-b border-gray-200 last:border-b-0">
-                <div className="flex justify-between items-start gap-4 mb-2">
-                  <h3 className="text-lg font-bold text-dark-text">{item.package}</h3>
-                  <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
+              <div key={idx} className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-6 border-b border-gray-200 last:border-b-0 md:items-start">
+                <div className="md:col-span-2">
+                  <h3 className="text-lg font-bold text-dark-text mb-2">{item.package}</h3>
+                  <p className="text-gray-600 text-sm">{item.details}</p>
                 </div>
-                <p className="text-gray-600">{item.details}</p>
+                <div className="md:text-right">
+                  <p className="text-xl font-bold text-teal">{item.price}</p>
+                </div>
               </div>
             ))}
           </div>
