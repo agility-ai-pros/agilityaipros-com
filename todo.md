@@ -17,3 +17,5 @@
 - [x] Capture 3 screenshots from gforcetoken.com
 - [x] Build /portfolio/gforcetoken case study page matching LexiUSD style
 - [x] Link GForce Token case study from homepage portfolio section
+- [x] Add visible project title above hero headline on GForceToken and LexiUSD case study pages
+- [x] Fix View Project buttons to scroll to top of case study page on navigation

@@ -15,11 +15,17 @@ export default function LexiUSD() {
       <section className="py-20 md:py-32 text-white" style={{ backgroundColor: '#1B3A6B' }}>
         <div className="container">
           <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: 'rgba(255,255,255,0.5)' }}>
+              Case Study
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{ color: '#ffffff' }}>
+              LexiUSD
+            </h2>
             <div
               className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-6 uppercase tracking-wide"
               style={{ backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488' }}
             >
-              Case Study — Stablecoin Platform
+              Stablecoin Platform
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               $1.6 Million Saved.{' '}
