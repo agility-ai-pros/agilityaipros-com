@@ -142,4 +142,52 @@
   .service-card {
     @apply bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow;
   }
+
+  .navy-section {
+    background-color: var(--navy);
+    color: #ffffff;
+  }
+
+  .gray-section {
+    background-color: var(--light-gray);
+  }
+
+  .hero-section {
+    background-color: var(--navy);
+    color: #ffffff;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    .section-padding {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  .cta-primary {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background-color: var(--teal);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+
+  .cta-primary:hover {
+    background-color: #0f766e;
+  }
 }
