@@ -2,10 +2,9 @@ import { Link } from 'wouter';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
-// Placeholder images — replace with actual CDN URLs when provided
-const PLACEHOLDER_1 = 'https://placehold.co/800x500/1B3A6B/0D9488?text=LexiUSD+Screenshot+1';
-const PLACEHOLDER_2 = 'https://placehold.co/800x500/1B3A6B/0D9488?text=LexiUSD+Screenshot+2';
-const PLACEHOLDER_3 = 'https://placehold.co/800x500/1B3A6B/0D9488?text=LexiUSD+Screenshot+3';
+const SCREENSHOT_1 = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_screenshot_1_59f36311.webp';
+const SCREENSHOT_2 = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_screenshot_2_deee9dfb.webp';
+const PLACEHOLDER_3 = 'https://placehold.co/800x500/1B3A6B/0D9488?text=Screenshot+Coming+Soon';
 
 export default function LexiUSD() {
   return (
@@ -65,14 +64,14 @@ export default function LexiUSD() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src={PLACEHOLDER_1}
+                  src={SCREENSHOT_1}
                   alt="LexiUSD platform screenshot 1"
                   className="w-full h-56 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src={PLACEHOLDER_2}
+                  src={SCREENSHOT_2}
                   alt="LexiUSD platform screenshot 2"
                   className="w-full h-56 object-cover"
                 />
