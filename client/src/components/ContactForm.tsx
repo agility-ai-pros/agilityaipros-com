@@ -243,8 +243,7 @@ export default function ContactForm() {
             )}
           </div>
           <p className="text-sm leading-relaxed select-none" style={{ color: 'rgba(255,255,255,0.85)' }}>
-            I agree to receive SMS messages from Patrick Daniel AI regarding my inquiry and relevant
-            offers. Message & data rates may apply. Reply STOP to unsubscribe at any time.
+            I agree to receive SMS messages from Agility AI Pros regarding my inquiry and relevant offers. Message & data rates may apply. Reply STOP to unsubscribe at any time.
           </p>
         </div>
 
