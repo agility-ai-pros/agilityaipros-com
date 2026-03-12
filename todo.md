@@ -19,3 +19,6 @@
 - [x] Link GForce Token case study from homepage portfolio section
 - [x] Add visible project title above hero headline on GForceToken and LexiUSD case study pages
 - [x] Fix View Project buttons to scroll to top of case study page on navigation
+- [x] Build /case-studies/due-diligence page with full copy, checklist sections, source tags, results grid
+- [x] Create /case-studies index page with cards for G-Force Token and Due Diligence
+- [x] Update App.tsx routes and navigation for new pages

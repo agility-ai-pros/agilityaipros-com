@@ -7,6 +7,8 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import LexiUSD from "@/pages/LexiUSD";
 import GForceToken from "@/pages/GForceToken";
+import DueDiligence from "@/pages/DueDiligence";
+import CaseStudies from "@/pages/CaseStudies";
 import WhoIServe from "@/pages/WhoIServe";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -22,6 +24,8 @@ function Router() {
       <Route path={"/contact"} component={Contact} />
       <Route path={"/portfolio/lexiusd"} component={LexiUSD} />
       <Route path={"/portfolio/gforcetoken"} component={GForceToken} />
+      <Route path={"/case-studies/due-diligence"} component={DueDiligence} />
+      <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/who-i-serve"} component={WhoIServe} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
