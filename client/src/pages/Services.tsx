@@ -17,14 +17,6 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Hero */}
-      <section className="navy-section text-center py-8 md:py-12">
-        <div className="container">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Services & Pricing</h1>
-          <p className="text-white/90 text-lg">Fast, focused, and built to deliver results. Minimum engagement: $250.</p>
-        </div>
-      </section>
-
       {/* AI Audit - Featured First */}
       <section className="bg-white py-12 md:py-16">
         <div className="container">
@@ -43,8 +35,16 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Services & Pricing Hero - moved below AI Audit */}
+      <section className="navy-section text-center py-8 md:py-12">
+        <div className="container">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Services & Pricing</h1>
+          <p className="text-white/90 text-lg">Fast, focused, and built to deliver results.</p>
+        </div>
+      </section>
+
       {/* Tier 1: Copy & Research */}
-      <section className="section-padding bg-white pt-20">
+      <section className="section-padding bg-white">
         <div className="container">
           <h2 className="text-3xl font-bold text-dark-text mb-8">Tier 1: Copy & Research</h2>
           <div className="max-w-4xl">
@@ -66,8 +66,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-
 
       {/* Tier 2: Website & Vibe Coding */}
       <section className="section-padding bg-white">
