@@ -237,13 +237,11 @@ export default function WhoIServe() {
 
       {/* Verticals Grid */}
       <section
+        className="wis-grid"
         style={{
           maxWidth: '1200px',
           margin: '0 auto',
           padding: '0 24px 100px',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-          gap: '28px',
         }}
       >
         {verticals.map((v, i) => (
@@ -318,6 +316,17 @@ export default function WhoIServe() {
 
       {/* Keyframe animation injected as a style tag */}
       <style>{`
+        .wis-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+        @media (min-width: 640px) {
+          .wis-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 1024px) {
+          .wis-grid { grid-template-columns: repeat(3, 1fr); }
+        }
         @keyframes wis-fadeUp {
           from { opacity: 0; transform: translateY(24px); }
           to { opacity: 1; transform: translateY(0); }
