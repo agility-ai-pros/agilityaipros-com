@@ -71,7 +71,7 @@ export default function Home() {
       <section className="bg-white py-16 md:py-32">
         <div className="container">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{color: '#1f2937'}}>What I Do</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1B3A6B'}}>What I Do</h2>
             <p className="text-xl max-w-2xl" style={{color: '#4b5563'}}>
               Four core services, each designed to deliver real, measurable results for your business.
             </p>
@@ -116,7 +116,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left Column */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{color: '#1f2937'}}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{color: '#1B3A6B'}}>
                 Find Out Exactly Where AI Is Costing You Time and Money — In 48 Hours.
               </h2>
               <h3 className="text-xl font-semibold mb-6" style={{color: '#4b5563'}}>
@@ -179,7 +179,7 @@ export default function Home() {
       {/* Portfolio */}
       <section className="py-24 md:py-32" style={{backgroundColor: '#1B3A6B', color: 'white'}}>
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Built With AI. Launched for Real Businesses.</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{color: '#1B3A6B'}}>Built With AI. Launched for Real Businesses.</h2>
           <p className="text-xl mb-16 max-w-2xl" style={{color: 'rgba(255,255,255,0.8)'}}>
             Three live projects showcasing what's possible when you combine AI intelligence with strategic execution.
           </p>
@@ -228,7 +228,7 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1f2937'}}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1B3A6B'}}>
                 After One Session with Me, You Won't Need Me Again.
               </h2>
               <p className="text-xl mb-8 leading-relaxed" style={{color: '#4b5563'}}>
@@ -254,7 +254,7 @@ export default function Home() {
       {/* Image Creation */}
       <section className="py-16 md:py-32" style={{backgroundColor: '#f9fafb'}}>
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{color: '#1f2937'}}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{color: '#1B3A6B'}}>
             Yes, I Can Build Your Brand Images Too.
           </h2>
           <p className="text-xl text-center mb-16 max-w-2xl mx-auto" style={{color: '#4b5563'}}>
@@ -282,7 +282,7 @@ export default function Home() {
       {/* Multi-LLM Research */}
       <section className="bg-white py-24 md:py-32">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{color: '#1f2937'}}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{color: '#1B3A6B'}}>
             Four AIs Cross-Examining Your Business Question.
           </h2>
           <p className="text-xl text-center mb-16 max-w-3xl mx-auto" style={{color: '#4b5563'}}>
