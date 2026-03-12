@@ -44,7 +44,7 @@ export default function LexiUSD() {
                 That's a real quote. From a real company. For work that, with the right tools and guidance, didn't require a seven-figure budget.
               </p>
               <p>
-                We sat down together and I walked him through what's now possible with today's AI-powered vibe coding platforms — tools that let a motivated, non-technical founder actually build production-level infrastructure without a full dev team. He built it himself. I was there every step of the way — helping him make decisions, avoid mistakes, and move fast without breaking things.
+                Together we went deep — regular working sessions exploring vibe coding platforms, testing AI tools, and figuring out what was actually possible in real time. This wasn't a classroom. It was two people building something live, learning the landscape together, and making smart decisions along the way. He did the building. We built the knowledge together — and what we learned in the process is already shaping what's possible on everything that comes next.
               </p>
               <p>
                 The result is <a href="https://lexiusd.com" target="_blank" rel="noopener noreferrer" style={{ color: '#0D9488', fontWeight: 600 }}>LexiUSD.com</a> — a live site with a fully functional demo exchange built right inside it, scheduled to launch in Q2 2026. Real fintech infrastructure, built at a fraction of what the quote demanded, by the person who understands the vision better than any outside dev shop ever could.
