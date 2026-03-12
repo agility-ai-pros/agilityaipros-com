@@ -47,11 +47,18 @@ export default function Home() {
                 Connect on WhatsApp
               </a>
             </div>
-            <div className="flex items-center gap-2 mt-6">
-              <Zap size={16} style={{color: '#0D9488'}} />
-              <p style={{color: 'rgba(255,255,255,0.7)', fontSize: '0.95rem'}}>
-                $497 flat fee
+            <div className="mt-8">
+              <p style={{color: 'rgba(255,255,255,0.8)', fontSize: '1rem', marginBottom: '0.5rem'}}>
+                AI Audit
               </p>
+              <div className="flex items-center gap-3">
+                <span style={{color: 'rgba(255,255,255,0.6)', fontSize: '1.2rem', textDecoration: 'line-through'}}>
+                  $997
+                </span>
+                <span style={{color: '#0D9488', fontSize: '2rem', fontWeight: 'bold'}}>
+                  $497
+                </span>
+              </div>
             </div>
           </div>
         </div>
