@@ -20,9 +20,7 @@ export default function Home() {
       <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
         <div className="px-4 md:px-8 flex items-center justify-center md:justify-end">
           <div className="text-white font-bold text-xl md:text-3xl lg:text-5xl text-center md:text-right" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-            <span>AI Audit: </span>
-            <span style={{textDecoration: 'line-through', opacity: 0.8}}>$997</span>
-            <span style={{marginLeft: '0.25rem'}}>→ $497</span>
+            <span>AI Audit — $997</span>
           </div>
         </div>
       </div>
@@ -94,7 +92,7 @@ export default function Home() {
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-4"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
-                Book Your AI Audit — $497
+                Book Your AI Audit — $997
               </a>
               <p style={{color: '#6b7280', fontSize: '0.95rem'}}>
                 Most clients identify $2,000–$5,000/month in recoverable time in the first session.
@@ -254,7 +252,7 @@ export default function Home() {
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
-                Book a Manus AI Session — $250
+                Book a Manus AI Tutorial — Starts at $997
               </a>
             </div>
             <div>
@@ -284,7 +282,7 @@ export default function Home() {
               className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
               style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
             >
-              Reach Out for a Site Build Quote — Starting at $450
+              Get in Touch About Your Project
             </a>
           </div>
         </div>
@@ -316,7 +314,7 @@ export default function Home() {
           <div className="text-center">
             <Link href="/services">
               <button className="px-8 py-4 text-white rounded-lg font-bold text-lg" style={{backgroundColor: '#0D9488', cursor: 'pointer'}}>
-                Get a Research Sprint — Starting at $350
+                Learn More About Our Services
               </button>
             </Link>
           </div>

@@ -8,10 +8,8 @@ import { getDb } from "./db";
 import { contactSubmissions } from "../drizzle/schema";
 
 const INTEREST_LABELS: Record<string, string> = {
-  'ai-audit': 'AI Audit ($497)',
-  'manus-website': 'Manus AI Website',
-  'multi-llm-research': 'Multi-LLM Research',
-  'ai-training': 'AI Training Session',
+  'ai-audit': 'AI Audit ($997)',
+  'manus-tutorial': 'Manus AI Tutorial (Starts at $997)',
   'other': 'Other',
 };
 
@@ -35,7 +33,7 @@ export const appRouter = router({
           name: z.string().min(1).max(200),
           email: z.string().email().max(320),
           phone: z.string().min(7).max(30),
-          interest: z.enum(['ai-audit', 'manus-website', 'multi-llm-research', 'ai-training', 'other']),
+          interest: z.enum(['ai-audit', 'manus-tutorial', 'other']),
           smsConsent: z.boolean().default(false),
         })
       )
