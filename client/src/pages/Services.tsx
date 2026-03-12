@@ -9,6 +9,15 @@ export default function Services() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
+      {/* Yellow Banner - AI Audit */}
+      <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
+        <div className="px-4 md:px-8 flex items-center justify-center md:justify-start">
+          <div className="text-white font-bold text-2xl md:text-3xl" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
+            AI Audit
+          </div>
+        </div>
+      </div>
+
       {/* Hero */}
       <section className="hero-section navy-section text-center">
         <div className="container">
@@ -20,6 +29,10 @@ export default function Services() {
       {/* AI Audit - Featured First */}
       <section className="section-padding bg-white">
         <div className="container">
+          <div className="mb-12 pb-8 border-b-2 border-gray-200">
+            <h2 className="text-4xl md:text-5xl font-bold text-dark-text mb-4">5 Hours Back. Weekly. Guaranteed.</h2>
+            <p className="text-xl text-gray-600 max-w-2xl">45-min discovery call + custom AI Action Report delivered within 48 hours + 30-min walkthrough call with prioritized recommendations.</p>
+          </div>
           <h2 className="text-3xl font-bold text-dark-text mb-8">AI Audit — Start Here</h2>
           <div className="grid grid-cols-1 gap-6">
             <div className="border-2 border-teal rounded-lg p-6">
