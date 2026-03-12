@@ -12,13 +12,13 @@ export default function Services() {
       <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
         <div className="px-4 md:px-8 flex items-center justify-center md:justify-start">
           <div className="text-white font-bold text-2xl md:text-3xl" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-            AI Audit
+            Reboot Your Business with an AI Audit Today
           </div>
         </div>
       </div>
 
       {/* Hero */}
-      <section className="hero-section navy-section text-center">
+      <section className="navy-section text-center py-8 md:py-12">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Services & Pricing</h1>
           <p className="text-white/90 text-lg">Fast, focused, and built to deliver results. Minimum engagement: $250.</p>
@@ -26,11 +26,11 @@ export default function Services() {
       </section>
 
       {/* AI Audit - Featured First */}
-      <section className="section-padding bg-white">
+      <section className="bg-white py-12 md:py-16">
         <div className="container">
-          <div className="mb-12 pb-8 border-b-2 border-gray-200">
-            <h2 className="text-4xl md:text-5xl font-bold text-dark-text mb-4">5 Hours Back. Weekly. Guaranteed.</h2>
-            <p className="text-xl text-gray-600 max-w-2xl">45-min discovery call + custom AI Action Report delivered within 48 hours + 30-min walkthrough call with prioritized recommendations.</p>
+          <div className="mb-8 pb-6 border-b-2 border-gray-200">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark-text mb-3">5 Hours Back. Weekly. Guaranteed.</h2>
+            <p className="text-lg text-gray-600 max-w-2xl">45-min discovery call + custom AI Action Report delivered within 48 hours + 30-min walkthrough call with prioritized recommendations.</p>
           </div>
           <h2 className="text-3xl font-bold text-dark-text mb-8">AI Audit — Start Here</h2>
           <div className="max-w-2xl">
