@@ -17,6 +17,26 @@ export default function Services() {
         </div>
       </section>
 
+      {/* AI Audit - Featured First */}
+      <section className="section-padding bg-white">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-dark-text mb-8">AI Audit — Start Here</h2>
+          <div className="grid grid-cols-1 gap-6">
+            <div className="border-2 border-teal rounded-lg p-6">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-2">AI Audit</h3>
+                  <p className="text-gray-600">45-min discovery + custom AI Action Report + 30-min walkthrough. Guaranteed 5+ hours/week savings.</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-4xl font-bold text-teal">$497</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tier 1: Copy & Research */}
       <section className="section-padding bg-white">
         <div className="container">
@@ -26,7 +46,7 @@ export default function Services() {
               <thead>
                 <tr className="border-b-2 border-border-gray">
                   <th className="text-left py-4 px-4 font-bold text-dark-text">Service</th>
-                  <th className="text-left py-4 px-4 font-bold text-dark-text">Price</th>
+                  <th className="text-left py-4 px-4 font-bold text-dark-text whitespace-nowrap">Price</th>
                   <th className="text-left py-4 px-4 font-bold text-dark-text">What You Get</th>
                 </tr>
               </thead>
@@ -40,7 +60,7 @@ export default function Services() {
                 ].map((item, idx) => (
                   <tr key={idx} className="border-b border-border-gray hover:bg-light-gray transition-colors">
                     <td className="py-4 px-4 font-semibold text-dark-text">{item.service}</td>
-                    <td className="py-4 px-4 text-teal font-bold">{item.price}</td>
+                    <td className="py-4 px-4 text-teal font-bold whitespace-nowrap">{item.price}</td>
                     <td className="py-4 px-4 text-gray-600">{item.details}</td>
                   </tr>
                 ))}
@@ -60,7 +80,7 @@ export default function Services() {
               <thead>
                 <tr className="border-b-2 border-white/20">
                   <th className="text-left py-4 px-4 font-bold text-white">Package</th>
-                  <th className="text-left py-4 px-4 font-bold text-white">Price</th>
+                  <th className="text-left py-4 px-4 font-bold text-white whitespace-nowrap">Price</th>
                   <th className="text-left py-4 px-4 font-bold text-white">What's Included</th>
                 </tr>
               </thead>
@@ -72,7 +92,7 @@ export default function Services() {
                 ].map((item, idx) => (
                   <tr key={idx} className="border-b border-white/10 hover:bg-white/5 transition-colors">
                     <td className="py-4 px-4 font-semibold text-white">{item.package}</td>
-                    <td className="py-4 px-4 text-teal font-bold">{item.price}</td>
+                    <td className="py-4 px-4 text-teal font-bold whitespace-nowrap">{item.price}</td>
                     <td className="py-4 px-4 text-white/80">{item.details}</td>
                   </tr>
                 ))}
@@ -96,7 +116,7 @@ export default function Services() {
               <thead>
                 <tr className="border-b-2 border-border-gray">
                   <th className="text-left py-4 px-4 font-bold text-dark-text">Service</th>
-                  <th className="text-left py-4 px-4 font-bold text-dark-text">Price</th>
+                  <th className="text-left py-4 px-4 font-bold text-dark-text whitespace-nowrap">Price</th>
                   <th className="text-left py-4 px-4 font-bold text-dark-text">Notes</th>
                 </tr>
               </thead>
@@ -109,7 +129,7 @@ export default function Services() {
                 ].map((item, idx) => (
                   <tr key={idx} className="border-b border-border-gray hover:bg-light-gray transition-colors">
                     <td className="py-4 px-4 font-semibold text-dark-text">{item.service}</td>
-                    <td className="py-4 px-4 text-teal font-bold">{item.price}</td>
+                    <td className="py-4 px-4 text-teal font-bold whitespace-nowrap">{item.price}</td>
                     <td className="py-4 px-4 text-gray-600">{item.details}</td>
                   </tr>
                 ))}
@@ -128,7 +148,7 @@ export default function Services() {
               <thead>
                 <tr className="border-b-2 border-border-gray">
                   <th className="text-left py-4 px-4 font-bold text-dark-text">Package</th>
-                  <th className="text-left py-4 px-4 font-bold text-dark-text">Price</th>
+                  <th className="text-left py-4 px-4 font-bold text-dark-text whitespace-nowrap">Price</th>
                   <th className="text-left py-4 px-4 font-bold text-dark-text">Deliverable</th>
                 </tr>
               </thead>
@@ -141,7 +161,7 @@ export default function Services() {
                 ].map((item, idx) => (
                   <tr key={idx} className="border-b border-border-gray hover:bg-white/50 transition-colors">
                     <td className="py-4 px-4 font-semibold text-dark-text">{item.package}</td>
-                    <td className="py-4 px-4 text-teal font-bold">{item.price}</td>
+                    <td className="py-4 px-4 text-teal font-bold whitespace-nowrap">{item.price}</td>
                     <td className="py-4 px-4 text-gray-600">{item.details}</td>
                   </tr>
                 ))}
