@@ -56,8 +56,8 @@ export default function Services() {
               { service: 'Landing Page Copy', price: '$350', details: 'Full landing page: headline, body, proof, CTA sections' },
             ].map((item, idx) => (
               <div key={idx} className="pb-6 border-b border-gray-200 last:border-b-0">
-                <div className="flex justify-between items-start gap-4 mb-2">
-                  <h3 className="text-lg font-bold text-dark-text">{item.service}</h3>
+                <div className="flex justify-between items-baseline gap-2 mb-2 flex-wrap">
+                  <h3 className="text-lg font-bold text-dark-text min-w-0">{item.service}</h3>
                   <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
                 </div>
                 <p className="text-gray-600 text-sm">{item.details}</p>
@@ -79,8 +79,8 @@ export default function Services() {
               { package: 'Affiliate Site Build', price: '$797–$1,200', details: 'Full Manus AI site with affiliate marketing infrastructure' },
             ].map((item, idx) => (
               <div key={idx} className="pb-6 border-b border-white/20 last:border-b-0">
-                <div className="flex justify-between items-start gap-4 mb-2">
-                  <h3 className="text-lg font-bold text-white">{item.package}</h3>
+                <div className="flex justify-between items-baseline gap-2 mb-2 flex-wrap">
+                  <h3 className="text-lg font-bold text-white min-w-0">{item.package}</h3>
                   <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
                 </div>
                 <p className="text-white/80 text-sm">{item.details}</p>
@@ -107,8 +107,8 @@ export default function Services() {
               { service: 'Custom Automation', price: '$500+', details: 'Specific workflow or integration, built to your specs' },
             ].map((item, idx) => (
               <div key={idx} className="pb-6 border-b border-gray-200 last:border-b-0">
-                <div className="flex justify-between items-start gap-4 mb-2">
-                  <h3 className="text-lg font-bold text-dark-text">{item.service}</h3>
+                <div className="flex justify-between items-baseline gap-2 mb-2 flex-wrap">
+                  <h3 className="text-lg font-bold text-dark-text min-w-0">{item.service}</h3>
                   <p className="text-xl font-bold text-teal flex-shrink-0">{item.price}</p>
                 </div>
                 <p className="text-gray-600 text-sm">{item.details}</p>
