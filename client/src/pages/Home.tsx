@@ -178,10 +178,11 @@ export default function Home() {
       </section>
 
       {/* Portfolio */}
-      <section className="py-24 md:py-32" style={{backgroundColor: '#1B3A6B', color: 'white'}}>
+      <section className="py-16 md:py-20" style={{backgroundColor: '#1B3A6B', color: 'white'}}>
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{color: '#1B3A6B'}}>Built With AI. Launched for Real Businesses.</h2>
-          <p className="text-xl mb-16 max-w-2xl" style={{color: 'rgba(255,255,255,0.8)'}}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Portfolio</h2>
+          <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#0D9488'}}>Built With AI. Launched for Real Businesses.</h3>
+          <p className="text-lg mb-12 max-w-2xl" style={{color: 'rgba(255,255,255,0.8)'}}>
             Three live projects showcasing what's possible when you combine AI intelligence with strategic execution.
           </p>
           
@@ -220,7 +221,7 @@ export default function Home() {
             ))}
           </div>
           
-          <p className="text-center mt-12 text-lg" style={{color: 'rgba(255,255,255,0.6)'}}>Additional projects available under NDA — ask on a call.</p>
+          <p className="text-center mt-8 text-base" style={{color: 'rgba(255,255,255,0.6)'}}>Additional projects available under NDA — ask on a call.</p>
         </div>
       </section>
 
