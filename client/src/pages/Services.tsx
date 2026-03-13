@@ -56,11 +56,14 @@ export default function Services() {
                   Then we get back on a 30-minute walkthrough call and I hand it to you with a clear implementation sequence.
                 </p>
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <span className="text-5xl font-bold" style={{color: '#1B3A6B'}}>
                   <span style={{textDecoration: 'line-through', opacity: 0.5, fontSize: '0.75em', marginRight: '0.25em'}}>$997</span>$497
                 </span>
               </div>
+              <p className="text-sm font-semibold mb-4" style={{color: '#c9553a'}}>
+                ⏳ Introductory rate — available to the next 7 clients only
+              </p>
               <a
                 href="/#contact"
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-3"
@@ -131,11 +134,14 @@ export default function Services() {
                   This isn't a course. It's a working session with someone who builds with these tools every day. You bring the idea. I bring the knowledge. We build it together.
                 </p>
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <span className="text-5xl font-bold" style={{color: '#1B3A6B'}}>
                   Starts at <span style={{textDecoration: 'line-through', opacity: 0.5, fontSize: '0.75em', marginRight: '0.25em'}}>$997</span>$497
                 </span>
               </div>
+              <p className="text-sm font-semibold mb-4" style={{color: '#c9553a'}}>
+                ⏳ Introductory rate — available to the next 7 clients only
+              </p>
               <a
                 href="/#contact"
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-3"
