@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { trpc } from '@/lib/trpc';
 
 const INTEREST_OPTIONS = [
-  { value: 'ai-audit', label: 'AI Audit ($997)' },
-  { value: 'manus-tutorial', label: 'Manus AI Tutorial (Starts at $997)' },
+  { value: 'ai-audit', label: 'AI Audit ($497 — intro price)' },
+  { value: 'manus-tutorial', label: 'Manus AI Tutorial (Starts at $497)' },
   { value: 'other', label: 'Other' },
 ];
 

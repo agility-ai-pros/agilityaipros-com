@@ -12,7 +12,7 @@ export default function Services() {
       <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
         <div className="px-4 md:px-8 flex items-center justify-center md:justify-end">
           <div className="text-white font-bold text-xl md:text-3xl lg:text-5xl text-center md:text-right" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-            AI Audit — $997
+            AI Audit — <span style={{textDecoration: 'line-through', opacity: 0.75}}>$997</span> <span>$497</span>
           </div>
         </div>
       </div>
@@ -57,14 +57,16 @@ export default function Services() {
                 </p>
               </div>
               <div className="mb-4">
-                <span className="text-5xl font-bold" style={{color: '#1B3A6B'}}>$997</span>
+                <span className="text-5xl font-bold" style={{color: '#1B3A6B'}}>
+                  <span style={{textDecoration: 'line-through', opacity: 0.5, fontSize: '0.75em', marginRight: '0.25em'}}>$997</span>$497
+                </span>
               </div>
               <a
                 href="/#contact"
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-3"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
-                Book Your AI Audit — $997
+                Book Your AI Audit — <span style={{textDecoration: 'line-through', opacity: 0.75, fontSize: '0.9em'}}>$997</span> $497
               </a>
               <p style={{color: '#6b7280', fontSize: '0.95rem'}}>
                 Most clients identify $2,000–$5,000/month in recoverable time in the first session.
@@ -130,7 +132,9 @@ export default function Services() {
                 </p>
               </div>
               <div className="mb-4">
-                <span className="text-5xl font-bold" style={{color: '#1B3A6B'}}>Starts at $997</span>
+                <span className="text-5xl font-bold" style={{color: '#1B3A6B'}}>
+                  Starts at <span style={{textDecoration: 'line-through', opacity: 0.5, fontSize: '0.75em', marginRight: '0.25em'}}>$997</span>$497
+                </span>
               </div>
               <a
                 href="/#contact"

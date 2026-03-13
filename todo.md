@@ -26,3 +26,4 @@
 - [x] Fix all Book Your AI Audit CTA buttons to reliably navigate to /#contact form
 - [x] Fix footer navigation: add spacing between links, add Who I Serve and Case Studies, ensure correct destinations
 - [x] Remove all AgilityAIInnerCircle mentions from portfolio and entire site
+- [x] Update all AI Audit pricing to show $997 crossed out → $497 introductory discount
