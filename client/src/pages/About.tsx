@@ -42,7 +42,7 @@ export default function About() {
             {[
               { name: 'LexiUSD.com', description: 'Stablecoin platform with fintech infrastructure' },
               { name: 'LegacyAviationFI.com', description: 'Global aviation finance and operations' },
-              { name: 'AgilityAIInnerCircle.com', description: 'AI membership site with affiliate marketing' },
+              { name: 'GForceToken.com', description: 'Deal registration & NCNDA protection platform' },
             ].map((project, idx) => (
               <div key={idx} className="bg-white rounded-xl p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-dark-text mb-2">{project.name}</h3>

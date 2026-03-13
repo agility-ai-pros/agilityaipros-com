@@ -247,21 +247,6 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Agility AI Inner Circle Card */}
-            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
-              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
-                AI Membership
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-3">AgilityAIInnerCircle.com</h3>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI membership site with full affiliate marketing infrastructure.</p>
-              <button
-                onClick={() => setSelectedProject(2)}
-                className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
-                style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
-              >
-                View Project
-              </button>
-            </div>
           </div>
           
           <p className="text-center mt-8 text-base" style={{color: 'rgba(255,255,255,0.6)'}}>Additional projects available under NDA — ask on a call.</p>
@@ -399,9 +384,7 @@ export default function Home() {
             {selectedProject === 1 && (
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/legacyaviationfi_2026-03-11_18-12-17_3122_11750452.webp" alt="Legacy Aviation FI" className="w-full h-auto" />
             )}
-            {selectedProject === 2 && (
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/agilityaiinnercircle_2026-03-11_18-12-38_4948_8f431570.webp" alt="Agility AI Inner Circle" className="w-full h-auto" />
-            )}
+
           </div>
         </div>
       )}

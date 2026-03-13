@@ -25,3 +25,4 @@
 - [x] Add Family Office / Due Diligence card to homepage portfolio section after G-Force Token card
 - [x] Fix all Book Your AI Audit CTA buttons to reliably navigate to /#contact form
 - [x] Fix footer navigation: add spacing between links, add Who I Serve and Case Studies, ensure correct destinations
+- [x] Remove all AgilityAIInnerCircle mentions from portfolio and entire site
