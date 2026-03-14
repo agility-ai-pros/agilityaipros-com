@@ -40,3 +40,4 @@
 - [x] Unify case study URLs: move LexiUSD and GForceToken from /portfolio/ to /case-studies/
 - [x] Add breadcrumb navigation to LexiUSD and GForceToken case study pages
 - [x] Add View All Case Studies link below homepage portfolio cards
+- [x] Update footer Services list to match current 3-service structure
