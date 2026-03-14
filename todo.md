@@ -39,3 +39,4 @@
 - [x] Fix mobile nav to auto-close when a link is tapped
 - [x] Unify case study URLs: move LexiUSD and GForceToken from /portfolio/ to /case-studies/
 - [x] Add breadcrumb navigation to LexiUSD and GForceToken case study pages
+- [x] Add View All Case Studies link below homepage portfolio cards

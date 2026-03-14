@@ -360,6 +360,17 @@ export default function Home() {
           </div>
           
           <p className="text-center mt-8 text-base" style={{color: 'rgba(255,255,255,0.6)'}}>Additional projects available under NDA — ask on a call.</p>
+          <div className="text-center mt-10">
+            <button
+              onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies'; }}
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-bold text-base transition-all"
+              style={{border: '2px solid #0D9488', color: '#0D9488', backgroundColor: 'transparent', cursor: 'pointer'}}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#0D9488'; (e.currentTarget as HTMLButtonElement).style.color = 'white'; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLButtonElement).style.color = '#0D9488'; }}
+            >
+              View All Case Studies →
+            </button>
+          </div>
         </div>
       </section>
 
