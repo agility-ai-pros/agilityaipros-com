@@ -347,14 +347,17 @@ export default function Home() {
                 Aviation Finance
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">LegacyAviationFI.com</h3>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Global aviation finance & operations platform.</p>
-              <button
-                onClick={() => setSelectedProject(1)}
-                className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
-                style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
-              >
-                View Project
-              </button>
+              <p className="text-teal-400 font-semibold mb-2 text-sm">1 day. 100 developers couldn't do it in a month.</p>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Global aviation finance &amp; operations platform — built and rebranded in a single day.</p>
+              <Link href="/case-studies/legacyaviationfi">
+                <button
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
+                  style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
+                >
+                  View Project
+                </button>
+              </Link>
             </div>
 
           </div>

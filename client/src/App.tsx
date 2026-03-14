@@ -10,6 +10,7 @@ import GForceToken from "@/pages/GForceToken";
 import DueDiligence from "@/pages/DueDiligence";
 import CaseStudies from "@/pages/CaseStudies";
 import WhoIServe from "@/pages/WhoIServe";
+import LegacyAviationFI from "@/pages/LegacyAviationFI";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -26,6 +27,7 @@ function Router() {
       <Route path={"/case-studies/gforcetoken"} component={GForceToken} />
       <Route path={"/case-studies/due-diligence"} component={DueDiligence} />
       <Route path={"/case-studies"} component={CaseStudies} />
+      <Route path={"/case-studies/legacyaviationfi"} component={LegacyAviationFI} />
       <Route path={"/who-i-serve"} component={WhoIServe} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}

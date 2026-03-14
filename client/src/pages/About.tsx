@@ -43,7 +43,7 @@ export default function About() {
               { name: 'LexiUSD.com', description: 'Stablecoin platform with fintech infrastructure', href: '/case-studies/lexiusd' },
               { name: 'GForceToken.com', description: 'Deal registration & NCNDA protection platform', href: '/case-studies/gforcetoken' },
               { name: 'Family Office Vetting', description: 'AI-powered due diligence across 47+ public sources', href: '/case-studies/due-diligence' },
-              { name: 'LegacyAviationFI.com', description: 'Global aviation finance and operations', href: null },
+              { name: 'LegacyAviationFI.com', description: 'Global aviation finance and operations', href: '/case-studies/legacyaviationfi' },
             ].map((project, idx) => (
               project.href ? (
                 <Link key={idx} href={project.href} onClick={() => window.scrollTo(0, 0)}>

@@ -42,3 +42,6 @@
 - [x] Add View All Case Studies link below homepage portfolio cards
 - [x] Update footer Services list to match current 3-service structure
 - [x] Make About page project cards clickable and add Family Office case study card
+- [x] Capture 3 screenshots from LegacyAviationFI.com
+- [x] Build /case-studies/legacyaviationfi case study page with rescue story and screenshots
+- [x] Link LegacyAviationFI case study from homepage, Case Studies index, and About page

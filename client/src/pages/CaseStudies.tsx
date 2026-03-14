@@ -12,6 +12,7 @@ const TEAL = '#0D9488';
 
 const GFORCE_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/gforcetoken_hero_b513eb3b.webp';
 const LEXIUSD_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_2026-03-11_18-10-56_2875_139dcaf2.webp';
+const LEGACY_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/legacyaviationfi_hero_c3424d70.webp';
 
 const caseStudies = [
   {
@@ -42,6 +43,16 @@ const caseStudies = [
     description: 'AI-powered vibe coding turned a seven-figure development quote into a founder-built fintech platform — live and launching Q2 2026.',
     stats: ['$1.6M saved', 'Founder-built', 'Live demo exchange'],
     img: LEXIUSD_IMG,
+    accent: TEAL,
+  },
+  {
+    slug: '/case-studies/legacyaviationfi',
+    category: 'Aviation Finance & Operations',
+    title: 'Legacy Aviation FI',
+    headline: 'A 100-person overseas team couldn\'t deliver in a month. We launched the next day.',
+    description: 'AI-assisted development and a strategic domain rebrand turned a stalled project into a live global aviation finance platform — in one day.',
+    stats: ['1-day build', '30 days saved', '6 divisions covered'],
+    img: LEGACY_IMG,
     accent: TEAL,
   },
 ];
