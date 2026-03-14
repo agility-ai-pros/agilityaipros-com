@@ -15,6 +15,12 @@ export default function GForceToken() {
       <section className="py-20 md:py-32 text-white" style={{ backgroundColor: '#1B3A6B' }}>
         <div className="container">
           <div className="max-w-3xl">
+            <div className="text-xs font-bold uppercase tracking-widest mb-6" style={{ letterSpacing: '2px' }}>
+              <Link href="/case-studies">
+                <span className="cursor-pointer hover:underline" style={{ color: 'rgba(255,255,255,0.5)' }}>Case Studies</span>
+              </Link>
+              <span style={{ color: '#0D9488' }}> &nbsp;/&nbsp; G-Force Token</span>
+            </div>
             <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: 'rgba(255,255,255,0.5)' }}>
               Case Study
             </p>
