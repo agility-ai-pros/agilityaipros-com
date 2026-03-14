@@ -72,7 +72,7 @@ export default function Navigation() {
           <div className="md:hidden pb-4" style={{borderTop: '1px solid #e5e7eb'}}>
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
-                <span className="block py-3 cursor-pointer font-medium" style={{color: '#1f2937'}}>
+                <span className="block py-3 cursor-pointer font-medium" style={{color: '#1f2937'}} onClick={() => setIsOpen(false)}>
                   {link.label}
                 </span>
               </Link>

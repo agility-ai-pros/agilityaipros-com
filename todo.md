@@ -36,3 +36,4 @@
 - [x] Update portfolio card descriptions with AI tools used
 - [x] Update platform logos strip with Claude/Manus descriptors
 - [x] Rebuild Services page with 3 flagship services (AI Audit, Claude Business Setup, Manus AI Builds & Training)
+- [x] Fix mobile nav to auto-close when a link is tapped
