@@ -9,7 +9,9 @@ import { contactSubmissions } from "../drizzle/schema";
 
 const INTEREST_LABELS: Record<string, string> = {
   'ai-audit': 'AI Audit ($997)',
-  'manus-tutorial': 'Manus AI Tutorial (Starts at $997)',
+  'claude-setup': 'Claude Business Setup (Starting at $2,000)',
+  'manus-builds': 'Manus AI Builds & Training',
+  'multi-llm': 'Multi-LLM Deep Research',
   'other': 'Other',
 };
 
@@ -33,7 +35,7 @@ export const appRouter = router({
           name: z.string().min(1).max(200),
           email: z.string().email().max(320),
           phone: z.string().min(7).max(30),
-          interest: z.enum(['ai-audit', 'manus-tutorial', 'other']),
+          interest: z.enum(['ai-audit', 'claude-setup', 'manus-builds', 'multi-llm', 'other']),
           smsConsent: z.boolean().default(false),
         })
       )

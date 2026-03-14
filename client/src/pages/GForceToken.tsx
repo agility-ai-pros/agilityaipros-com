@@ -231,7 +231,7 @@ export default function GForceToken() {
                   (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#0D9488';
                 }}
               >
-                Book Your AI Audit — <span style={{textDecoration: 'line-through', opacity: 0.75, fontSize: '0.9em'}}>$997</span> $497
+                Book Your AI Audit — $997
               </button>
             </Link>
           </div>

@@ -184,7 +184,7 @@ export default function CaseStudies() {
               (e.currentTarget as HTMLButtonElement).style.backgroundColor = TEAL;
             }}
           >
-            Book Your AI Audit — <span style={{textDecoration: 'line-through', opacity: 0.75, fontSize: '0.9em'}}>$997</span> $497
+            Book Your AI Audit — $997
           </button>
         </div>
       </section>

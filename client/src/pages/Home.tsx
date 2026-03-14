@@ -20,7 +20,7 @@ export default function Home() {
       <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
         <div className="px-4 md:px-8 flex items-center justify-center md:justify-end">
           <div className="text-white font-bold text-xl md:text-3xl lg:text-5xl text-center md:text-right" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-            <span>AI Audit — <span style={{textDecoration: 'line-through', opacity: 0.75}}>$997</span> <span style={{color: '#fff'}}>$497</span></span>
+            <span>AI Audit — $997</span>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function Home() {
               Start Using AI Effectively <span style={{color: '#0D9488'}}>In Your Business Today.</span>
             </h1>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-2xl" style={{color: 'rgba(255,255,255,0.9)'}}>
-              I'll do it for you. Or show you how. Either way, you'll actually know how to use AI in your business — no confusion, no wasted time. Let's get you effective.
+              Two AI platforms. One system. Built specifically for how your business operates. I'll do it for you, or show you how. Either way, you win.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/services">
@@ -92,7 +92,7 @@ export default function Home() {
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-4"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
-                Book Your AI Audit — <span style={{textDecoration: 'line-through', opacity: 0.75, fontSize: '0.9em'}}>$997</span> $497
+                Book Your AI Audit — $997
               </a>
               <p style={{color: '#6b7280', fontSize: '0.95rem'}}>
                 Most clients identify $2,000–$5,000/month in recoverable time in the first session.
@@ -142,23 +142,23 @@ export default function Home() {
             {[
               {
                 icon: <Brain size={32} style={{color: '#0D9488'}} />,
-                title: 'Market Research & Copy',
-                description: 'AI-powered research, competitor analysis, and copy that converts. Delivered in 48 hours.',
+                title: 'AI Audit \u2014 $997',
+                description: '45-minute discovery. Custom AI Action Report. Clear implementation sequence. Guaranteed 5+ hours saved per week.',
               },
               {
                 icon: <Code size={32} style={{color: '#0D9488'}} />,
-                title: 'Manus AI Websites',
-                description: 'Full websites built and launched in days, including affiliate marketing infrastructure.',
+                title: 'Claude Business Setup \u2014 Starting at $2,000',
+                description: 'Your business on Claude\'s full ecosystem in one week. Projects, Cowork, memory, and custom skills configured for your workflows. Packages for solo operators through full teams.',
+              },
+              {
+                icon: <Zap size={32} style={{color: '#0D9488'}} />,
+                title: 'Manus AI Builds & Training',
+                description: 'Websites, automations, research systems \u2014 built with Manus AI. Or learn to build them yourself in one live session.',
               },
               {
                 icon: <Cpu size={32} style={{color: '#0D9488'}} />,
                 title: 'Multi-LLM Deep Research',
-                description: 'Your question run through 4 frontier AI systems and synthesized into one clear decision brief.',
-              },
-              {
-                icon: <Zap size={32} style={{color: '#0D9488'}} />,
-                title: 'Manus AI Training',
-                description: 'One 90-minute session. You\'ll know exactly how to build with Manus AI yourself.',
+                description: 'Your question run through Claude, Manus, Grok, and Perplexity \u2014 each in deep research mode \u2014 then cross-referenced into one decision brief.',
               },
             ].map((service, idx) => (
               <div key={idx} className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: '#f9fafb', borderLeft: '4px solid #0D9488'}}>
@@ -168,6 +168,116 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* AI Stack Section */}
+      <section className="py-16 md:py-32" style={{backgroundColor: '#f9fafb'}}>
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1B3A6B'}}>
+              Two AI Powerhouses. One System Built for Your Business.
+            </h2>
+            <p className="text-xl max-w-3xl mx-auto" style={{color: '#4b5563'}}>
+              Most consultants give you one tool and a tutorial. I give you an AI operating system — Claude for the daily work, Manus for the heavy lifting.
+            </p>
+          </div>
+
+          <p className="text-lg mb-12 max-w-3xl mx-auto text-center" style={{color: '#4b5563', lineHeight: '1.8'}}>
+            I don't pick sides in the AI wars. I pick what works. That's why every client gets a system built on two platforms that do different things extremely well.
+          </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            {/* Claude Column */}
+            <div className="p-8 md:p-10 rounded-2xl bg-white shadow-lg" style={{borderTop: '4px solid #0D9488'}}>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2" style={{color: '#1B3A6B'}}>Claude</h3>
+              <p className="text-lg font-semibold mb-6" style={{color: '#0D9488'}}>Your Team's Always-On AI Brain</p>
+              <p className="mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
+                Claude is the AI your team will live inside every day. It's not a chatbot — it's a business operating system built by Anthropic, the same company trusted by Spotify, Deloitte, and Novo Nordisk.
+              </p>
+              <p className="font-semibold mb-4" style={{color: '#1B3A6B'}}>Here's what I set up for you:</p>
+              <div className="space-y-5">
+                <div>
+                  <p className="font-bold" style={{color: '#1f2937'}}>Claude Projects</p>
+                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Dedicated workspaces for each department, loaded with your SOPs, brand voice, pricing, templates, and company knowledge. Your team never re-explains context. Claude already knows your business before anyone types a word.</p>
+                </div>
+                <div>
+                  <p className="font-bold" style={{color: '#1f2937'}}>Claude Cowork</p>
+                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>AI that connects directly to your files and systems. Describe what you need — organized folders, formatted reports, processed data, a first draft from scattered notes — and come back to finished work. It breaks complex tasks into steps and runs them in parallel while you do something else.</p>
+                </div>
+                <div>
+                  <p className="font-bold" style={{color: '#1f2937'}}>Claude Code</p>
+                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Custom integrations your business actually needs. Connect your CRM to your follow-up system. Build internal tools. Automate the workflows that off-the-shelf software can't touch — without hiring a development team.</p>
+                </div>
+                <div>
+                  <p className="font-bold" style={{color: '#1f2937'}}>Claude Memory</p>
+                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Claude remembers your preferences, your projects, your team's patterns. Every conversation picks up where the last one left off. No more starting from scratch.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Manus Column */}
+            <div className="p-8 md:p-10 rounded-2xl bg-white shadow-lg" style={{borderTop: '4px solid #1B3A6B'}}>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2" style={{color: '#1B3A6B'}}>Manus AI</h3>
+              <p className="text-lg font-semibold mb-6" style={{color: '#0D9488'}}>Your Autonomous Execution Engine</p>
+              <p className="mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
+                Manus is the AI that works in the background while you sleep. Acquired by Meta for $2B, it's the most advanced autonomous agent available today — and I'm one of the few consultants who builds with it.
+              </p>
+              <p className="font-semibold mb-4" style={{color: '#1B3A6B'}}>Here's what Manus does that nothing else can:</p>
+              <div className="space-y-5">
+                <div>
+                  <p className="font-bold" style={{color: '#1f2937'}}>Autonomous Task Execution</p>
+                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Give Manus a goal and walk away. It plans the steps, executes them, and delivers results. Research, reports, data analysis, website builds — start to finish, no hand-holding.</p>
+                </div>
+                <div>
+                  <p className="font-bold" style={{color: '#1f2937'}}>Website & App Building</p>
+                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Need a site launched fast? Manus builds functional websites and web apps from a single prompt. I've used it to build client sites in days, not weeks.</p>
+                </div>
+                <div>
+                  <p className="font-bold" style={{color: '#1f2937'}}>Wide Research</p>
+                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Manus runs parallel research across dozens of sources simultaneously, then compiles and synthesizes the findings. What takes your team a full day takes Manus about 20 minutes.</p>
+                </div>
+                <div>
+                  <p className="font-bold" style={{color: '#1f2937'}}>Background Operation</p>
+                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Unlike chatbots that only work while you're watching, Manus handles long-running tasks entirely in the background. Queue it up, close your laptop, check back later.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-xl md:text-2xl font-bold mb-8 max-w-3xl mx-auto" style={{color: '#1B3A6B'}}>
+              Claude handles the daily work. Manus handles the heavy lifting. Together, they give your business capabilities that used to require a full-time team.
+            </p>
+            <a
+              href="/#contact"
+              className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
+              style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
+            >
+              See How This Works for Your Business
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Two Platforms FAQ */}
+      <section className="bg-white py-16 md:py-20">
+        <div className="container max-w-3xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{color: '#1B3A6B'}}>
+            Why do you use both Claude and Manus instead of just one?
+          </h2>
+          <p className="text-lg mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
+            Because they do different things well, and your business needs both.
+          </p>
+          <p className="text-lg mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
+            <strong style={{color: '#1B3A6B'}}>Claude</strong> is where your team works every day. It holds your company knowledge, understands your processes, and produces work that sounds like your brand — not like a robot. It's the best AI for ongoing daily operations.
+          </p>
+          <p className="text-lg mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
+            <strong style={{color: '#1B3A6B'}}>Manus</strong> is the heavy lifter you deploy for big jobs. Need a website built from scratch? A 50-source research brief? A full competitive analysis running in the background? That's Manus.
+          </p>
+          <p className="text-lg" style={{color: '#4b5563', lineHeight: '1.8'}}>
+            Think of it this way: Claude is your smartest employee. Manus is your most tireless contractor. Together, they cover everything.
+          </p>
         </div>
       </section>
 
@@ -188,7 +298,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">LexiUSD.com</h3>
               <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>AI helped my client save $1.6M in development costs.</p>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Fintech infrastructure and tokenomics for a 2026 launch.</p>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Built with Manus AI and Claude's research capabilities. Fintech infrastructure and tokenomics for a 2026 launch.</p>
               <button
                 onClick={() => { window.scrollTo(0, 0); window.location.href = '/portfolio/lexiusd'; }}
                 className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
@@ -203,8 +313,8 @@ export default function Home() {
                 Finance &amp; Deal Flow
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">GForceToken.com</h3>
-              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>Deal registration &amp; NCNDA protection platform — live and raising capital.</p>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI-assisted iteration turned a real-world frustration into a live deal lifecycle system.</p>
+              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>Deal registration & NCNDA protection platform — live and raising capital.</p>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI-assisted iteration using Claude and Manus turned a real-world frustration into a live deal lifecycle system.</p>
               <button
                 onClick={() => { window.scrollTo(0, 0); window.location.href = '/portfolio/gforcetoken'; }}
                 className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
@@ -220,8 +330,8 @@ export default function Home() {
                 Family Office / Private Capital
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">AI Due Diligence System</h3>
-              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>47+ public sources. Hours, not months. $106M deal protected.</p>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI-powered vetting that catches credential fraud before the first meeting.</p>
+              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>47+ public sources · Hours, not months · $106M deal protected.</p>
+              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Built using Claude Projects for persistent knowledge and Manus Wide Research for parallel source analysis.</p>
               <button
                 onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies/due-diligence'; }}
                 className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
@@ -269,7 +379,7 @@ export default function Home() {
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
-                Book a Manus AI Tutorial — Starts at <span style={{textDecoration: 'line-through', opacity: 0.75, fontSize: '0.9em'}}>$997</span> $497
+                Book a Manus AI Tutorial — Starts at $997
               </a>
             </div>
             <div>
@@ -345,7 +455,15 @@ export default function Home() {
             Trusted by businesses across AI platforms
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
-            {['Manus AI', 'Claude', 'Grok', 'Perplexity', 'Gemini'].map((platform) => (
+            <div className="text-center">
+              <div className="text-sm font-bold" style={{color: '#1f2937'}}>Claude</div>
+              <div className="text-xs" style={{color: '#6b7280'}}>Projects · Cowork · Code</div>
+            </div>
+            <div className="text-center">
+              <div className="text-sm font-bold" style={{color: '#1f2937'}}>Manus AI</div>
+              <div className="text-xs" style={{color: '#6b7280'}}>Builds · Research · Agents</div>
+            </div>
+            {['Grok', 'Perplexity', 'Gemini'].map((platform) => (
               <div key={platform} className="text-sm font-bold" style={{color: '#1f2937'}}>
                 {platform}
               </div>

@@ -28,3 +28,11 @@
 - [x] Remove all AgilityAIInnerCircle mentions from portfolio and entire site
 - [x] Update all AI Audit pricing to show $997 crossed out → $497 introductory discount
 - [x] Add scarcity line under $497 price on Services page for both services
+- [x] Revert all $497 discount pricing back to $997 straight pricing across the site
+- [x] Update homepage hero subhead to Option B
+- [x] Replace What I Do four-card grid with updated cards (AI Audit, Claude Business Setup, Manus AI Builds, Multi-LLM Research)
+- [x] Add new AI Stack section after What I Do grid, before Portfolio
+- [x] Add Why Two Platforms FAQ section below AI Stack
+- [x] Update portfolio card descriptions with AI tools used
+- [x] Update platform logos strip with Claude/Manus descriptors
+- [x] Rebuild Services page with 3 flagship services (AI Audit, Claude Business Setup, Manus AI Builds & Training)
