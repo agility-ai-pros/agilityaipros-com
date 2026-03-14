@@ -41,3 +41,4 @@
 - [x] Add breadcrumb navigation to LexiUSD and GForceToken case study pages
 - [x] Add View All Case Studies link below homepage portfolio cards
 - [x] Update footer Services list to match current 3-service structure
+- [x] Make About page project cards clickable and add Family Office case study card

@@ -38,16 +38,27 @@ export default function About() {
       <section className="section-padding gray-section">
         <div className="container">
           <h2 className="text-3xl font-bold text-dark-text mb-12 text-center">A Few Things I've Built</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {[
-              { name: 'LexiUSD.com', description: 'Stablecoin platform with fintech infrastructure' },
-              { name: 'LegacyAviationFI.com', description: 'Global aviation finance and operations' },
-              { name: 'GForceToken.com', description: 'Deal registration & NCNDA protection platform' },
+              { name: 'LexiUSD.com', description: 'Stablecoin platform with fintech infrastructure', href: '/case-studies/lexiusd' },
+              { name: 'GForceToken.com', description: 'Deal registration & NCNDA protection platform', href: '/case-studies/gforcetoken' },
+              { name: 'Family Office Vetting', description: 'AI-powered due diligence across 47+ public sources', href: '/case-studies/due-diligence' },
+              { name: 'LegacyAviationFI.com', description: 'Global aviation finance and operations', href: null },
             ].map((project, idx) => (
-              <div key={idx} className="bg-white rounded-xl p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-dark-text mb-2">{project.name}</h3>
-                <p className="text-gray-600 text-sm">{project.description}</p>
-              </div>
+              project.href ? (
+                <Link key={idx} href={project.href} onClick={() => window.scrollTo(0, 0)}>
+                  <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
+                    <h3 className="text-lg font-bold text-dark-text mb-2 group-hover:text-teal-600 transition-colors">{project.name}</h3>
+                    <p className="text-gray-600 text-sm mb-3">{project.description}</p>
+                    <span className="text-xs font-semibold text-teal-600">View Case Study →</span>
+                  </div>
+                </Link>
+              ) : (
+                <div key={idx} className="bg-white rounded-xl p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-dark-text mb-2">{project.name}</h3>
+                  <p className="text-gray-600 text-sm">{project.description}</p>
+                </div>
+              )
             ))}
           </div>
           <p className="text-center text-gray-600">Additional projects available under NDA.</p>
