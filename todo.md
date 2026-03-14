@@ -45,3 +45,4 @@
 - [x] Capture 3 screenshots from LegacyAviationFI.com
 - [x] Build /case-studies/legacyaviationfi case study page with rescue story and screenshots
 - [x] Link LegacyAviationFI case study from homepage, Case Studies index, and About page
+- [x] Fix WhatsApp button deformation/clipping on desktop navigation
