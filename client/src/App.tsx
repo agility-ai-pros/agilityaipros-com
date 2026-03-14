@@ -22,8 +22,8 @@ function Router() {
       <Route path={"/services"} component={Services} />
       <Route path={"/about"} component={About} />
       <Route path={"/contact"} component={Contact} />
-      <Route path={"/portfolio/lexiusd"} component={LexiUSD} />
-      <Route path={"/portfolio/gforcetoken"} component={GForceToken} />
+      <Route path={"/case-studies/lexiusd"} component={LexiUSD} />
+      <Route path={"/case-studies/gforcetoken"} component={GForceToken} />
       <Route path={"/case-studies/due-diligence"} component={DueDiligence} />
       <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/who-i-serve"} component={WhoIServe} />

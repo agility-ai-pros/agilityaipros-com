@@ -300,7 +300,7 @@ export default function Home() {
               <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>AI helped my client save $1.6M in development costs.</p>
               <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Built with Manus AI and Claude's research capabilities. Fintech infrastructure and tokenomics for a 2026 launch.</p>
               <button
-                onClick={() => { window.scrollTo(0, 0); window.location.href = '/portfolio/lexiusd'; }}
+                onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies/lexiusd'; }}
                 className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
                 style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
               >
@@ -316,7 +316,7 @@ export default function Home() {
               <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>Deal registration & NCNDA protection platform — live and raising capital.</p>
               <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI-assisted iteration using Claude and Manus turned a real-world frustration into a live deal lifecycle system.</p>
               <button
-                onClick={() => { window.scrollTo(0, 0); window.location.href = '/portfolio/gforcetoken'; }}
+                onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies/gforcetoken'; }}
                 className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
                 style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
               >

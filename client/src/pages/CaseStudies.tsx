@@ -25,7 +25,7 @@ const caseStudies = [
     accent: ACCENT,
   },
   {
-    slug: '/portfolio/gforcetoken',
+    slug: '/case-studies/gforcetoken',
     category: 'Finance & Deal Flow',
     title: 'G-Force Token',
     headline: 'A deal maker was losing deals to red tape — endless NDAs, lost counterparties, broken communication.',
@@ -35,7 +35,7 @@ const caseStudies = [
     accent: TEAL,
   },
   {
-    slug: '/portfolio/lexiusd',
+    slug: '/case-studies/lexiusd',
     category: 'Stablecoin Platform',
     title: 'LexiUSD',
     headline: '$1.6 Million saved. Built by the founder himself.',
