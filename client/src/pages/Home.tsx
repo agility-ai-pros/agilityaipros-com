@@ -20,7 +20,7 @@ export default function Home() {
       <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
         <div className="px-4 md:px-8 flex items-center justify-center md:justify-end">
           <div className="text-white font-bold text-xl md:text-3xl lg:text-5xl text-center md:text-right" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-            <span>Customized AI Roadmap Session for Your Business</span>
+            <span>Customized AI Roadmap Session for Your Business — $997</span>
           </div>
         </div>
       </div>
