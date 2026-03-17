@@ -279,7 +279,7 @@ export default function WhoIServe() {
           }}
         >
           If you run a business where your time is worth more than what you're spending it on,
-          we should talk. I'll do a free 45-minute workflow audit and show you exactly where AI
+          we should talk. I'll do a free 45-minute workflow review and show you exactly where AI
           saves you hours — this week.
         </p>
         <Link href="/#contact">
@@ -307,7 +307,7 @@ export default function WhoIServe() {
               (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)';
             }}
           >
-            Book Your Free AI Audit
+            Book Your Free AI Roadmap Session
           </button>
         </Link>
       </section>

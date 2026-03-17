@@ -10,7 +10,7 @@ export default function Services() {
       <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
         <div className="px-4 md:px-8 flex items-center justify-center md:justify-end">
           <div className="text-white font-bold text-xl md:text-3xl lg:text-5xl text-center md:text-right" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-            AI Audit — $997
+            AI Roadmap Session — $997
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Service 1: AI Audit */}
+      {/* Service 1: AI Roadmap Session */}
       <section className="bg-white py-16 md:py-24">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
@@ -35,7 +35,7 @@ export default function Services() {
                 Flagship Service #1
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight" style={{color: '#1B3A6B'}}>
-                AI Audit
+                AI Roadmap Session
               </h2>
               <h3 className="text-2xl font-bold mb-4" style={{color: '#0D9488'}}>
                 5 Hours Back. Per Week. Guaranteed.
@@ -48,7 +48,7 @@ export default function Services() {
                   We start with a 45-minute discovery call. You walk me through how your business operates — the tools, the bottlenecks, the tasks your team runs on autopilot. I take it from there.
                 </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  Using Claude and Manus in combination, I map your workflows against what's actually working in your vertical right now. The output is a clean, one-page AI Action Report — no jargon, no fluff. Just what's broken, what to fix first, and what it's worth to you.
+                  Using Claude and Manus in combination, I map your workflows against what's actually working in your vertical right now. The output is a clean, one-page AI Action Report — no jargon, no fluff. Just where the biggest opportunities are, what to prioritize first, and what it's worth to you.
                 </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
                   Then we get back on a 30-minute walkthrough call and I hand it to you with a clear implementation sequence.
@@ -62,7 +62,7 @@ export default function Services() {
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-3 mt-4"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
-                Book Your AI Audit — $997
+                Book Your AI Roadmap Session — $997
               </a>
               <p style={{color: '#6b7280', fontSize: '0.95rem'}}>
                 Most clients identify $2,000–$5,000/month in recoverable time in the first session.

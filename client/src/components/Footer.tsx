@@ -51,7 +51,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4 text-sm uppercase tracking-wide" style={{color: 'white'}}>Services</h4>
             <div className="space-y-3">
-              <a href="/services" className="block text-sm hover:underline" style={{color: 'rgba(255,255,255,0.7)'}}>AI Audit — $997</a>
+              <a href="/services" className="block text-sm hover:underline" style={{color: 'rgba(255,255,255,0.7)'}}>AI Roadmap Session — $997</a>
               <a href="/services" className="block text-sm hover:underline" style={{color: 'rgba(255,255,255,0.7)'}}>Claude Business Setup</a>
               <a href="/services" className="block text-sm hover:underline" style={{color: 'rgba(255,255,255,0.7)'}}>Manus AI Builds &amp; Training</a>
             </div>

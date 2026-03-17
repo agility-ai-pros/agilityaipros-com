@@ -118,7 +118,7 @@ export default function LexiUSD() {
                   (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#0D9488';
                 }}
               >
-                Book Your AI Audit — $997
+                Book Your AI Roadmap Session — $997
               </button>
             </Link>
           </div>

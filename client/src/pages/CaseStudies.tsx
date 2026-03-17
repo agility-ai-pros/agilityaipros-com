@@ -182,7 +182,7 @@ export default function CaseStudies() {
             Want results like these for your business?
           </h2>
           <p className="text-lg mb-10" style={{ color: 'rgba(255,255,255,0.85)' }}>
-            Book a free 45-minute AI Audit and I'll show you exactly where AI can save you time and money.
+            Book a free 45-minute AI Roadmap Session and I'll show you exactly where AI can save you time and money.
           </p>
           <button
             onClick={() => { window.scrollTo(0, 0); window.location.href = '/#contact'; }}
@@ -195,7 +195,7 @@ export default function CaseStudies() {
               (e.currentTarget as HTMLButtonElement).style.backgroundColor = TEAL;
             }}
           >
-            Book Your AI Audit — $997
+            Book Your AI Roadmap Session — $997
           </button>
         </div>
       </section>

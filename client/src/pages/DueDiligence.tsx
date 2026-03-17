@@ -316,7 +316,7 @@ export default function DueDiligence() {
             How much is one bad meeting costing you?
           </h2>
           <p className="text-base md:text-lg mb-10" style={{ color: MUTED }}>
-            If your team is spending weeks vetting people who should have been flagged on day one, I can show you how AI changes that equation. Free 45-minute audit, no pitch.
+            If your team is spending weeks vetting people who should have been flagged on day one, I can show you how AI changes that equation. Free 45-minute session, no pitch.
           </p>
           <Link href="/#contact">
             <button
@@ -331,7 +331,7 @@ export default function DueDiligence() {
                 (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)';
               }}
             >
-              Book Your Free AI Audit
+              Book Your Free AI Roadmap Session
             </button>
           </Link>
         </div>

@@ -46,3 +46,6 @@
 - [x] Build /case-studies/legacyaviationfi case study page with rescue story and screenshots
 - [x] Link LegacyAviationFI case study from homepage, Case Studies index, and About page
 - [x] Fix WhatsApp button deformation/clipping on desktop navigation
+- [x] Rename all "AI Audit" → "AI Roadmap Session" across entire site
+- [x] Apply tone adjustments: "what's broken" → "where the biggest opportunities are", "what to fix" → "what to prioritize"
+- [x] QA: verify zero remaining "Audit" references site-wide

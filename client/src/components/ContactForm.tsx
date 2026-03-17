@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { trpc } from '@/lib/trpc';
 
 const INTEREST_OPTIONS = [
-  { value: 'ai-audit', label: 'AI Audit ($997)' },
+  { value: 'ai-roadmap', label: 'AI Roadmap Session ($997)' },
   { value: 'claude-setup', label: 'Claude Business Setup (Starting at $2,000)' },
   { value: 'manus-builds', label: 'Manus AI Builds & Training' },
   { value: 'multi-llm', label: 'Multi-LLM Deep Research' },
   { value: 'other', label: 'Other' },
 ];
 
-type InterestValue = 'ai-audit' | 'claude-setup' | 'manus-builds' | 'multi-llm' | 'other';
+type InterestValue = 'ai-roadmap' | 'claude-setup' | 'manus-builds' | 'multi-llm' | 'other';
 
 export default function ContactForm() {
   const [name, setName] = useState('');

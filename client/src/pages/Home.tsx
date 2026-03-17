@@ -20,7 +20,7 @@ export default function Home() {
       <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
         <div className="px-4 md:px-8 flex items-center justify-center md:justify-end">
           <div className="text-white font-bold text-xl md:text-3xl lg:text-5xl text-center md:text-right" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-            <span>AI Audit — $997</span>
+            <span>AI Roadmap Session — $997</span>
           </div>
         </div>
       </div>
@@ -58,11 +58,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Audit Section */}
+      {/* AI Roadmap Session Section */}
       <section className="bg-white py-16 md:py-32">
         <div className="container">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{color: '#1B3A6B'}}>
-            AI Audit
+            AI Roadmap Session
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left Column */}
@@ -71,7 +71,7 @@ export default function Home() {
                 5 Hours Back. Per Week. <span style={{color: '#0D9488'}}>Guaranteed.</span>
               </h3>
               <p className="text-xl font-semibold mb-8" style={{color: '#0D9488'}}>
-                I'll Show You Exactly Where AI Can Save Your Business Time and Money
+                I'll Map Exactly Where AI Can Save Your Business Time and Money
               </p>
               <div className="space-y-6 mb-8">
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
@@ -81,7 +81,7 @@ export default function Home() {
                   We start with a 45-minute discovery call. You walk me through how your business operates — the tools, the bottlenecks, the tasks your team runs on autopilot. I take it from there.
                 </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  Using my proprietary AI analysis process, I map your workflows against what's actually working in your vertical right now. The output is a clean, one-page AI Action Report — no jargon, no fluff. Just what's broken, what to fix first, and what it's worth to you.
+                  Using my proprietary AI analysis process, I map your workflows against what's actually working in your vertical right now. The output is a clean, one-page AI Action Report — no jargon, no fluff. Just where the biggest opportunities are, what to prioritize first, and what it's worth to you.
                 </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
                   Then we get back on a 30-minute walkthrough call and I hand it to you with a clear implementation sequence.
@@ -92,7 +92,7 @@ export default function Home() {
                 className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-4"
                 style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
               >
-                Book Your AI Audit — $997
+                Book Your AI Roadmap Session — $997
               </a>
               <p style={{color: '#6b7280', fontSize: '0.95rem'}}>
                 Most clients identify $2,000–$5,000/month in recoverable time in the first session.
@@ -142,7 +142,7 @@ export default function Home() {
             {[
               {
                 icon: <Brain size={32} style={{color: '#0D9488'}} />,
-                title: 'AI Audit \u2014 $997',
+                title: 'AI Roadmap Session \u2014 $997',
                 description: '45-minute discovery. Custom AI Action Report. Clear implementation sequence. Guaranteed 5+ hours saved per week.',
               },
               {
