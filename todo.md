@@ -49,3 +49,4 @@
 - [x] Rename all "AI Audit" → "AI Roadmap Session" across entire site
 - [x] Apply tone adjustments: "what's broken" → "where the biggest opportunities are", "what to fix" → "what to prioritize"
 - [x] QA: verify zero remaining "Audit" references site-wide
+- [x] Update homepage yellow banner copy to "Customized AI Roadmap Session for Your Business"
