@@ -43,7 +43,7 @@
 }
 
 :root {
-  /* PatrickDanielAi Brand Colors */
+  /* Agility AI Pros Brand Colors */
   --navy: #1B3A6B;
   --teal: #0D9488;
   --light-gray: #F9FAFB;
@@ -138,7 +138,7 @@
     }
   }
   
-  /* PatrickDanielAi Custom Components */
+  /* Agility AI Pros Custom Components */
   .service-card {
     @apply bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow;
   }

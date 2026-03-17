@@ -50,3 +50,4 @@
 - [x] Apply tone adjustments: "what's broken" → "where the biggest opportunities are", "what to fix" → "what to prioritize"
 - [x] QA: verify zero remaining "Audit" references site-wide
 - [x] Update homepage yellow banner copy to "Customized AI Roadmap Session for Your Business"
+- [x] Replace all PatrickDanielAi in metadata/title/OG tags with Agility AI Pros
