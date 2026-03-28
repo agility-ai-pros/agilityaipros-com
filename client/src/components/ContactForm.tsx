@@ -3,8 +3,8 @@ import { trpc } from '@/lib/trpc';
 
 const INTEREST_OPTIONS = [
   { value: 'ai-roadmap', label: 'AI Roadmap Session ($997)' },
-  { value: 'claude-setup', label: 'Claude Business Setup (Starting at $2,000)' },
-  { value: 'manus-builds', label: 'Manus AI Builds & Training' },
+  { value: 'claude-setup', label: 'Claude Business Setup (Starts at $997)' },
+  { value: 'manus-builds', label: 'Manus AI Builds & Training (Starts at $997)' },
   { value: 'multi-llm', label: 'Multi-LLM Deep Research' },
   { value: 'other', label: 'Other' },
 ];
