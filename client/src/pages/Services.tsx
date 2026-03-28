@@ -125,7 +125,7 @@ export default function Services() {
                 </p>
               </div>
               <div className="mb-2">
-                <span className="text-5xl font-bold" style={{color: '#1B3A6B'}}>Starting at $2,000</span>
+                <span className="text-5xl font-bold" style={{color: '#1B3A6B'}}>Starts at $997</span>
               </div>
               <a
                 href="/#contact"
