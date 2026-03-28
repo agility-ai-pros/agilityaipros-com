@@ -51,3 +51,4 @@
 - [x] QA: verify zero remaining "Audit" references site-wide
 - [x] Update homepage yellow banner copy to "Customized AI Roadmap Session for Your Business"
 - [x] Replace all PatrickDanielAi in metadata/title/OG tags with Agility AI Pros
+- [x] Change "Builds start at $2,500 | Training starts at $997" to "Manus Training Session: $997" on Services page

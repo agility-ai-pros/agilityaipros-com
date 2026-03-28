@@ -222,9 +222,7 @@ export default function Services() {
                 </p>
               </div>
               <div className="mb-2">
-                <span className="text-3xl md:text-4xl font-bold" style={{color: '#1B3A6B'}}>Builds start at $2,500</span>
-                <span className="mx-3 text-2xl" style={{color: '#e5e7eb'}}>|</span>
-                <span className="text-3xl md:text-4xl font-bold" style={{color: '#1B3A6B'}}>Training starts at $997</span>
+                <span className="text-3xl md:text-4xl font-bold" style={{color: '#1B3A6B'}}>Manus Training Session: $997</span>
               </div>
               <a
                 href="/#contact"
