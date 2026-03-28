@@ -53,3 +53,4 @@
 - [x] Replace all PatrickDanielAi in metadata/title/OG tags with Agility AI Pros
 - [x] Change "Builds start at $2,500 | Training starts at $997" to "Manus Training Session: $997" on Services page
 - [x] Change Claude Business Setup pricing from "Starting at $2,000" to "Starts at $997"
+- [x] Update Claude Business Setup tier prices: $2,000→$997, $3,500→$2,997, $5,000+→$4,997

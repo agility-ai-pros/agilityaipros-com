@@ -186,9 +186,9 @@ export default function Services() {
                     </tr>
                     <tr style={{backgroundColor: '#f9fafb'}}>
                       <td className="p-4 font-bold text-sm" style={{color: '#1f2937'}}>Price</td>
-                      <td className="p-4 font-bold text-lg" style={{color: '#0D9488'}}>$2,000</td>
-                      <td className="p-4 font-bold text-lg" style={{color: '#0D9488'}}>$3,500</td>
-                      <td className="p-4 font-bold text-lg" style={{color: '#0D9488'}}>$5,000+</td>
+                      <td className="p-4 font-bold text-lg" style={{color: '#0D9488'}}>$997</td>
+                      <td className="p-4 font-bold text-lg" style={{color: '#0D9488'}}>$2,997</td>
+                      <td className="p-4 font-bold text-lg" style={{color: '#0D9488'}}>$4,997</td>
                     </tr>
                   </tbody>
                 </table>
