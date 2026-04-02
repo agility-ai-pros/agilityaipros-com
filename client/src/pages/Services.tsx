@@ -38,11 +38,11 @@ export default function Services() {
                 AI Roadmap Session
               </h2>
               <h3 className="text-2xl font-bold mb-4" style={{color: '#0D9488'}}>
-                5 Hours Back. Per Week. Guaranteed.
+                17 Hours Back. Per Week. Guaranteed.
               </h3>
               <div className="space-y-5 mb-8">
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  Most South Florida businesses are either ignoring AI or using it wrong. Either way, they're losing 5–10 hours a week.
+                  Most South Florida businesses are either ignoring AI or using it wrong. Either way, they're losing 17+ hours a week.
                 </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
                   We start with a 45-minute discovery call. You walk me through how your business operates — the tools, the bottlenecks, the tasks your team runs on autopilot. I take it from there.
@@ -89,7 +89,7 @@ export default function Services() {
                 <div className="pt-6" style={{borderTop: '2px solid #e5e7eb'}}>
                   <p className="text-lg font-bold" style={{color: '#1f2937'}}>Our Guarantee</p>
                   <p className="mt-2" style={{color: '#0D9488', fontWeight: '600'}}>
-                    Identify 5+ hours of weekly time savings or full refund.
+                    Identify 17+ hours of weekly time savings or full refund.
                   </p>
                 </div>
               </div>

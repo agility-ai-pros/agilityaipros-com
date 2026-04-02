@@ -55,3 +55,4 @@
 - [x] Change Claude Business Setup pricing from "Starting at $2,000" to "Starts at $997"
 - [x] Update Claude Business Setup tier prices: $2,000→$997, $3,500→$2,997, $5,000+→$4,997
 - [x] Update contact form dropdown: Claude Business Setup and Manus AI Builds both show "Starts at $997"
+- [x] Change all "5 hours" guarantee references to "17 hours" across Home and Services pages

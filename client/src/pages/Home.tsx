@@ -68,14 +68,14 @@ export default function Home() {
             {/* Left Column */}
             <div>
               <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight" style={{color: '#1B3A6B'}}>
-                5 Hours Back. Per Week. <span style={{color: '#0D9488'}}>Guaranteed.</span>
+                17 Hours Back. Per Week. <span style={{color: '#0D9488'}}>Guaranteed.</span>
               </h3>
               <p className="text-xl font-semibold mb-8" style={{color: '#0D9488'}}>
                 I'll Map Exactly Where AI Can Save Your Business Time and Money
               </p>
               <div className="space-y-6 mb-8">
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  Most South Florida businesses are either ignoring AI or using it wrong. Either way, they're losing 5–10 hours a week.
+                  Most South Florida businesses are either ignoring AI or using it wrong. Either way, they're losing 17+ hours a week.
                 </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
                   We start with a 45-minute discovery call. You walk me through how your business operates — the tools, the bottlenecks, the tasks your team runs on autopilot. I take it from there.
@@ -119,7 +119,7 @@ export default function Home() {
                 <div className="pt-8" style={{borderTop: '2px solid #e5e7eb'}}>
                   <p className="text-lg font-bold" style={{color: '#1f2937'}}>Our Guarantee</p>
                   <p className="mt-3" style={{color: '#0D9488', fontWeight: '600'}}>
-                    Identify 5+ hours of weekly time savings or full refund.
+                    Identify 17+ hours of weekly time savings or full refund.
                   </p>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function Home() {
               {
                 icon: <Brain size={32} style={{color: '#0D9488'}} />,
                 title: 'AI Roadmap Session \u2014 $997',
-                description: '45-minute discovery. Custom AI Action Report. Clear implementation sequence. Guaranteed 5+ hours saved per week.',
+                description: '45-minute discovery. Custom AI Action Report. Clear implementation sequence. Guaranteed 17+ hours saved per week.',
               },
               {
                 icon: <Code size={32} style={{color: '#0D9488'}} />,
