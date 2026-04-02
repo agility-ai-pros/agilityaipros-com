@@ -81,7 +81,7 @@ export default function Home() {
                   We start with a 45-minute discovery call. You walk me through how your business operates — the tools, the bottlenecks, the tasks your team runs on autopilot. I take it from there.
                 </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  Using my proprietary AI analysis process, I map your workflows against what's actually working in your vertical right now. The output is a clean, one-page AI Action Report — no jargon, no fluff. Just where the biggest opportunities are, what to prioritize first, and what it's worth to you.
+                  Using my proprietary AI analysis process, I map your workflows against what's actually working in your vertical right now. The output is a clean, one-to-three page AI Action Report — no jargon, no fluff. Just where the biggest opportunities are, what to prioritize first, and what it's worth to you.
                 </p>
                 <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
                   Then we get back on a 30-minute walkthrough call and I hand it to you with a clear implementation sequence.
