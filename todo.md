@@ -1,56 +1,42 @@
-# PatrickDanielAi TODO
+# Agility AI Pros Website Rebuild
 
-- [x] Homepage with hero, AI Audit section, services grid, portfolio, and CTA sections
-- [x] Services page with tier pricing and 5 Hours Back guarantee section
-- [x] About page
-- [x] Navigation with WhatsApp button (kept in nav only)
-- [x] Footer with LinkedIn link
-- [x] Yellow banner on homepage and services page
-- [x] Contact form component (Name, Email, Dropdown, Let's Talk button)
-- [x] Replace WhatsApp CTAs on homepage, services, and about pages with contact form links
-- [x] tRPC backend route for contact form submission
-- [x] Owner notification on form submission
-- [x] Add optional phone number field to contact form
-- [x] Add pre-checked SMS consent checkbox to contact form
-- [x] Store contact form submissions in database
-- [x] Update vitest for new schema and router
-- [x] Capture 3 screenshots from gforcetoken.com
-- [x] Build /portfolio/gforcetoken case study page matching LexiUSD style
-- [x] Link GForce Token case study from homepage portfolio section
-- [x] Add visible project title above hero headline on GForceToken and LexiUSD case study pages
-- [x] Fix View Project buttons to scroll to top of case study page on navigation
-- [x] Build /case-studies/due-diligence page with full copy, checklist sections, source tags, results grid
-- [x] Create /case-studies index page with cards for G-Force Token and Due Diligence
-- [x] Update App.tsx routes and navigation for new pages
-- [x] Add Family Office / Due Diligence card to homepage portfolio section after G-Force Token card
-- [x] Fix all Book Your AI Audit CTA buttons to reliably navigate to /#contact form
-- [x] Fix footer navigation: add spacing between links, add Who I Serve and Case Studies, ensure correct destinations
-- [x] Remove all AgilityAIInnerCircle mentions from portfolio and entire site
-- [x] Update all AI Audit pricing to show $997 crossed out → $497 introductory discount
-- [x] Add scarcity line under $497 price on Services page for both services
-- [x] Revert all $497 discount pricing back to $997 straight pricing across the site
-- [x] Update homepage hero subhead to Option B
-- [x] Replace What I Do four-card grid with updated cards (AI Audit, Claude Business Setup, Manus AI Builds, Multi-LLM Research)
-- [x] Add new AI Stack section after What I Do grid, before Portfolio
-- [x] Add Why Two Platforms FAQ section below AI Stack
-- [x] Update portfolio card descriptions with AI tools used
-- [x] Update platform logos strip with Claude/Manus descriptors
-- [x] Rebuild Services page with 3 flagship services (AI Audit, Claude Business Setup, Manus AI Builds & Training)
-- [x] Fix mobile nav to auto-close when a link is tapped
-- [x] Unify case study URLs: move LexiUSD and GForceToken from /portfolio/ to /case-studies/
-- [x] Add breadcrumb navigation to LexiUSD and GForceToken case study pages
-- [x] Add View All Case Studies link below homepage portfolio cards
-- [x] Update footer Services list to match current 3-service structure
-- [x] Make About page project cards clickable and add Family Office case study card
-- [x] Capture 3 screenshots from LegacyAviationFI.com
-- [x] Build /case-studies/legacyaviationfi case study page with rescue story and screenshots
-- [x] Link LegacyAviationFI case study from homepage, Case Studies index, and About page
-- [x] Fix WhatsApp button deformation/clipping on desktop navigation
-- [x] Rename all "AI Audit" → "AI Roadmap Session" across entire site
-- [x] Apply tone adjustments: "what's broken" → "where the biggest opportunities are", "what to fix" → "what to prioritize"
-- [x] QA: verify zero remaining "Audit" references site-wide
-- [x] Update homepage yellow banner copy to "Customized AI Roadmap Session for Your Business"
-- [x] Replace all PatrickDanielAi in metadata/title/OG tags with Agility AI Pros
+## Phase 1: Structure & Copy
+- [x] Rebuild Home.tsx as true single-page with all 8 sections
+- [x] Hero section: "Turn AI Into Clear Business Action" + subheadline + CTAs + credibility strip
+- [x] About section: "AI Strategy First. Clear Next Steps Second."
+- [x] AI Roadmap Session section: with bullets, pricing ($997), guarantee (17+ hours)
+- [x] Services section: 4 services with titles and descriptions
+- [x] Bio section: "Meet Patrick Daniel Murphy" with long bio
+- [x] Case Studies section: 4 case studies with categories and descriptions
+- [x] FAQ section: 4 questions including new "How quickly will I see value?"
+- [x] Final CTA section: "Get Clear on Where AI Fits in Your Business"
+
+## Phase 2: Navigation & Routing
+- [x] Update Navigation.tsx for single-page smooth scroll
+- [x] Remove multi-page routing (Services, Case Studies, etc.)
+- [x] Add anchor links for smooth scrolling to sections
+- [x] Ensure mobile navigation works seamlessly
+
+## Phase 3: Design & Styling
+- [ ] Implement premium color scheme: deep navy, charcoal, white, teal accent
+- [ ] Add section dividers and premium spacing
+- [ ] Ensure strong typography hierarchy
+- [ ] Remove any gradients, glowing effects, or startup clichés
+- [ ] Make pricing and guarantee visually prominent
+- [ ] Optimize for mobile-first experience
+
+## Phase 4: Testing & Polish
+- [ ] Test all CTAs and links
+- [ ] Verify mobile responsiveness
+- [ ] Test smooth scrolling on all browsers
+- [ ] Ensure form submissions work
+- [ ] Final design review against brief
+
+## Phase 5: Deployment
+- [ ] Save checkpoint
+- [ ] Publish to live site
+
+## Completed Items (Previous Work)
 - [x] Change "Builds start at $2,500 | Training starts at $997" to "Manus Training Session: $997" on Services page
 - [x] Change Claude Business Setup pricing from "Starting at $2,000" to "Starts at $997"
 - [x] Update Claude Business Setup tier prices: $2,000→$997, $3,500→$2,997, $5,000+→$4,997

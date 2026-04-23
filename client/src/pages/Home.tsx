@@ -1,527 +1,343 @@
 import { Link } from 'wouter';
-import { Brain, Code, Cpu, Zap, X } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import ContactForm from '@/components/ContactForm';
-
-const ROBOT_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/ai_robot_figure-2vKeEbfmGQUYFMJMfibq5N.webp';
-const RESEARCH_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/research_data_screens-guZTcenqbebJoxz6XyUcoy.webp';
-const CODE_IMAGE = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/website_code_building_new-Mk22PxCjcdDLQdwZqMK7qp.webp';
 
 export default function Home() {
-  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+
+  const whatsappLink = 'https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20book%20an%20AI%20Roadmap%20Session.';
+
+  const faqItems = [
+    {
+      question: 'How is this different from hiring a full-time AI person?',
+      answer: 'You get senior-level AI strategy, workflow analysis, and implementation guidance without the cost or delay of hiring a full-time internal lead.',
+    },
+    {
+      question: 'What if my business has not used AI at all yet?',
+      answer: 'That is exactly where the AI Roadmap Session helps most. We start with your real workflows, identify the best opportunities, and build a clear first-step plan based on your business.',
+    },
+    {
+      question: 'Do you personally build every automation?',
+      answer: 'My core value is strategy, prioritization, roadmaps, and implementation guidance. When deeper technical execution is needed, I help define what should be built and guide the right internal team, freelancer, or trusted specialist.',
+    },
+    {
+      question: 'How quickly will I see value?',
+      answer: 'Most clients leave the first session with a clear action plan, prioritized opportunities, and identified time-saving potential. The goal is immediate clarity and practical next steps.',
+    },
+  ];
+
+  const services = [
+    {
+      title: 'AI Roadmaps and Strategy',
+      body: 'I analyze your actual workflows, bottlenecks, and growth goals to identify the highest-leverage AI opportunities for time savings, better decision-making, sharper messaging, and faster execution. You get a prioritized, practical plan — not another generic list of tools.',
+    },
+    {
+      title: 'Claude Business Setup',
+      body: 'I help businesses turn Claude into a real operating system for daily work by structuring projects, memory, custom skills, and role-based workflows around how the business actually runs.',
+    },
+    {
+      title: 'Manus Builds and Guidance',
+      body: 'I use Manus to help build fast-moving assets like websites, research systems, and growth tools, and I help clients understand where Manus can create the most leverage inside their business.',
+    },
+    {
+      title: 'Multi-LLM Deep Research',
+      body: 'I run important business questions through multiple frontier AI systems, cross-reference the findings, and turn them into a clear decision brief your business can actually use.',
+    },
+  ];
+
+  const caseStudies = [
+    {
+      category: 'Stablecoin Platform',
+      title: 'LexiUSD.com',
+      body: 'A fintech startup needed a clearer path forward on platform planning and AI integration. Using AI-supported strategy and development planning, I helped reduce projected development costs by $1.6 million while creating a more practical path to launch.',
+    },
+    {
+      category: 'Finance and Deal Flow',
+      title: 'GForceToken.com',
+      body: 'Built around real-world frustration in capital raising and transaction workflows, GForceToken became a live deal registration and NCNDA protection platform with AI-assisted iteration and execution.',
+    },
+    {
+      category: 'Family Office / Private Capital',
+      title: 'AI Due Diligence System',
+      body: 'I built a multi-source AI research and due diligence workflow using Claude Projects and Manus wide research to support faster analysis across 47+ public sources and help protect a $106 million deal.',
+    },
+    {
+      category: 'Aviation Finance',
+      title: 'LegacyAviationFI.com',
+      body: 'A global aviation finance and operations platform was reworked and rebranded in a single day using AI-assisted strategy and build execution.',
+    },
+  ];
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navigation />
+    <div className="min-h-screen" style={{ backgroundColor: '#ffffff' }}>
+      {/* ===== 1. HERO SECTION ===== */}
+      <section id="home" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B' }}>
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{ color: '#ffffff' }}>
+            Turn AI Into Clear Business Action
+          </h1>
+          <p className="text-xl md:text-2xl mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
+            I help businesses identify where AI can save time, improve execution, sharpen decision-making, and create leverage — then turn that into a clear roadmap your team or trusted specialists can actually use.
+          </p>
 
-      {/* Yellow Banner */}
-      <div className="w-full py-4 md:py-6" style={{backgroundColor: '#FFD700'}}>
-        <div className="px-4 md:px-8 flex items-center justify-center md:justify-end">
-          <div className="text-white font-bold text-xl md:text-3xl lg:text-5xl text-center md:text-right" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-            <span>Customized AI Roadmap Session for Your Business — $997</span>
+          {/* Primary & Secondary CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 text-white rounded-lg font-bold text-lg transition-all"
+              style={{ backgroundColor: '#0D9488', cursor: 'pointer' }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0f766e')}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
+            >
+              Book Your AI Roadmap Session
+            </a>
+            <a
+              href="#case-studies"
+              className="px-8 py-4 rounded-lg font-bold text-lg transition-all"
+              style={{ border: '2px solid white', color: 'white', cursor: 'pointer' }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.1)')}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+            >
+              View Case Studies
+            </a>
           </div>
-        </div>
-      </div>
 
-      {/* Hero Section */}
-      <section className="text-white py-12 md:py-32 relative overflow-hidden" style={{backgroundColor: '#1B3A6B'}}>
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl" style={{backgroundColor: '#0D9488'}} />
-          <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl" style={{backgroundColor: '#0D9488'}} />
+          {/* Credibility Strip */}
+          <p className="text-sm md:text-base" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Claude • Manus • Perplexity • Grok • Multi-LLM research • AI roadmaps • Implementation guidance
+          </p>
         </div>
-        
-        <div className="container relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Start Using AI Effectively <span style={{color: '#0D9488'}}>In Your Business Today.</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-2xl" style={{color: 'rgba(255,255,255,0.9)'}}>
-              Two AI platforms. One system. Built specifically for how your business operates. I'll do it for you, or show you how. Either way, you win.
+      </section>
+
+      {/* ===== 2. ABOUT SECTION ===== */}
+      <section id="about" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center" style={{ color: '#1B3A6B' }}>
+            AI Strategy First. Clear Next Steps Second.
+          </h2>
+          <div className="space-y-6" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.1rem' }}>
+            <p>
+              Most businesses do not need more AI hype. They need someone who can look at how the business actually runs, identify where AI will make a real difference, and turn that into a practical plan.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/services">
-                <button className="px-8 py-4 text-white rounded-lg font-bold text-lg" style={{backgroundColor: '#0D9488', cursor: 'pointer'}}>
-                  See My Services
-                </button>
-              </Link>
-              <a
-                href="/#contact"
-                className="px-8 py-4 rounded-lg font-bold text-lg text-center" 
-                style={{border: '2px solid white', color: 'white', cursor: 'pointer'}}
-              >
-                Let's Talk
-              </a>
-            </div>
+            <p>
+              That is where I come in. I work as a Fractional AI Strategist, helping businesses uncover time-saving opportunities, sharpen workflows, improve messaging, and choose the right AI tools for the way they actually operate.
+            </p>
+            <p>
+              I focus on strategy, workflow analysis, AI roadmaps, multi-LLM research, and implementation guidance using tools like Claude, Manus, Perplexity, Grok, and other leading models. When a project needs deeper technical execution, I help define the right path and can guide implementation with internal teams, freelancers, or trusted specialists.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* AI Roadmap Session Section */}
-      <section className="bg-white py-16 md:py-32">
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{color: '#1B3A6B'}}>
-            AI Roadmap Session
+      {/* ===== 3. AI ROADMAP SESSION SECTION ===== */}
+      <section id="roadmap" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#1B3A6B' }}>
+            Start With an AI Roadmap Session
           </h2>
+          <p className="text-xl mb-12" style={{ color: '#4b5563' }}>
+            This is the best place to begin if you know AI could help your business, but you want clarity before you waste time or money on the wrong tools.
+          </p>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column */}
+            {/* Left: Bullets */}
             <div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight" style={{color: '#1B3A6B'}}>
-                17 Hours Back. Per Week. <span style={{color: '#0D9488'}}>Guaranteed.</span>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <span style={{ color: '#0D9488', fontWeight: 'bold', marginTop: '2px' }}>✓</span>
+                  <span style={{ color: '#4b5563' }}>45-minute discovery call to review your workflows, bottlenecks, tools, and biggest opportunities</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span style={{ color: '#0D9488', fontWeight: 'bold', marginTop: '2px' }}>✓</span>
+                  <span style={{ color: '#4b5563' }}>Customized AI Action Report delivered within 48 hours</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span style={{ color: '#0D9488', fontWeight: 'bold', marginTop: '2px' }}>✓</span>
+                  <span style={{ color: '#4b5563' }}>Prioritized recommendations with a clear implementation sequence</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span style={{ color: '#0D9488', fontWeight: 'bold', marginTop: '2px' }}>✓</span>
+                  <span style={{ color: '#4b5563' }}>30-minute walkthrough call so you know exactly what to do next</span>
+                </li>
+              </ul>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg transition-all"
+                style={{ backgroundColor: '#0D9488', cursor: 'pointer' }}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0f766e')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
+              >
+                Book Your AI Roadmap Session
+              </a>
+            </div>
+
+            {/* Right: Pricing & Guarantee Box */}
+            <div className="p-8 rounded-2xl" style={{ backgroundColor: '#ffffff', border: '2px solid #0D9488' }}>
+              <h3 className="text-2xl font-bold mb-6" style={{ color: '#1f2937' }}>
+                AI Roadmap Session
               </h3>
-              <p className="text-xl font-semibold mb-8" style={{color: '#0D9488'}}>
-                I'll Map Exactly Where AI Can Save Your Business Time and Money
-              </p>
-              <div className="space-y-6 mb-8">
-                <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  Most South Florida businesses are either ignoring AI or using it wrong. Either way, they're losing 17+ hours a week.
+              <div className="mb-8">
+                <p className="text-sm" style={{ color: '#6b7280', marginBottom: '8px' }}>
+                  Investment
                 </p>
-                <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  We start with a 45-minute discovery call. You walk me through how your business operates — the tools, the bottlenecks, the tasks your team runs on autopilot. I take it from there.
-                </p>
-                <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  Using my proprietary AI analysis process, I map your workflows against what's actually working in your vertical right now. The output is a clean, one-to-three page AI Action Report — no jargon, no fluff. Just where the biggest opportunities are, what to prioritize first, and what it's worth to you.
-                </p>
-                <p style={{color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem'}}>
-                  Then we get back on a 30-minute walkthrough call and I hand it to you with a clear implementation sequence.
+                <p className="text-4xl font-bold" style={{ color: '#0D9488' }}>
+                  $997
                 </p>
               </div>
-              <a
-                href="/#contact"
-                className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg mb-4"
-                style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
-              >
-                Book Your AI Roadmap Session — $997
-              </a>
-              <p style={{color: '#6b7280', fontSize: '0.95rem'}}>
-                Most clients identify $2,000–$5,000/month in recoverable time in the first session.
-              </p>
-            </div>
-            
-            {/* Right Column */}
-            <div>
-              <div className="p-8 rounded-2xl" style={{backgroundColor: '#f9fafb', border: '2px solid #0D9488'}}>
-                <h3 className="text-2xl font-bold mb-6" style={{color: '#1f2937'}}>What's Included</h3>
-                <ul className="space-y-4 mb-8">
-                  {[
-                    '45-min discovery call',
-                    'Custom AI Action Report delivered within 48 hours',
-                    '30-min walkthrough call with prioritized recommendations',
-                    'Clear implementation sequence — what to do first, second, and third',
-                  ].map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <span style={{color: '#0D9488', fontWeight: 'bold', marginTop: '2px'}}>✓</span>
-                      <span style={{color: '#4b5563'}}>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="pt-8" style={{borderTop: '2px solid #e5e7eb'}}>
-                  <p className="text-lg font-bold" style={{color: '#1f2937'}}>Our Guarantee</p>
-                  <p className="mt-3" style={{color: '#0D9488', fontWeight: '600'}}>
-                    Identify 17+ hours of weekly time savings or full refund.
-                  </p>
-                </div>
+              <div style={{ borderTop: '2px solid #e5e7eb', paddingTop: '16px' }}>
+                <p className="text-lg font-bold mb-3" style={{ color: '#1f2937' }}>
+                  Our Guarantee
+                </p>
+                <p style={{ color: '#0D9488', fontWeight: '600', fontSize: '1.05rem' }}>
+                  Identify 17+ hours of weekly time savings or full refund.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="bg-white py-16 md:py-32">
-        <div className="container">
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1B3A6B'}}>What I Do</h2>
-            <p className="text-xl max-w-2xl" style={{color: '#4b5563'}}>
-              Four core services, each designed to deliver real, measurable results for your business.
-            </p>
-          </div>
-          
+      {/* ===== 4. SERVICES SECTION ===== */}
+      <section id="services" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ color: '#1B3A6B' }}>
+            How I Help Businesses Use AI
+          </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                icon: <Brain size={32} style={{color: '#0D9488'}} />,
-                title: 'AI Roadmap Session \u2014 $997',
-                description: '45-minute discovery. Custom AI Action Report. Clear implementation sequence. Guaranteed 17+ hours saved per week.',
-              },
-              {
-                icon: <Code size={32} style={{color: '#0D9488'}} />,
-                title: 'Claude Business Setup \u2014 Starting at $2,000',
-                description: 'Your business on Claude\'s full ecosystem in one week. Projects, Cowork, memory, and custom skills configured for your workflows. Packages for solo operators through full teams.',
-              },
-              {
-                icon: <Zap size={32} style={{color: '#0D9488'}} />,
-                title: 'Manus AI Builds & Training',
-                description: 'Websites, automations, research systems \u2014 built with Manus AI. Or learn to build them yourself in one live session.',
-              },
-              {
-                icon: <Cpu size={32} style={{color: '#0D9488'}} />,
-                title: 'Multi-LLM Deep Research',
-                description: 'Your question run through Claude, Manus, Grok, and Perplexity \u2014 each in deep research mode \u2014 then cross-referenced into one decision brief.',
-              },
-            ].map((service, idx) => (
-              <div key={idx} className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: '#f9fafb', borderLeft: '4px solid #0D9488'}}>
-                <div className="mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-bold mb-3" style={{color: '#1f2937'}}>{service.title}</h3>
-                <p className="text-lg leading-relaxed" style={{color: '#4b5563'}}>{service.description}</p>
+            {services.map((service, idx) => (
+              <div key={idx} className="p-8 rounded-2xl" style={{ backgroundColor: '#f9fafb', borderLeft: '4px solid #0D9488' }}>
+                <h3 className="text-2xl font-bold mb-4" style={{ color: '#1f2937' }}>
+                  {service.title}
+                </h3>
+                <p style={{ color: '#4b5563', lineHeight: '1.7', fontSize: '1.05rem' }}>
+                  {service.body}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* AI Stack Section */}
-      <section className="py-16 md:py-32" style={{backgroundColor: '#f9fafb'}}>
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1B3A6B'}}>
-              Two AI Powerhouses. One System Built for Your Business.
-            </h2>
-            <p className="text-xl max-w-3xl mx-auto" style={{color: '#4b5563'}}>
-              Most consultants give you one tool and a tutorial. I give you an AI operating system — Claude for the daily work, Manus for the heavy lifting.
-            </p>
-          </div>
-
-          <p className="text-lg mb-12 max-w-3xl mx-auto text-center" style={{color: '#4b5563', lineHeight: '1.8'}}>
-            I don't pick sides in the AI wars. I pick what works. That's why every client gets a system built on two platforms that do different things extremely well.
-          </p>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            {/* Claude Column */}
-            <div className="p-8 md:p-10 rounded-2xl bg-white shadow-lg" style={{borderTop: '4px solid #0D9488'}}>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2" style={{color: '#1B3A6B'}}>Claude</h3>
-              <p className="text-lg font-semibold mb-6" style={{color: '#0D9488'}}>Your Team's Always-On AI Brain</p>
-              <p className="mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
-                Claude is the AI your team will live inside every day. It's not a chatbot — it's a business operating system built by Anthropic, the same company trusted by Spotify, Deloitte, and Novo Nordisk.
-              </p>
-              <p className="font-semibold mb-4" style={{color: '#1B3A6B'}}>Here's what I set up for you:</p>
-              <div className="space-y-5">
-                <div>
-                  <p className="font-bold" style={{color: '#1f2937'}}>Claude Projects</p>
-                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Dedicated workspaces for each department, loaded with your SOPs, brand voice, pricing, templates, and company knowledge. Your team never re-explains context. Claude already knows your business before anyone types a word.</p>
-                </div>
-                <div>
-                  <p className="font-bold" style={{color: '#1f2937'}}>Claude Cowork</p>
-                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>AI that connects directly to your files and systems. Describe what you need — organized folders, formatted reports, processed data, a first draft from scattered notes — and come back to finished work. It breaks complex tasks into steps and runs them in parallel while you do something else.</p>
-                </div>
-                <div>
-                  <p className="font-bold" style={{color: '#1f2937'}}>Claude Code</p>
-                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Custom integrations your business actually needs. Connect your CRM to your follow-up system. Build internal tools. Automate the workflows that off-the-shelf software can't touch — without hiring a development team.</p>
-                </div>
-                <div>
-                  <p className="font-bold" style={{color: '#1f2937'}}>Claude Memory</p>
-                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Claude remembers your preferences, your projects, your team's patterns. Every conversation picks up where the last one left off. No more starting from scratch.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Manus Column */}
-            <div className="p-8 md:p-10 rounded-2xl bg-white shadow-lg" style={{borderTop: '4px solid #1B3A6B'}}>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2" style={{color: '#1B3A6B'}}>Manus AI</h3>
-              <p className="text-lg font-semibold mb-6" style={{color: '#0D9488'}}>Your Autonomous Execution Engine</p>
-              <p className="mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
-                Manus is the AI that works in the background while you sleep. Acquired by Meta for $2B, it's the most advanced autonomous agent available today — and I'm one of the few consultants who builds with it.
-              </p>
-              <p className="font-semibold mb-4" style={{color: '#1B3A6B'}}>Here's what Manus does that nothing else can:</p>
-              <div className="space-y-5">
-                <div>
-                  <p className="font-bold" style={{color: '#1f2937'}}>Autonomous Task Execution</p>
-                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Give Manus a goal and walk away. It plans the steps, executes them, and delivers results. Research, reports, data analysis, website builds — start to finish, no hand-holding.</p>
-                </div>
-                <div>
-                  <p className="font-bold" style={{color: '#1f2937'}}>Website & App Building</p>
-                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Need a site launched fast? Manus builds functional websites and web apps from a single prompt. I've used it to build client sites in days, not weeks.</p>
-                </div>
-                <div>
-                  <p className="font-bold" style={{color: '#1f2937'}}>Wide Research</p>
-                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Manus runs parallel research across dozens of sources simultaneously, then compiles and synthesizes the findings. What takes your team a full day takes Manus about 20 minutes.</p>
-                </div>
-                <div>
-                  <p className="font-bold" style={{color: '#1f2937'}}>Background Operation</p>
-                  <p style={{color: '#4b5563', lineHeight: '1.7'}}>Unlike chatbots that only work while you're watching, Manus handles long-running tasks entirely in the background. Queue it up, close your laptop, check back later.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <p className="text-xl md:text-2xl font-bold mb-8 max-w-3xl mx-auto" style={{color: '#1B3A6B'}}>
-              Claude handles the daily work. Manus handles the heavy lifting. Together, they give your business capabilities that used to require a full-time team.
-            </p>
-            <a
-              href="/#contact"
-              className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
-              style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
-            >
-              See How This Works for Your Business
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Two Platforms FAQ */}
-      <section className="bg-white py-16 md:py-20">
-        <div className="container max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{color: '#1B3A6B'}}>
-            Why do you use both Claude and Manus instead of just one?
+      {/* ===== 5. BIO SECTION ===== */}
+      <section id="bio" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center" style={{ color: '#1B3A6B' }}>
+            Meet Patrick Daniel Murphy
           </h2>
-          <p className="text-lg mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
-            Because they do different things well, and your business needs both.
-          </p>
-          <p className="text-lg mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
-            <strong style={{color: '#1B3A6B'}}>Claude</strong> is where your team works every day. It holds your company knowledge, understands your processes, and produces work that sounds like your brand — not like a robot. It's the best AI for ongoing daily operations.
-          </p>
-          <p className="text-lg mb-6" style={{color: '#4b5563', lineHeight: '1.8'}}>
-            <strong style={{color: '#1B3A6B'}}>Manus</strong> is the heavy lifter you deploy for big jobs. Need a website built from scratch? A 50-source research brief? A full competitive analysis running in the background? That's Manus.
-          </p>
-          <p className="text-lg" style={{color: '#4b5563', lineHeight: '1.8'}}>
-            Think of it this way: Claude is your smartest employee. Manus is your most tireless contractor. Together, they cover everything.
-          </p>
+          <div className="space-y-6" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem' }}>
+            <p>
+              I am Patrick Daniel Murphy, a Fractional AI Strategist who helps growth-focused businesses cut through the noise and use AI in a way that actually supports execution, smarter decisions, and scalable growth. I specialize in turning AI confusion into clear business action.
+            </p>
+            <p>
+              Instead of pushing random tools or generic automation promises, I start with how your business really operates — where the friction is, what is already working, and which AI opportunities will deliver the highest return first.
+            </p>
+            <p>
+              My work spans fintech, private capital, deal flow, messaging, and aviation finance. I combine Claude, Manus, Perplexity, Grok, and other frontier models to deliver clearer strategy, tighter messaging, stronger research, and practical implementation plans.
+            </p>
+            <p>
+              Projects featured on this site include LexiUSD.com, where AI-supported strategy and development planning helped reduce projected development costs by $1.6 million; GForceToken.com, a live deal registration and NCNDA protection platform shaped around real-world transaction workflow needs; an AI Due Diligence System built around 47+ public sources and used to support research tied to a $106 million protected deal; and LegacyAviationFI.com, a global aviation finance and operations platform reworked and rebranded in a single day using AI-assisted strategy and build execution.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Portfolio */}
-      <section className="py-16 md:py-20" style={{backgroundColor: '#1B3A6B', color: 'white'}}>
-        <div className="container">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Portfolio</h2>
-          <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{color: '#0D9488'}}>Built With AI. Launched for Real Businesses.</h3>
-          <p className="text-lg mb-12 max-w-2xl" style={{color: 'rgba(255,255,255,0.8)'}}>
-            Four live projects showcasing what's possible when you combine AI intelligence with strategic execution.
+      {/* ===== 6. CASE STUDIES SECTION ===== */}
+      <section id="case-studies" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{ color: '#1B3A6B' }}>
+            Case Studies
+          </h2>
+          <p className="text-xl text-center mb-16" style={{ color: '#4b5563' }}>
+            Here are a few examples of how I have used AI-supported strategy, research, and execution across different industries.
           </p>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
-            {/* LexiUSD Card — links to internal case study page */}
-            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
-              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
-                Stablecoin Platform
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-3">LexiUSD.com</h3>
-              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>AI helped my client save $1.6M in development costs.</p>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Built with Manus AI and Claude's research capabilities. Fintech infrastructure and tokenomics for a 2026 launch.</p>
-              <button
-                onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies/lexiusd'; }}
-                className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
-                style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
-              >
-                View Project
-              </button>
-            </div>
 
-            {/* G-Force Token Card — links to internal case study page */}
-            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
-                Finance &amp; Deal Flow
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {caseStudies.map((study, idx) => (
+              <div key={idx} className="p-8 rounded-2xl" style={{ backgroundColor: '#f9fafb', border: '1px solid #e5e7eb' }}>
+                <div className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{ backgroundColor: 'rgba(13,148,136,0.1)', color: '#0D9488' }}>
+                  {study.category}
+                </div>
+                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1f2937' }}>
+                  {study.title}
+                </h3>
+                <p style={{ color: '#4b5563', lineHeight: '1.7', fontSize: '1.05rem' }}>
+                  {study.body}
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3">GForceToken.com</h3>
-              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>Deal registration & NCNDA protection platform — live and raising capital.</p>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>AI-assisted iteration using Claude and Manus turned a real-world frustration into a live deal lifecycle system.</p>
-              <button
-                onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies/gforcetoken'; }}
-                className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
-                style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
-              >
-                View Project
-              </button>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* Family Office / Due Diligence Card */}
-            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
-              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
-                Family Office / Private Capital
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-3">AI Due Diligence System</h3>
-              <p className="text-sm font-semibold mb-2" style={{color: '#0D9488'}}>47+ public sources · Hours, not months · $106M deal protected.</p>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Built using Claude Projects for persistent knowledge and Manus Wide Research for parallel source analysis.</p>
-              <button
-                onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies/due-diligence'; }}
-                className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
-                style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
-              >
-                View Project
-              </button>
-            </div>
+      {/* ===== 7. FAQ SECTION ===== */}
+      <section id="faq" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ color: '#1B3A6B' }}>
+            Frequently Asked Questions
+          </h2>
 
-            {/* Legacy Aviation FI Card */}
-            <div className="p-8 rounded-2xl hover:shadow-lg transition-all" style={{backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
-              <div className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488'}}>
-                Aviation Finance
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-3">LegacyAviationFI.com</h3>
-              <p className="text-teal-400 font-semibold mb-2 text-sm">1 day. 100 developers couldn't do it in a month.</p>
-              <p className="text-lg leading-relaxed" style={{color: 'rgba(255,255,255,0.7)'}}>Global aviation finance &amp; operations platform — built and rebranded in a single day.</p>
-              <Link href="/case-studies/legacyaviationfi">
+          <div className="space-y-4">
+            {faqItems.map((item, idx) => (
+              <div key={idx} className="rounded-lg overflow-hidden" style={{ backgroundColor: '#ffffff', border: '1px solid #e5e7eb' }}>
                 <button
-                  onClick={() => window.scrollTo(0, 0)}
-                  className="mt-4 px-4 py-2 rounded-lg font-bold text-sm transition-colors"
-                  style={{backgroundColor: '#0D9488', color: 'white', cursor: 'pointer'}}
+                  onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
+                  className="w-full px-6 py-4 flex items-center justify-between font-semibold transition-all"
+                  style={{ color: '#1f2937', backgroundColor: '#ffffff' }}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#f9fafb')}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ffffff')}
                 >
-                  View Project
+                  <span className="text-left">{item.question}</span>
+                  <ChevronDown
+                    size={20}
+                    style={{
+                      color: '#0D9488',
+                      transform: expandedFaq === idx ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.3s ease',
+                      flexShrink: 0,
+                      marginLeft: '16px',
+                    }}
+                  />
                 </button>
-              </Link>
-            </div>
-
-          </div>
-          
-          <p className="text-center mt-8 text-base" style={{color: 'rgba(255,255,255,0.6)'}}>Additional projects available under NDA — ask on a call.</p>
-          <div className="text-center mt-10">
-            <button
-              onClick={() => { window.scrollTo(0, 0); window.location.href = '/case-studies'; }}
-              className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-bold text-base transition-all"
-              style={{border: '2px solid #0D9488', color: '#0D9488', backgroundColor: 'transparent', cursor: 'pointer'}}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#0D9488'; (e.currentTarget as HTMLButtonElement).style.color = 'white'; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLButtonElement).style.color = '#0D9488'; }}
-            >
-              View All Case Studies →
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Manus AI Offer */}
-      <section className="bg-white py-16 md:py-32">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#1B3A6B'}}>
-                After One Session with Me, You Won't Need Me Again.
-              </h2>
-              <p className="text-xl mb-8 leading-relaxed" style={{color: '#4b5563'}}>
-                That's the offer. I'll show you how to use Manus AI to build websites, generate professional AI images, run automations, and grow your business — live, in one session. Most clients walk away and never look back. A few hire me to do it for them. Either way, you win.
-              </p>
-              <a
-                href="/#contact"
-                className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
-                style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
-              >
-                Book a Manus AI Tutorial — Starts at $997
-              </a>
-            </div>
-            <div>
-              <img src={ROBOT_IMAGE} alt="AI Robot" className="rounded-2xl shadow-2xl w-full" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Image Creation */}
-      <section className="py-16 md:py-32" style={{backgroundColor: '#f9fafb'}}>
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{color: '#1B3A6B'}}>
-            Yes, I Can Build Your Brand Images Too.
-          </h2>
-          <p className="text-xl text-center mb-16 max-w-2xl mx-auto" style={{color: '#4b5563'}}>
-            Manus AI generates custom, professional AI images on demand. I'll show you how to create hero images, product visuals, and brand assets like the ones on this site.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <img src={RESEARCH_IMAGE} alt="Research Dashboard" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
-            <img src={CODE_IMAGE} alt="Web Builder" className="rounded-2xl shadow-lg w-full h-80 object-cover" />
-          </div>
-          <p className="text-center text-lg italic" style={{color: '#6b7280'}}>All images on this site were generated using AI.</p>
-          <div className="text-center mt-12">
-            <a
-              href="/#contact"
-              className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
-              style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
-            >
-              Get in Touch About Your Project
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Multi-LLM Research */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{color: '#1B3A6B'}}>
-            Four AIs Cross-Examining Your Business Question.
-          </h2>
-          <p className="text-xl text-center mb-16 max-w-3xl mx-auto" style={{color: '#4b5563'}}>
-            Most people use one AI and trust the answer. I run your question through Grok, Perplexity, Gemini, and Claude — each in their deepest research modes — then cross-reference the results.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {[
-              'Cross-verified findings across 4 frontier AI systems',
-              'Single-page decision brief — clear and actionable',
-              'Moat analysis: where AI can replicate you, and where it can\'t',
-            ].map((feature, idx) => (
-              <div key={idx} className="p-8 rounded-2xl" style={{backgroundColor: '#f9fafb'}}>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{backgroundColor: 'rgba(13,148,136,0.2)'}}>
-                  <Cpu style={{color: '#0D9488'}} size={24} />
-                </div>
-                <p className="font-bold text-lg" style={{color: '#1f2937'}}>{feature}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link href="/services">
-              <button className="px-8 py-4 text-white rounded-lg font-bold text-lg" style={{backgroundColor: '#0D9488', cursor: 'pointer'}}>
-                Learn More About Our Services
-              </button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof */}
-      <section className="bg-white py-12" style={{borderBottom: '1px solid #e5e7eb'}}>
-        <div className="container">
-          <p className="text-center text-sm font-semibold mb-8 uppercase tracking-wide" style={{color: '#6b7280'}}>
-            Trusted by businesses across AI platforms
-          </p>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
-            <div className="text-center">
-              <div className="text-sm font-bold" style={{color: '#1f2937'}}>Claude</div>
-              <div className="text-xs" style={{color: '#6b7280'}}>Projects · Cowork · Code</div>
-            </div>
-            <div className="text-center">
-              <div className="text-sm font-bold" style={{color: '#1f2937'}}>Manus AI</div>
-              <div className="text-xs" style={{color: '#6b7280'}}>Builds · Research · Agents</div>
-            </div>
-            {['Grok', 'Perplexity', 'Gemini'].map((platform) => (
-              <div key={platform} className="text-sm font-bold" style={{color: '#1f2937'}}>
-                {platform}
+                {expandedFaq === idx && (
+                  <div className="px-6 py-4" style={{ backgroundColor: '#f9fafb', borderTop: '1px solid #e5e7eb' }}>
+                    <p style={{ color: '#4b5563', lineHeight: '1.7', fontSize: '1.05rem' }}>
+                      {item.answer}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section id="contact" className="py-24 md:py-32 text-white" style={{backgroundColor: '#1B3A6B'}}>
-        <div className="container">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">Ready to Move Fast?</h2>
-            <p className="text-xl mb-12 text-center" style={{color: 'rgba(255,255,255,0.85)'}}>
-              No pitch. Just a conversation about what AI can do for your business right now.
-            </p>
-            <ContactForm />
-          </div>
+      {/* ===== 8. FINAL CTA SECTION ===== */}
+      <section id="cta" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B' }}>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#ffffff' }}>
+            Get Clear on Where AI Fits in Your Business
+          </h2>
+          <p className="text-xl mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
+            If you want a practical AI plan built around your real workflows, the best place to start is the AI Roadmap Session. You will walk away with clear priorities, recommended tools, and next steps you can actually use.
+          </p>
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg transition-all"
+            style={{ backgroundColor: '#0D9488', cursor: 'pointer' }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0f766e')}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
+          >
+            Book Your AI Roadmap Session
+          </a>
         </div>
       </section>
-
-      {/* Project Modal */}
-      {selectedProject !== null && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" onClick={() => setSelectedProject(null)}>
-          <div className="relative max-w-4xl w-full max-h-[90vh] overflow-auto rounded-2xl" onClick={(e) => e.stopPropagation()}>
-            <button
-              onClick={() => setSelectedProject(null)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full" 
-              style={{backgroundColor: 'rgba(0,0,0,0.7)', color: 'white', cursor: 'pointer'}}
-            >
-              <X size={24} />
-            </button>
-            {selectedProject === 0 && (
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_2026-03-11_18-10-56_2875_139dcaf2.webp" alt="LexiUSD" className="w-full h-auto" />
-            )}
-            {selectedProject === 1 && (
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/legacyaviationfi_2026-03-11_18-12-17_3122_11750452.webp" alt="Legacy Aviation FI" className="w-full h-auto" />
-            )}
-
-          </div>
-        </div>
-      )}
-
-      <Footer />
     </div>
   );
 }
