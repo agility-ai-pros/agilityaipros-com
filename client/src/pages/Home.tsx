@@ -230,7 +230,7 @@ export default function Home() {
           <div className="flex justify-center mb-12">
             <img
               src="/images/patrick.jpg"
-              alt="Patrick Daniel Murphy"
+              alt="Patrick Daniel"
               className="rounded-2xl shadow-lg w-full max-w-xs object-cover"
               style={{ aspectRatio: '1 / 1' }}
             />
@@ -239,11 +239,11 @@ export default function Home() {
           {/* Bio Text */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center" style={{ color: '#1B3A6B' }}>
-              Meet Patrick Daniel Murphy
+              Meet Patrick Daniel
             </h2>
             <div className="space-y-6 max-w-3xl mx-auto" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem' }}>
               <p>
-                I am Patrick Daniel Murphy, a Fractional AI Strategist who helps growth-focused businesses cut through the noise and use AI in a way that actually supports execution, smarter decisions, and scalable growth. I specialize in turning AI confusion into clear business action.
+                I am Patrick Daniel, a Fractional AI Strategist who helps growth-focused businesses cut through the noise and use AI in a way that actually supports execution, smarter decisions, and scalable growth. I specialize in turning AI confusion into clear business action.
               </p>
               <p>
                 Instead of pushing random tools or generic automation promises, I start with how your business really operates — where the friction is, what is already working, and which AI opportunities will deliver the highest return first.
