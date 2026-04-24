@@ -83,10 +83,10 @@ export default function Home() {
             Built for boutique firms, med spas and clinics
           </p>
           <p className="text-xl md:text-2xl mb-4 leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
-            I help you spot where AI can actually save time, improve execution, and sharpen decisions. Then I turn that into a clear 90-day roadmap your team or specialists can implement.
+            I help you spot where AI can actually save time, improve execution, and sharpen decisions — so you can see more of the right clients without burning out your team. Then I turn that into a clear 90-day roadmap your team or specialists can implement.
           </p>
           <p className="text-base md:text-lg mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            Result: more high-quality clients, fuller calendars, and fewer dropped leads.
+            Result: fuller calendars, fewer dropped leads, and a simple plan instead of AI overwhelm.
           </p>
 
           {/* Primary & Secondary CTAs */}
