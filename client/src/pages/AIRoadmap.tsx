@@ -5,8 +5,11 @@ export default function AIRoadmap() {
       <section className="py-20 md:py-32 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">AI Roadmap Session</h1>
-          <p className="text-xl md:text-2xl" style={{ color: 'rgba(255,255,255,0.9)' }}>
+          <p className="text-xl md:text-2xl mb-4" style={{ color: 'rgba(255,255,255,0.9)' }}>
             Identify your highest-value AI opportunities in one strategic session
+          </p>
+          <p className="text-base md:text-lg" style={{ color: 'rgba(255,255,255,0.75)' }}>
+            Focused on three outcomes: time saved, better client experience, and measurable revenue impact.
           </p>
         </div>
       </section>

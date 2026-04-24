@@ -64,7 +64,7 @@ export default function Navigation() {
               className="px-6 py-2.5 text-white rounded-lg font-semibold text-sm transition-all whitespace-nowrap inline-block"
               style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
             >
-              Book Session
+              Get Your AI Roadmap
             </a>
           </div>
 
@@ -98,7 +98,7 @@ export default function Navigation() {
               className="block mt-4 px-6 py-3 text-white text-center rounded-lg font-semibold transition-all"
               style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
             >
-              Book Session
+              Get Your AI Roadmap
             </a>
           </div>
         )}

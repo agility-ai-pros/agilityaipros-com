@@ -88,6 +88,9 @@ export default function Home() {
           <p className="text-base md:text-lg mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
             Result: fuller calendars, fewer dropped leads, and a simple plan instead of AI overwhelm.
           </p>
+          <p className="text-sm md:text-base text-center mb-12" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Typically uncovers 3–7 high-leverage AI wins for your next 90 days.
+          </p>
 
           {/* Primary & Secondary CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -100,7 +103,7 @@ export default function Home() {
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0f766e')}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
             >
-              Book Your AI Roadmap Session
+              Get Your AI Roadmap
             </a>
             <a
               href="#case-studies"
