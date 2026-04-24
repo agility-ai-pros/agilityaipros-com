@@ -73,9 +73,12 @@ export default function Home() {
       {/* ===== 1. HERO SECTION ===== */}
       <section id="home" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B' }}>
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{ color: '#ffffff' }}>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-3 leading-tight" style={{ color: '#ffffff' }}>
             Turn AI Into Clear Business Action
           </h1>
+          <p className="text-lg md:text-xl mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            For your boutique firm or clinic
+          </p>
           <p className="text-xl md:text-2xl mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
             I help businesses identify where AI can save time, improve execution, sharpen decision-making, and create leverage — then turn that into a clear roadmap your team or trusted specialists can actually use.
           </p>
