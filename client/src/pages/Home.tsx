@@ -1,4 +1,3 @@
-import { Link } from 'wouter';
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
@@ -9,20 +8,44 @@ export default function Home() {
 
   const faqItems = [
     {
-      question: 'How is this different from hiring a full-time AI person?',
-      answer: 'You get senior-level AI strategy, workflow analysis, and implementation guidance without the cost or delay of hiring a full-time internal lead.',
+      question: "We're getting inquiries, but they fall through the cracks. Can AI actually help us get more booked appointments, not just more leads?",
+      answer: "Yes. I focus on plugging the exact gaps where leads usually die: slow follow-up, no-shows, and manual booking. Together we design AI workflows that respond to new leads instantly (even after hours), nurture them with the right messages for your services, and guide them straight to a booked consult on your calendar. You end up with a simple, trackable system that turns more of your existing leads into paying clients—without adding work to your front desk.",
     },
     {
-      question: 'What if my business has not used AI at all yet?',
-      answer: 'That is exactly where the AI Roadmap Session helps most. We start with your real workflows, identify the best opportunities, and build a clear first-step plan based on your business.',
+      question: 'There are a million AI tools, agencies, and "systems." I don\'t have time to figure out what\'s legit. How do you help with that?',
+      answer: "I treat your tech stack like a menu, not a mystery box. I audit what you already use (CRM, booking, marketing tools), then compare a short list of AI options that actually fit those systems—not whatever is trending this week. You get a clear, vendor-agnostic recommendation: what to keep, what to drop, and what to add, plus the trade-offs in plain language so you can make a confident decision without sitting through five different sales demos.",
     },
     {
-      question: 'Do you personally build every automation?',
-      answer: 'My core value is strategy, prioritization, roadmaps, and implementation guidance. When deeper technical execution is needed, I help define what should be built and guide the right internal team, freelancer, or trusted specialist.',
+      question: "We've already tried AI/chatbots/automation and it didn't really work. What will be different this time?",
+      answer: "Most failed AI projects weren't bad tech—they were bad fit and no follow-through. I start with your actual workflows and metrics (intake, follow-up, show-up rate, rebooking), not with a specific tool. Your roadmap includes where AI should not be used (to avoid breaking trust with clients), the minimum viable workflow to prove ROI quickly, and who does what so it doesn't stall once the call is over. The goal is a small, winnable first project that builds confidence instead of another abandoned experiment.",
     },
     {
-      question: 'How quickly will I see value?',
-      answer: 'Most clients leave the first session with a clear action plan, prioritized opportunities, and identified time-saving potential. The goal is immediate clarity and practical next steps.',
+      question: "My team is already maxed out. Will this just create more work for us?",
+      answer: "The whole point is the opposite: fewer manual tasks, not more meetings. In your roadmap, every recommendation must pass a simple test: \"Does this save time or increase revenue in a way my current team can handle?\" If it doesn't, it doesn't make the list. We focus on automating low-value admin (back-and-forth scheduling, reminders, basic FAQs) so your staff can spend more time with clients and less time in the inbox.",
+    },
+    {
+      question: "We're great at client care, not tech. Do we need a full-time AI person to implement this?",
+      answer: "No. Your roadmap is written so a normal ops/marketing person or trusted external specialist can implement it step by step. I avoid jargon, specify exactly which tools to connect, and outline the sequence (Week 1, Week 2, etc.), so you're not relying on me forever or hiring a six-figure AI engineer.",
+    },
+    {
+      question: "How do I know this won't just be another expense that doesn't pay off?",
+      answer: "Before you ever book the roadmap, we define what \"worth it\" looks like for you—more consults per month, higher show-up rates, fewer hours on admin, or all three. Then, every recommendation in the roadmap is tied to a specific lever (e.g., \"recover more after-hours leads,\" \"reduce no-shows via smarter reminders\"). You'll know how we expect it to move your numbers and what to track over the first 90 days.",
+    },
+    {
+      question: "What if we've barely used AI at all? Are we too early for this?",
+      answer: "Being early is actually an advantage. We can skip the messy legacy setups and design simple, modern workflows from day one—things like a basic AI assistant to answer common questions and route people to booking, intake forms that feed directly into your CRM, and follow-up sequences that feel personal, not robotic. You don't need any AI experience; you just need clarity on your bottlenecks and goals, which we'll define together in the session.",
+    },
+    {
+      question: "I'm nervous that AI will make our client experience feel cold or robotic. How do you avoid that?",
+      answer: "In a med spa or boutique firm, trust and warmth are non-negotiable. We keep humans front-and-center and use AI mainly to respond faster, answer routine questions consistently, and free your team's time so they can deliver better in-person care. Part of the roadmap is defining \"AI guardrails\"—what must stay human, what AI can draft but staff approves, and how to keep your tone on-brand.",
+    },
+    {
+      question: "Is this just a strategy deck, or do you help us get things live?",
+      answer: "The AI Roadmap is designed to be implemented, not just admired. You get a prioritized 90-day plan with \"Phase 1 / Phase 2 / Phase 3,\" tool and vendor recommendations, clear owner for each step (your team, your vendor, or a specialist), and options for follow-on support if you want help reviewing or troubleshooting implementation. No hand-wavy buzzwords—just who does what, by when, with which tools.",
+    },
+    {
+      question: "How long before we see any real impact from this?",
+      answer: "Most clients can ship at least one high-impact workflow within 30 days, and a full first wave within 90 days if they follow the plan. Early wins usually show up as more leads captured outside business hours, faster response times, and fewer dropped or no-show appointments. We design your roadmap to stack quick wins first, then build toward deeper automations once the basics are working.",
     },
   ];
 
@@ -115,118 +138,30 @@ export default function Home() {
               View Case Studies
             </a>
           </div>
-
-          {/* Credibility Strip */}
-          <p className="text-sm md:text-base" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Claude • Manus • Perplexity • Grok • Multi-LLM research • AI roadmaps • Implementation guidance
-          </p>
         </div>
       </section>
 
-      {/* ===== 2. ABOUT SECTION ===== */}
-      <section id="about" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center" style={{ color: '#1B3A6B' }}>
-            AI Strategy First. Clear Next Steps Second.
-          </h2>
-          <div className="space-y-6" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.1rem' }}>
-            <p>
-              Most businesses do not need more AI hype. They need someone who can look at how the business actually runs, identify where AI will make a real difference, and turn that into a practical plan.
-            </p>
-            <p>
-              That is where I come in. I work as a Fractional AI Strategist, helping businesses uncover time-saving opportunities, sharpen workflows, improve messaging, and choose the right AI tools for the way they actually operate.
-            </p>
-            <p>
-              I focus on strategy, workflow analysis, AI roadmaps, multi-LLM research, and implementation guidance using tools like Claude, Manus, Perplexity, Grok, and other leading models. When a project needs deeper technical execution, I help define the right path and can guide implementation with internal teams, freelancers, or trusted specialists.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== 3. AI ROADMAP SESSION SECTION ===== */}
-      <section id="roadmap" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#1B3A6B' }}>
-            Start With an AI Roadmap Session
-          </h2>
-          <p className="text-xl mb-12" style={{ color: '#4b5563' }}>
-            This is the best place to begin if you know AI could help your business, but you want clarity before you waste time or money on the wrong tools.
-          </p>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Left: Bullets */}
-            <div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#0D9488', fontWeight: 'bold', marginTop: '2px' }}>✓</span>
-                  <span style={{ color: '#4b5563' }}>45-minute discovery call to review your workflows, bottlenecks, tools, and biggest opportunities</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#0D9488', fontWeight: 'bold', marginTop: '2px' }}>✓</span>
-                  <span style={{ color: '#4b5563' }}>Customized AI Action Report delivered within 48 hours</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#0D9488', fontWeight: 'bold', marginTop: '2px' }}>✓</span>
-                  <span style={{ color: '#4b5563' }}>Prioritized recommendations with a clear implementation sequence</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#0D9488', fontWeight: 'bold', marginTop: '2px' }}>✓</span>
-                  <span style={{ color: '#4b5563' }}>30-minute walkthrough call so you know exactly what to do next</span>
-                </li>
-              </ul>
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg transition-all"
-                style={{ backgroundColor: '#0D9488', cursor: 'pointer' }}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0f766e')}
-                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
-              >
-                Book Your AI Roadmap Session
-              </a>
-            </div>
-
-            {/* Right: Pricing & Guarantee Box */}
-            <div className="p-8 rounded-2xl" style={{ backgroundColor: '#ffffff', border: '2px solid #0D9488' }}>
-              <h3 className="text-2xl font-bold mb-6" style={{ color: '#1f2937' }}>
-                AI Roadmap Session
-              </h3>
-              <div className="mb-8">
-                <p className="text-sm" style={{ color: '#6b7280', marginBottom: '8px' }}>
-                  Investment
-                </p>
-                <p className="text-4xl font-bold" style={{ color: '#0D9488' }}>
-                  $997
-                </p>
-              </div>
-              <div style={{ borderTop: '2px solid #e5e7eb', paddingTop: '16px' }}>
-                <p className="text-lg font-bold mb-3" style={{ color: '#1f2937' }}>
-                  Our Guarantee
-                </p>
-                <p style={{ color: '#0D9488', fontWeight: '600', fontSize: '1.05rem' }}>
-                  Identify 17+ hours of weekly time savings or full refund.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== 4. SERVICES SECTION ===== */}
+      {/* ===== 2. SERVICES SECTION ===== */}
       <section id="services" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ color: '#1B3A6B' }}>
-            How I Help Businesses Use AI
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center" style={{ color: '#1B3A6B' }}>
+            What I Do
           </h2>
+          <p className="text-xl text-center mb-16 max-w-2xl mx-auto" style={{ color: '#4b5563' }}>
+            Four core services, each designed to deliver real, measurable results for your business.
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, idx) => (
-              <div key={idx} className="p-8 rounded-2xl" style={{ backgroundColor: '#f9fafb', borderLeft: '4px solid #0D9488' }}>
-                <h3 className="text-2xl font-bold mb-4" style={{ color: '#1f2937' }}>
+              <div
+                key={idx}
+                className="p-8 rounded-2xl hover:shadow-lg transition-all"
+                style={{ backgroundColor: '#f9fafb', borderLeft: '4px solid #0D9488' }}
+              >
+                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1f2937' }}>
                   {service.title}
                 </h3>
-                <p style={{ color: '#4b5563', lineHeight: '1.7', fontSize: '1.05rem' }}>
+                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
                   {service.body}
                 </p>
               </div>
@@ -235,62 +170,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 5. BIO SECTION ===== */}
-      <section id="bio" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
-        <div className="max-w-4xl mx-auto">
-          {/* Photo */}
-          <div className="flex justify-center mb-12">
-            <img
-              src="/images/patrick.jpg"
-              alt="Patrick Daniel"
-              className="rounded-2xl shadow-lg w-full max-w-xs object-cover"
-              style={{ aspectRatio: '1 / 1' }}
-            />
-          </div>
-
-          {/* Bio Text */}
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center" style={{ color: '#1B3A6B' }}>
-              Meet Patrick Daniel
-            </h2>
-            <div className="space-y-6 max-w-3xl mx-auto" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem' }}>
-              <p>
-                I am Patrick Daniel, a Fractional AI Strategist who helps growth-focused businesses cut through the noise and use AI in a way that actually supports execution, smarter decisions, and scalable growth. I specialize in turning AI confusion into clear business action.
-              </p>
-              <p>
-                Instead of pushing random tools or generic automation promises, I start with how your business really operates — where the friction is, what is already working, and which AI opportunities will deliver the highest return first.
-              </p>
-              <p>
-                My work spans fintech, private capital, deal flow, messaging, and aviation finance. I combine Claude, Manus, Perplexity, Grok, and other frontier models to deliver clearer strategy, tighter messaging, stronger research, and practical implementation plans.
-              </p>
-              <p>
-                Projects featured on this site include LexiUSD.com, where AI-supported strategy and development planning helped reduce projected development costs by $1.6 million; GForceToken.com, a live deal registration and NCNDA protection platform shaped around real-world transaction workflow needs; an AI Due Diligence System built around 47+ public sources and used to support research tied to a $106 million protected deal; and LegacyAviationFI.com, a global aviation finance and operations platform reworked and rebranded in a single day using AI-assisted strategy and build execution.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== 6. CASE STUDIES SECTION ===== */}
-      <section id="case-studies" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center" style={{ color: '#1B3A6B' }}>
-            Case Studies
-          </h2>
-          <p className="text-xl text-center mb-16" style={{ color: '#4b5563' }}>
-            Here are a few examples of how I have used AI-supported strategy, research, and execution across different industries.
+      {/* ===== 3. CASE STUDIES SECTION ===== */}
+      <section id="case-studies" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Portfolio</h2>
+          <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: '#0D9488' }}>
+            Built With AI. Launched for Real Businesses.
+          </h3>
+          <p className="text-lg mb-12 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Four live projects showcasing what's possible when you combine AI intelligence with strategic execution.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {caseStudies.map((study, idx) => (
-              <div key={idx} className="p-8 rounded-2xl" style={{ backgroundColor: '#f9fafb', border: '1px solid #e5e7eb' }}>
-                <div className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-wide" style={{ backgroundColor: 'rgba(13,148,136,0.1)', color: '#0D9488' }}>
+              <div
+                key={idx}
+                className="p-8 rounded-2xl hover:shadow-lg transition-all"
+                style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
+              >
+                <div
+                  className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
+                  style={{ backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488' }}
+                >
                   {study.category}
                 </div>
-                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1f2937' }}>
-                  {study.title}
-                </h3>
-                <p style={{ color: '#4b5563', lineHeight: '1.7', fontSize: '1.05rem' }}>
+                <h3 className="text-2xl font-bold text-white mb-3">{study.title}</h3>
+                <p className="text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
                   {study.body}
                 </p>
               </div>
@@ -299,56 +204,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 7. FAQ SECTION ===== */}
+      {/* ===== 4. FAQ SECTION ===== */}
       <section id="faq" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center" style={{ color: '#1B3A6B' }}>
-            Frequently Asked Questions
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center" style={{ color: '#1B3A6B' }}>
+            Common Questions
           </h2>
+          <p className="text-xl text-center mb-16 max-w-2xl mx-auto" style={{ color: '#4b5563' }}>
+            Clear answers to what's on your mind about AI strategy and implementation.
+          </p>
 
           <div className="space-y-4">
             {faqItems.map((item, idx) => (
-              <div key={idx} className="rounded-lg overflow-hidden" style={{ backgroundColor: '#ffffff', border: '1px solid #e5e7eb' }}>
+              <div
+                key={idx}
+                className="border rounded-lg overflow-hidden transition-all"
+                style={{ borderColor: '#e5e7eb' }}
+              >
                 <button
                   onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}
-                  className="w-full px-6 py-4 flex items-center justify-between font-semibold transition-all"
-                  style={{ color: '#1f2937', backgroundColor: '#ffffff' }}
-                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#f9fafb')}
-                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ffffff')}
+                  className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                  style={{ backgroundColor: expandedFaq === idx ? '#ffffff' : '#ffffff' }}
                 >
-                  <span className="text-left">{item.question}</span>
+                  <h3 className="font-bold text-lg" style={{ color: '#1B3A6B' }}>
+                    {item.question}
+                  </h3>
                   <ChevronDown
-                    size={20}
+                    size={24}
                     style={{
                       color: '#0D9488',
                       transform: expandedFaq === idx ? 'rotate(180deg)' : 'rotate(0deg)',
                       transition: 'transform 0.3s ease',
-                      flexShrink: 0,
-                      marginLeft: '16px',
                     }}
                   />
                 </button>
                 {expandedFaq === idx && (
-                  <div className="px-6 py-4" style={{ backgroundColor: '#f9fafb', borderTop: '1px solid #e5e7eb' }}>
-                    <p style={{ color: '#4b5563', lineHeight: '1.7', fontSize: '1.05rem' }}>
-                      {item.answer}
-                    </p>
+                  <div
+                    className="px-6 py-4 border-t"
+                    style={{ borderColor: '#e5e7eb', backgroundColor: '#f9fafb', color: '#4b5563', lineHeight: '1.8' }}
+                  >
+                    {item.answer}
                   </div>
                 )}
               </div>
             ))}
           </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-lg mb-6" style={{ color: '#4b5563' }}>
+              More questions? Visit the full FAQ page for comprehensive answers.
+            </p>
+            <a
+              href="/faq"
+              className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
+              style={{ backgroundColor: '#0D9488', cursor: 'pointer' }}
+            >
+              View Full FAQ
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* ===== 8. FINAL CTA SECTION ===== */}
-      <section id="cta" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B' }}>
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#ffffff' }}>
-            Get Clear on Where AI Fits in Your Business
-          </h2>
-          <p className="text-xl mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
-            If you want a practical AI plan built around your real workflows, the best place to start is the AI Roadmap Session. You will walk away with clear priorities, recommended tools, and next steps you can actually use.
+      {/* ===== 5. FINAL CTA SECTION ===== */}
+      <section className="py-16 md:py-24 px-4 text-center" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Turn AI Into Action?</h2>
+          <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.9)' }}>
+            Book your AI Roadmap Session and get a clear, prioritized plan in 90 days.
           </p>
           <a
             href={whatsappLink}
@@ -359,7 +281,7 @@ export default function Home() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0f766e')}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
           >
-            Book Your AI Roadmap Session
+            Get Your AI Roadmap
           </a>
         </div>
       </section>
