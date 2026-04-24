@@ -225,23 +225,36 @@ export default function Home() {
 
       {/* ===== 5. BIO SECTION ===== */}
       <section id="bio" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center" style={{ color: '#1B3A6B' }}>
-            Meet Patrick Daniel Murphy
-          </h2>
-          <div className="space-y-6" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem' }}>
-            <p>
-              I am Patrick Daniel Murphy, a Fractional AI Strategist who helps growth-focused businesses cut through the noise and use AI in a way that actually supports execution, smarter decisions, and scalable growth. I specialize in turning AI confusion into clear business action.
-            </p>
-            <p>
-              Instead of pushing random tools or generic automation promises, I start with how your business really operates — where the friction is, what is already working, and which AI opportunities will deliver the highest return first.
-            </p>
-            <p>
-              My work spans fintech, private capital, deal flow, messaging, and aviation finance. I combine Claude, Manus, Perplexity, Grok, and other frontier models to deliver clearer strategy, tighter messaging, stronger research, and practical implementation plans.
-            </p>
-            <p>
-              Projects featured on this site include LexiUSD.com, where AI-supported strategy and development planning helped reduce projected development costs by $1.6 million; GForceToken.com, a live deal registration and NCNDA protection platform shaped around real-world transaction workflow needs; an AI Due Diligence System built around 47+ public sources and used to support research tied to a $106 million protected deal; and LegacyAviationFI.com, a global aviation finance and operations platform reworked and rebranded in a single day using AI-assisted strategy and build execution.
-            </p>
+        <div className="max-w-4xl mx-auto">
+          {/* Photo */}
+          <div className="flex justify-center mb-12">
+            <img
+              src="/images/patrick.jpg"
+              alt="Patrick Daniel Murphy"
+              className="rounded-2xl shadow-lg w-full max-w-xs object-cover"
+              style={{ aspectRatio: '1 / 1' }}
+            />
+          </div>
+
+          {/* Bio Text */}
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center" style={{ color: '#1B3A6B' }}>
+              Meet Patrick Daniel Murphy
+            </h2>
+            <div className="space-y-6 max-w-3xl mx-auto" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem' }}>
+              <p>
+                I am Patrick Daniel Murphy, a Fractional AI Strategist who helps growth-focused businesses cut through the noise and use AI in a way that actually supports execution, smarter decisions, and scalable growth. I specialize in turning AI confusion into clear business action.
+              </p>
+              <p>
+                Instead of pushing random tools or generic automation promises, I start with how your business really operates — where the friction is, what is already working, and which AI opportunities will deliver the highest return first.
+              </p>
+              <p>
+                My work spans fintech, private capital, deal flow, messaging, and aviation finance. I combine Claude, Manus, Perplexity, Grok, and other frontier models to deliver clearer strategy, tighter messaging, stronger research, and practical implementation plans.
+              </p>
+              <p>
+                Projects featured on this site include LexiUSD.com, where AI-supported strategy and development planning helped reduce projected development costs by $1.6 million; GForceToken.com, a live deal registration and NCNDA protection platform shaped around real-world transaction workflow needs; an AI Due Diligence System built around 47+ public sources and used to support research tied to a $106 million protected deal; and LegacyAviationFI.com, a global aviation finance and operations platform reworked and rebranded in a single day using AI-assisted strategy and build execution.
+              </p>
+            </div>
           </div>
         </div>
       </section>
