@@ -9,21 +9,15 @@ export default function Navigation() {
   const whatsappLink = 'https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20book%20an%20AI%20Roadmap%20Session.';
 
   const navLinks = [
-    { href: '#home', label: 'Home', onClick: () => scrollToSection('home') },
-    { href: '#about', label: 'About', onClick: () => scrollToSection('about') },
-    { href: '#roadmap', label: 'AI Roadmap', onClick: () => scrollToSection('roadmap') },
-    { href: '#services', label: 'Services', onClick: () => scrollToSection('services') },
-    { href: '#case-studies', label: 'Case Studies', onClick: () => scrollToSection('case-studies') },
-    { href: '#faq', label: 'FAQ', onClick: () => scrollToSection('faq') },
+    { href: '/', label: 'Home', isPage: true },
+    { href: '/about', label: 'About', isPage: true },
+    { href: '/ai-roadmap', label: 'AI Roadmap', isPage: true },
+    { href: '/automation-offers', label: 'Automation Offers', isPage: true },
+    { href: '/case-studies', label: 'Case Studies', isPage: true },
+    { href: '/faq', label: 'FAQ', isPage: true },
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
-    }
-  };
+
 
   return (
     <nav className="sticky top-0 z-50 bg-white" style={{borderBottom: '1px solid #e5e7eb'}}>
@@ -37,21 +31,21 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={link.onClick}
-                className="cursor-pointer font-medium transition-colors"
-                style={{
-                  color: hoveredLink === link.href ? '#0D9488' : '#1f2937',
-                  background: 'none',
-                  border: 'none',
-                  padding: 0,
-                }}
-                onMouseEnter={() => setHoveredLink(link.href)}
-                onMouseLeave={() => setHoveredLink(null)}
-              >
-                {link.label}
-              </button>
+              <Link key={link.href} href={link.href}>
+                <button
+                  className="cursor-pointer font-medium transition-colors"
+                  style={{
+                    color: hoveredLink === link.href ? '#0D9488' : '#1f2937',
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                  }}
+                  onMouseEnter={() => setHoveredLink(link.href)}
+                  onMouseLeave={() => setHoveredLink(null)}
+                >
+                  {link.label}
+                </button>
+              </Link>
             ))}
           </div>
 
@@ -82,14 +76,14 @@ export default function Navigation() {
         {isOpen && (
           <div className="md:hidden pb-4" style={{borderTop: '1px solid #e5e7eb'}}>
             {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={link.onClick}
-                className="block w-full text-left py-3 cursor-pointer font-medium"
-                style={{color: '#1f2937', background: 'none', border: 'none', padding: '12px 0'}}
-              >
-                {link.label}
-              </button>
+              <Link key={link.href} href={link.href}>
+                <button
+                  className="block w-full text-left py-3 cursor-pointer font-medium"
+                  style={{color: '#1f2937', background: 'none', border: 'none', padding: '12px 0'}}
+                >
+                  {link.label}
+                </button>
+              </Link>
             ))}
             <a
               href={whatsappLink}
