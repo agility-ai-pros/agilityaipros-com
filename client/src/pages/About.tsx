@@ -1,120 +1,103 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { Link } from 'wouter';
-import { CheckCircle } from 'lucide-react';
-
-
-
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navigation />
-
+    <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="hero-section navy-section text-center">
-        <div className="container">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">I Build What Others Just Talk About.</h1>
+      <section className="py-20 md:py-32 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">About Patrick Daniel</h1>
+          <p className="text-xl md:text-2xl" style={{ color: 'rgba(255,255,255,0.9)' }}>
+            AI strategist, operator, and implementation guide for lean teams
+          </p>
         </div>
       </section>
 
-      {/* Bio Section */}
-      <section className="section-padding bg-white">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-dark-text mb-6">About Patrick Daniel</h2>
-            <div className="prose prose-lg max-w-none">
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Patrick Daniel is the founder of Agility AI Agents and Strategic Advisor for LexiUSD, a stablecoin launching in 2026. He has facilitated over $100 million in funding for enterprise infrastructure and datacenter projects. After watching small businesses struggle with overpriced, overcomplicated AI solutions, he now works directly with business owners and entrepreneurs to deploy AI in practical, revenue-generating ways — fast.
+      {/* Main Content */}
+      <section className="py-20 md:py-32 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          {/* Photo & Bio Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-16">
+            {/* Photo */}
+            <div className="flex justify-center">
+              <img
+                src="/images/patrick.jpg"
+                alt="Patrick Daniel"
+                className="rounded-2xl shadow-lg w-full max-w-sm object-cover"
+                style={{ aspectRatio: '1 / 1' }}
+              />
+            </div>
+
+            {/* Bio */}
+            <div className="space-y-6" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem' }}>
+              <p>
+                I am Patrick Daniel, a Fractional AI Strategist who helps growth-focused businesses cut through the noise and use AI in a way that actually supports execution, smarter decisions, and scalable growth. I specialize in turning AI confusion into clear business action.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Patrick specializes in AI prompting, copywriting, market research, Manus AI website builds (including full affiliate marketing infrastructure), vibe coding with Claude Code, and multi-LLM deep research intelligence. He has built sites and systems across fintech, aviation finance, stablecoin infrastructure, and AI automation — many under NDA.
+              <p>
+                Instead of pushing random tools or generic automation promises, I start with how your business really operates — where the friction is, what is already working, and which AI opportunities will deliver the highest return first.
+              </p>
+              <p>
+                My background spans capital-intensive operations, fintech strategy, and complex workflow optimization. That operator perspective shapes everything I do: I prioritize practical leverage over hype, clear thinking over noisy trends, and execution over experimentation.
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Portfolio */}
-      <section className="section-padding gray-section">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-dark-text mb-12 text-center">A Few Things I've Built</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            {[
-              { name: 'LexiUSD.com', description: 'Stablecoin platform with fintech infrastructure', href: '/case-studies/lexiusd' },
-              { name: 'GForceToken.com', description: 'Deal registration & NCNDA protection platform', href: '/case-studies/gforcetoken' },
-              { name: 'Family Office Vetting', description: 'AI-powered due diligence across 47+ public sources', href: '/case-studies/due-diligence' },
-              { name: 'LegacyAviationFI.com', description: 'Global aviation finance and operations', href: '/case-studies/legacyaviationfi' },
-            ].map((project, idx) => (
-              project.href ? (
-                <Link key={idx} href={project.href} onClick={() => window.scrollTo(0, 0)}>
-                  <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
-                    <h3 className="text-lg font-bold text-dark-text mb-2 group-hover:text-teal-600 transition-colors">{project.name}</h3>
-                    <p className="text-gray-600 text-sm mb-3">{project.description}</p>
-                    <span className="text-xs font-semibold text-teal-600">View Case Study →</span>
-                  </div>
-                </Link>
-              ) : (
-                <div key={idx} className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="text-lg font-bold text-dark-text mb-2">{project.name}</h3>
-                  <p className="text-gray-600 text-sm">{project.description}</p>
-                </div>
-              )
-            ))}
+          {/* Why This Work Matters */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold mb-8" style={{ color: '#1B3A6B' }}>Why This Work Matters</h2>
+            <div className="space-y-6" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem' }}>
+              <p>
+                Most businesses do not lack AI ideas. They lack prioritization, workflow clarity, and implementation logic. Teams experiment with tools, but without a strategic roadmap, those experiments scatter and rarely compound into real business value.
+              </p>
+              <p>
+                The goal of my work is to help you identify where AI can create the most leverage, prioritize those opportunities in a way that aligns with your business model, and then execute reliably — either directly or with vetted specialist support.
+              </p>
+              <p>
+                I believe in:
+              </p>
+              <ul className="space-y-3 ml-6">
+                <li>• <strong>AI without hype</strong> — practical tools and workflows, not buzzwords</li>
+                <li>• <strong>Strategy before tools</strong> — understand the business first, then choose the right systems</li>
+                <li>• <strong>Practical leverage over experimentation</strong> — focus on the few moves that matter most</li>
+                <li>• <strong>Clear thinking over noisy trends</strong> — ignore the noise, focus on what works for your team</li>
+                <li>• <strong>One trusted guide instead of fragmented vendor conversations</strong> — you get a single strategic lead, not a patchwork of consultants</li>
+              </ul>
+            </div>
           </div>
-          <p className="text-center text-gray-600">Additional projects available under NDA.</p>
-        </div>
-      </section>
 
-      {/* Credibility */}
-      <section className="section-padding bg-white">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-dark-text mb-12 text-center">Why This Works</h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="space-y-6">
-              {[
-                {
-                  title: 'I use the same tools I sell.',
-                  description: 'Every site I build is built with Manus AI or Claude Code. I\'m not selling you something I don\'t use.',
-                },
-                {
-                  title: 'I\'ve worked across high-stakes industries.',
-                  description: 'Fintech, aviation finance, stablecoin infrastructure, AI automation — so I understand what it takes to build credible, scalable systems.',
-                },
-                {
-                  title: 'I keep projects small and fast.',
-                  description: 'You get a real deliverable, not a 6-week engagement with scope creep. Fast iteration, real results.',
-                },
-              ].map((point, idx) => (
-                <div key={idx} className="flex gap-4">
-                  <CheckCircle className="text-teal flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <h3 className="text-lg font-bold text-dark-text mb-2">{point.title}</h3>
-                    <p className="text-gray-600">{point.description}</p>
-                  </div>
-                </div>
-              ))}
+          {/* Operator Background */}
+          <div>
+            <h2 className="text-4xl font-bold mb-8" style={{ color: '#1B3A6B' }}>Operator Background</h2>
+            <div className="space-y-6" style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.05rem' }}>
+              <p>
+                Before focusing full-time on AI strategy and implementation, I spent years in capital-intensive operations and fintech strategy. That background taught me how to prioritize under constraint, how to build systems that scale, and how to recognize which operational improvements actually move the needle.
+              </p>
+              <p>
+                That operator lens is why I approach AI differently. I do not sell tools or push features. I ask: where is your team losing time? Where are leads slipping? Where is inconsistency costing you money? Then I build a roadmap that addresses those specific bottlenecks in a way that fits your existing workflow.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section-padding navy-section text-center">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-white mb-4">Let's Talk.</h2>
-          <p className="text-white/90 text-lg mb-8">
-            No pitch. Just a conversation about what AI can do for your business.
+      <section className="py-16 md:py-24 px-4 md:px-8" style={{ backgroundColor: '#f9fafb' }}>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#1B3A6B' }}>
+            Ready to turn AI into clear business action?
+          </h2>
+          <p className="text-lg mb-8" style={{ color: '#4b5563' }}>
+            Start with an AI Roadmap Session or Automation Audit to identify your highest-value opportunities.
           </p>
           <a
-            href="/#contact"
-            className="cta-primary inline-block"
+            href="https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20book%20an%20AI%20Roadmap%20Session."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
+            style={{ backgroundColor: '#0D9488', cursor: 'pointer' }}
           >
-            Send a Message
+            Book Your AI Roadmap Session
           </a>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

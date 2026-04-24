@@ -1,45 +1,88 @@
-# Agility AI Pros Website Rebuild
+# Agility AI Pros v2 Redesign — Multi-Page Premium Advisory Site
 
-## Phase 1: Structure & Copy
-- [x] Rebuild Home.tsx as true single-page with all 8 sections
-- [x] Hero section: "Turn AI Into Clear Business Action" + subheadline + CTAs + credibility strip
-- [x] About section: "AI Strategy First. Clear Next Steps Second."
-- [x] AI Roadmap Session section: with bullets, pricing ($997), guarantee (17+ hours)
-- [x] Services section: 4 services with titles and descriptions
-- [x] Bio section: "Meet Patrick Daniel Murphy" with long bio
-- [x] Case Studies section: 4 case studies with categories and descriptions
-- [x] FAQ section: 4 questions including new "How quickly will I see value?"
-- [x] Final CTA section: "Get Clear on Where AI Fits in Your Business"
+## Phase 1: Architecture & Routing
+- [ ] Update App.tsx with multi-page routing (Home, About, AI Roadmap, Automation Offers, Case Studies, FAQ)
+- [ ] Update Navigation.tsx with new nav structure: Home | About | AI Roadmap | Automation Offers | Case Studies | FAQ | Book Session (sticky)
+- [ ] Add sticky CTA component to Navigation
 
-## Phase 2: Navigation & Routing
-- [x] Update Navigation.tsx for single-page smooth scroll
-- [x] Remove multi-page routing (Services, Case Studies, etc.)
-- [x] Add anchor links for smooth scrolling to sections
-- [x] Ensure mobile navigation works seamlessly
+## Phase 2: Home Page Rebuild
+- [ ] Hero section: "Turn AI Into Clear Business Action" headline + subheadline
+- [ ] Hero CTAs: "Book Your AI Roadmap Session" + "Explore Automation Offers"
+- [ ] Proof line: "Identify 17+ weekly hours of time savings — or full refund · Operator background across capital-intensive and operationally complex businesses"
+- [ ] Section: "Why clients come here" (fragmented tools, unclear next steps, missed leverage)
+- [ ] Section: "Two clear paths" (AI Roadmap vs Automation Offers side-by-side premium cards)
+- [ ] Section: "What this work improves" (Faster follow-up, Better decision-making, Less repetitive admin, Cleaner execution)
+- [ ] Section: "Who this is for" (Boutique wealth firms, Cosmetic practices/med spas, Lean founder-led service businesses)
+- [ ] Section: "Featured case studies" (2-3 case studies in premium editorial format)
+- [ ] Section: "Final CTA" (strong invitation to book)
 
-## Phase 3: Design & Styling
-- [ ] Implement premium color scheme: deep navy, charcoal, white, teal accent
-- [ ] Add section dividers and premium spacing
-- [ ] Ensure strong typography hierarchy
-- [ ] Remove any gradients, glowing effects, or startup clichés
-- [ ] Make pricing and guarantee visually prominent
-- [ ] Optimize for mobile-first experience
+## Phase 3: About Page
+- [ ] Professional headshot (patrick.jpg)
+- [ ] Founder credibility narrative
+- [ ] Explanation of why this work matters
+- [ ] Operator/strategist perspective
+- [ ] Prior-career context (Agility Fi, fintech, operator experience) — framed as bio context only
 
-## Phase 4: Testing & Polish
-- [ ] Test all CTAs and links
-- [ ] Verify mobile responsiveness
-- [ ] Test smooth scrolling on all browsers
-- [ ] Ensure form submissions work
-- [ ] Final design review against brief
+## Phase 4: AI Roadmap Page
+- [ ] Hero section
+- [ ] "What an AI Roadmap is" section
+- [ ] "What gets diagnosed" section
+- [ ] "What clients receive" section (45-min discovery, custom report, prioritized recommendations, 30-min walkthrough)
+- [ ] Proof/outcomes section
+- [ ] Guarantee section: "Identify at least 17+ weekly hours of time savings across the team, or full refund."
+- [ ] CTA: "Book Your AI Roadmap Session"
 
-## Phase 5: Deployment
-- [ ] Save checkpoint
-- [ ] Publish to live site
+## Phase 5: Automation Offers Page
+- [ ] Hero: "Automation That Removes Bottlenecks" + subheadline + CTAs
+- [ ] Section 1: "From AI ideas to working systems"
+- [ ] Section 2: "What automation can handle" (Lead capture, Front desk, Internal ops, Research)
+- [ ] Section 3: "Best for lean teams that need leverage"
+- [ ] Section 4: "A simple implementation path" (Audit, Design, Implement)
+- [ ] Section 5: "Example Workflows" (anchor link for secondary CTA)
+- [ ] Section 6: "Strategy-led, implementation-supported"
+- [ ] Section 7: "Why businesses come to this work"
+- [ ] Section 8: "Start with the highest-value bottleneck" + CTAs
+- [ ] Ensure both "Book an Automation Audit" and "Book an AI Roadmap Session" CTAs route to same booking flow
 
-## Completed Items (Previous Work)
-- [x] Change "Builds start at $2,500 | Training starts at $997" to "Manus Training Session: $997" on Services page
-- [x] Change Claude Business Setup pricing from "Starting at $2,000" to "Starts at $997"
-- [x] Update Claude Business Setup tier prices: $2,000→$997, $3,500→$2,997, $5,000+→$4,997
-- [x] Update contact form dropdown: Claude Business Setup and Manus AI Builds both show "Starts at $997"
-- [x] Change all "5 hours" guarantee references to "17 hours" across Home and Services pages
-- [x] Change "one-page AI Action Report" to "one-to-three page AI Action Report" in Home and Services
+## Phase 6: Case Studies Page
+- [ ] Use existing case studies
+- [ ] Frame with "Role Agility AI Pros played" line on each
+- [ ] Use category proof framing for partner-delivered work
+- [ ] Do NOT name specific white-label partners
+- [ ] Premium editorial format with narrative, result headline, proof metrics
+
+## Phase 7: FAQ Page
+- [ ] What is the difference between AI Roadmap and Automation Offers?
+- [ ] Do clients need special tools before starting?
+- [ ] Is this best for small teams or larger organizations?
+- [ ] How is implementation handled?
+- [ ] What happens after the roadmap?
+- [ ] Do you build everything directly?
+
+## Phase 8: Footer & Global Elements
+- [ ] Add footer with email contact, WhatsApp (if appropriate), navigation links, secondary CTA
+- [ ] Do NOT include any links to Agility AI Inner Circle
+- [ ] Ensure sticky CTA is elegant and not intrusive
+
+## Phase 9: Design & Polish
+- [ ] Verify premium spacing and section hierarchy
+- [ ] Test visual rhythm and proof placement
+- [ ] Ensure mobile layouts are clean, readable, premium
+- [ ] Verify no references to specific white-label vendors
+- [ ] Verify no references to Agility AI Inner Circle
+- [ ] Verify tone is premium, calm, strategic, direct, commercially serious
+
+## Phase 10: Testing & Deployment
+- [ ] Test all CTAs and booking flows
+- [ ] Test mobile responsiveness across all pages
+- [ ] Test sticky CTA on mobile and desktop
+- [ ] Verify anchor links work (e.g., "See Example Workflows" → Example Workflows section)
+- [ ] Save checkpoint and prepare for deployment
+
+## Previous Work (v1 Single-Page)
+- [x] Built initial single-page site with 8 sections
+- [x] Fixed Navigation component and restored logo
+- [x] Added Patrick's photo to Bio section
+- [x] Changed name from "Patrick Daniel Murphy" to "Patrick Daniel"
+- [x] Updated pricing across all sections ($997 starting price)
+- [x] Updated guarantee to 17+ hours
