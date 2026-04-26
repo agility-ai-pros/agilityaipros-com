@@ -80,6 +80,7 @@ export default function Navigation() {
                 <button
                   className="block w-full text-left py-3 cursor-pointer font-medium"
                   style={{color: '#1f2937', background: 'none', border: 'none', padding: '12px 0'}}
+                  onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </button>
@@ -91,6 +92,7 @@ export default function Navigation() {
               rel="noopener noreferrer"
               className="block mt-4 px-6 py-3 text-white text-center rounded-lg font-semibold transition-all"
               style={{backgroundColor: '#0D9488', cursor: 'pointer'}}
+              onClick={() => setIsOpen(false)}
             >
               Get Your AI Roadmap
             </a>
