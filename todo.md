@@ -105,3 +105,12 @@
 - [x] Add "See all 7 case studies →" link to /case-studies
 - [x] Ensure mobile stacking (left column above right column)
 - [x] Maintain existing card design, teal tags, typography, and hover behavior
+
+
+## Phase 13: HTML Case Studies Conversion
+- [x] Convert Chocomize HTML to React component (verbatim content)
+- [x] Convert Cryotherapy 2x Bookings HTML to React component (verbatim content)
+- [x] Convert Cryotherapy 30k Email Campaign HTML to React component (verbatim content)
+- [x] Register all new case study routes in App.tsx
+- [x] Update CaseStudies.tsx index with correct slugs and metadata
+- [x] Test all case study pages display correctly with full HTML content

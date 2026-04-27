@@ -1,244 +1,317 @@
+import { useEffect } from 'react';
 import { Link } from 'wouter';
 
-import { useEffect } from 'react';
-
-export default function Chocomize() {
+export default function CaseStudy() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <header className="bg-gradient-to-b from-[#0e1d3a] to-[#142a52] text-white relative overflow-hidden py-28">
-        <div className="absolute right-[-180px] top-[-120px] w-[520px] h-[520px] rounded-full bg-radial-gradient opacity-20 pointer-events-none"></div>
-        
-        <div className="max-w-7xl mx-auto px-7 relative z-10">
-          {/* Breadcrumbs */}
-          <div className="text-xs tracking-widest text-white/55 uppercase mb-7">
-            <Link href="/case-studies" className="text-white/75 hover:text-white">Case Studies</Link>
-            {' '}/ 2x Booked Consults from Same Ad Spend
-          </div>
-
-          {/* Label */}
-          <span className="inline-block text-xs tracking-wider text-teal-500 uppercase border-l-4 border-teal-500 pl-2.5 mb-6">
-            Case Study
-          </span>
-
-          {/* Category Tags */}
-          <div className="inline-block bg-teal-500/18 text-teal-500 text-xs tracking-wider uppercase px-3.5 py-1.5 rounded mb-6">
-            Lead Nurture · Wellness & Med Spa · Email Automation
-          </div>
-
-          {/* Hero Title */}
-          <h1 className="text-5xl font-bold leading-tight mb-6 max-w-4xl tracking-tight">
-            Doubling weekly booked consults from the <span className="text-teal-500">same ad spend</span>.
-          </h1>
-
-          {/* Hero Subtitle */}
-          <p className="text-lg leading-relaxed text-white/78 max-w-2xl mb-9">
-            A growing California wellness studio was running effective Meta ads — but only 18% of leads were actually booking. After a single generic auto-reply, prospects went silent. We mapped the post-form gap, designed a two-stage email nurture system, and lifted the conversion rate to 37% — without changing a single dollar of ad spend.
-          </p>
-
-          {/* Client Pill */}
-          <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-4.5 py-3 rounded-full text-white/90 text-sm mb-9">
-            <span className="w-7 h-7 rounded-full bg-teal-500 text-navy-900 flex items-center justify-center font-bold text-xs">UC</span>
-            <span>Client: <strong>US Cryotherapy</strong> — Walnut Creek, California (recovery & wellness facility)</span>
-          </div>
-
-          {/* Meta Row */}
-          <div className="grid grid-cols-4 gap-0 border-t border-b border-white/10 py-6 mt-3.5">
-            <div className="px-6 pr-6 border-r border-white/10">
-              <div className="text-xs text-white/55 tracking-wider uppercase mb-1.5">Industry</div>
-              <div className="text-sm text-white font-medium">Wellness / Recovery / Med Spa</div>
-            </div>
-            <div className="px-6 border-r border-white/10">
-              <div className="text-xs text-white/55 tracking-wider uppercase mb-1.5">Challenge</div>
-              <div className="text-sm text-white font-medium">18% lead-to-book conversion ceiling</div>
-            </div>
-            <div className="px-6 border-r border-white/10">
-              <div className="text-xs text-white/55 tracking-wider uppercase mb-1.5">AI Role</div>
-              <div className="text-sm text-white font-medium">Two-stage automated email nurture</div>
-            </div>
-            <div className="px-6">
-              <div className="text-xs text-white/55 tracking-wider uppercase mb-1.5">Result</div>
-              <div className="text-sm text-white font-medium">2× bookings · same ad spend · zero new leads needed</div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* Problem Section */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-7">
-          <span className="inline-block text-xs tracking-wider text-teal-500 uppercase border-l-4 border-teal-500 pl-2.5 mb-5">
-            The Problem
-          </span>
-          <h2 className="text-4xl font-bold mb-5 tracking-tight">The ads were working. The follow-up wasn't.</h2>
-          
-          <p className="text-lg leading-relaxed text-slate-700 max-w-2xl mb-6">
-            The studio was already running a Meta ads campaign that delivered consistent leads every week. Forms were getting filled out, leads were landing in the list, ad spend was producing real intent. From the outside it looked like a healthy funnel — until you measured what happened next.
-          </p>
-          
-          <p className="text-lg leading-relaxed text-slate-700 max-w-2xl mb-6">
-            Only 18% of leads were actually booking the free consultation they'd raised their hand for. Once a prospect filled out the form, they got a single generic confirmation email, and then nothing. No nudge. No reminder. No reason to come back. The leads weren't cold — they had self-identified as warm five minutes earlier — but the silence after the form turned them cold within hours.
-          </p>
-          
-          <p className="text-lg leading-relaxed text-slate-700 max-w-2xl">
-            The owner's instinct was understandable: <em>"the ads must not be working — let's adjust targeting, change creative, increase spend."</em> That's the default move. It's almost always the wrong one.
-          </p>
-
-          {/* Metrics */}
-          <div className="grid grid-cols-4 gap-5 mt-14">
-            <div className="bg-white border border-slate-200 rounded-2xl p-7 shadow-sm">
-              <div className="text-4xl font-bold text-navy-900 leading-tight">18<span className="text-teal-500">%</span></div>
-              <div className="text-sm text-slate-600 mt-2">Lead-to-booked-consult conversion rate before nurture</div>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-7 shadow-sm">
-              <div className="text-4xl font-bold text-navy-900 leading-tight">5–10</div>
-              <div className="text-sm text-slate-600 mt-2">Booked consultations per week — flat across the funnel</div>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-7 shadow-sm">
-              <div className="text-4xl font-bold text-navy-900 leading-tight">1</div>
-              <div className="text-sm text-slate-600 mt-2">Generic confirmation email — and that was the entire post-form experience</div>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-2xl p-7 shadow-sm">
-              <div className="text-4xl font-bold text-navy-900 leading-tight">0</div>
-              <div className="text-sm text-slate-600 mt-2">Follow-up touches sent after the confirmation email</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Solution Section */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-7">
-          <span className="inline-block text-xs tracking-wider text-teal-500 uppercase border-l-4 border-teal-500 pl-2.5 mb-5">
-            The Solution
-          </span>
-          <h2 className="text-4xl font-bold mb-5 tracking-tight">A two-stage nurture system: educate first, re-engage second.</h2>
-          
-          <p className="text-lg leading-relaxed text-slate-700 max-w-2xl mb-6">
-            The problem wasn't the ads. The problem was the gap after the form. We designed a two-stage email sequence that ran automatically after every form submission:
-          </p>
-
-          {/* Before/After Grid */}
-          <div className="grid grid-cols-2 gap-6 mt-12">
-            {/* Before */}
-            <div className="bg-red-50 border border-red-200 rounded-3xl p-8">
-              <h3 className="text-sm tracking-wider font-bold text-red-700 uppercase mb-5">Before</h3>
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-base text-slate-700">
-                  <span className="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">✗</span>
-                  <span>Single generic confirmation email</span>
-                </li>
-                <li className="flex gap-3 text-base text-slate-700">
-                  <span className="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">✗</span>
-                  <span>No follow-up sequence</span>
-                </li>
-                <li className="flex gap-3 text-base text-slate-700">
-                  <span className="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">✗</span>
-                  <span>Leads go cold within hours</span>
-                </li>
-                <li className="flex gap-3 text-base text-slate-700">
-                  <span className="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">✗</span>
-                  <span>18% conversion to booked consult</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* After */}
-            <div className="bg-green-50 border border-green-200 rounded-3xl p-8">
-              <h3 className="text-sm tracking-wider font-bold text-green-700 uppercase mb-5">After</h3>
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-base text-slate-700">
-                  <span className="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">✓</span>
-                  <span>Stage 1: Educational email (benefits of recovery)</span>
-                </li>
-                <li className="flex gap-3 text-base text-slate-700">
-                  <span className="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">✓</span>
-                  <span>Stage 2: Re-engagement email (limited-time offer)</span>
-                </li>
-                <li className="flex gap-3 text-base text-slate-700">
-                  <span className="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">✓</span>
-                  <span>Automated, personalized, and always on</span>
-                </li>
-                <li className="flex gap-3 text-base text-slate-700">
-                  <span className="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 font-bold text-xs mt-0.5">✓</span>
-                  <span>37% conversion to booked consult</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Results */}
-          <div className="mt-16 pt-16 border-t border-slate-200">
-            <h3 className="text-2xl font-bold mb-8">The Results</h3>
-            <div className="grid grid-cols-3 gap-6">
-              <div className="bg-white border border-slate-200 rounded-2xl p-8">
-                <div className="text-3xl font-bold text-teal-500 mb-2">2×</div>
-                <div className="text-base text-slate-700">Booked consults per week (from 5–10 to 10–20)</div>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-2xl p-8">
-                <div className="text-3xl font-bold text-teal-500 mb-2">37%</div>
-                <div className="text-base text-slate-700">Lead-to-book conversion rate (up from 18%)</div>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-2xl p-8">
-                <div className="text-3xl font-bold text-teal-500 mb-2">$0</div>
-                <div className="text-base text-slate-700">Additional ad spend required</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="py-24">
-        <div className="max-w-3xl mx-auto px-7">
-          <div className="bg-gradient-to-r from-teal-500/8 to-transparent border-l-4 border-teal-500 rounded-r-2xl p-9">
-            <p className="text-2xl leading-relaxed text-slate-900 italic mb-4">
-              "We were spending thousands on ads and only converting 18% of leads. Patrick showed us the real problem wasn't the ads — it was what happened after. The two-stage email system has been running for three months now, and we're consistently booking double the consults from the same ad spend. This is the kind of leverage every wellness studio needs."
-            </p>
-            <div className="text-sm text-slate-600">Owner, US Cryotherapy — Walnut Creek, CA</div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why This Matters Section */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-3xl mx-auto px-7">
-          <h2 className="text-4xl font-bold mb-8 tracking-tight">Why This Matters</h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white border-l-4 border-teal-500 rounded-r-2xl p-8">
-              <p className="text-base leading-relaxed text-slate-700 mb-4">
-                <strong>For wellness studios and med spas:</strong> Most of your marketing budget goes to paid ads. But if your follow-up is broken, you're throwing money away. A two-stage nurture system costs almost nothing to run, but it can double your bookings without increasing ad spend.
-              </p>
-              <p className="text-base leading-relaxed text-slate-700">
-                This is the kind of AI-powered leverage that separates studios that grow and studios that stay flat.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-800 text-white text-center">
-        <div className="max-w-2xl mx-auto px-7">
-          <h2 className="text-4xl font-bold mb-4 tracking-tight">
-            Is your follow-up <span className="text-teal-500">leaving money on the table?</span>
-          </h2>
-          <p className="text-lg text-white/75 mb-8">
-            Book an AI Roadmap Session to map your workflow, identify your biggest bottlenecks, and design a clear 90-day implementation plan.
-          </p>
-          <a href="#" className="inline-block bg-teal-500 text-slate-900 px-8 py-4 rounded-lg font-bold text-base tracking-wide hover:shadow-lg hover:-translate-y-0.5 transition-all">
-            Book Your AI Roadmap Session — $997
-          </a>
-          <div className="text-sm text-white/50 mt-5">
-            Most clients identify $2,000–$5,000/month in recoverable value in the first session.
-          </div>
-        </div>
-      </section>
+    <div dangerouslySetInnerHTML={{ __html: `
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="crumbs">
+      <a href="/case-studies">Case Studies</a> &nbsp;/&nbsp; Chocomize
     </div>
+    <span class="label">Case Study</span>
+    <div><span class="cat-tags">AI Automation · E-commerce · Corporate Gifting</span></div>
+
+    <h1 class="hero-h1">From <span class="accent">4-hour delays</span> to 15-minute replies — at scale.</h1>
+    <p class="hero-sub">
+      Chocomize was losing high-value B2B leads to slow, inconsistent inquiry handling. We
+      designed an end-to-end automation that captures, enriches, drafts, and logs every
+      corporate gifting inquiry — so the sales team focuses on closing, not admin.
+    </p>
+
+    <div class="client-pill">
+      <span class="dot">CZ</span>
+      <span>Client: <strong>Chocomize</strong> — Corporate Chocolate Gifting (Shopify, B2B)</span>
+    </div>
+
+    <div class="meta-row">
+      <div class="meta-cell">
+        <div class="meta-label">Industry</div>
+        <div class="meta-value">B2B E-commerce / Corporate Gifting</div>
+      </div>
+      <div class="meta-cell">
+        <div class="meta-label">Challenge</div>
+        <div class="meta-value">Manual inquiry handling at scale</div>
+      </div>
+      <div class="meta-cell">
+        <div class="meta-label">AI Role</div>
+        <div class="meta-value">RAG-driven drafting + workflow orchestration</div>
+      </div>
+      <div class="meta-cell">
+        <div class="meta-label">Result</div>
+        <div class="meta-value">85% faster replies · 0 missed leads · 10+ hrs/rep/wk</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ THE PROBLEM ============ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">The Problem</span>
+    <h2 class="section-h">Manual workflows couldn't keep pace with B2B inquiry volume.</h2>
+    <p class="lede">
+      Corporate gifting inquiries aren't simple "what's the price?" messages. Every Shopify
+      form submission landed with custom branding requirements, multiple SKUs, quantity tiers,
+      and tight delivery windows. The reps were doing the same slow chain on every single one:
+      open the dashboard, look up products, draft a personalised reply from scratch, then
+      manually create a CRM lead.
+    </p>
+    <p class="lede">
+      During Q4 and other peak gifting cycles, the system broke. Replies slipped from hours to
+      days. Messaging quality became inconsistent across reps. And by Chocomize's own
+      estimate, roughly one in five high-value inquiries was going cold or unanswered during
+      peak volume — a quiet but expensive leak.
+    </p>
+
+    <div class="metrics">
+      <div class="metric">
+        <div class="num">4–8 <span class="unit">hrs</span></div>
+        <div class="lbl">Average response time before automation — climbing past 24 hrs at peak</div>
+      </div>
+      <div class="metric">
+        <div class="num">30–45 <span class="unit">min</span></div>
+        <div class="lbl">Per reply — including product lookup, drafting, and CRM entry</div>
+      </div>
+      <div class="metric">
+        <div class="num">~20<span class="unit">%</span></div>
+        <div class="lbl">Estimated lead drop-off during high-volume periods</div>
+      </div>
+      <div class="metric">
+        <div class="num">500<span class="unit">+</span></div>
+        <div class="lbl">Inbound corporate inquiries per month at the time of engagement</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE SOLUTION ============ -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">The Solution</span>
+    <h2 class="section-h">An end-to-end inquiry pipeline — capture, enrich, draft, log.</h2>
+    <p class="lede">
+      We mapped the workflow, designed the automation architecture, and stood up the build
+      with our specialist implementation team. The pipeline triggers the moment a customer
+      submits Chocomize's Shopify inquiry form. From there, it pulls relevant product context
+      using retrieval-augmented generation, drafts a personalised on-brand reply, creates a
+      fully populated CRM lead, and queues it for a 60-second human review before send.
+    </p>
+    <p class="lede">
+      The reps still own the conversation — they just no longer own the 30 minutes of admin
+      that used to come with it.
+    </p>
+
+    <!-- Workflow visualization -->
+    <div class="diagram-card">
+      <div class="d-eyebrow">How it flows</div>
+      <h3 class="d-title">Inquiry → Reply, in under 15 minutes</h3>
+      <svg viewBox="0 0 1040 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow diagram">
+        <!-- Connecting line -->
+        <line x1="60" y1="120" x2="980" y2="120" stroke="rgba(28,181,184,0.35)" stroke-width="2" stroke-dasharray="4 6"/>
+
+        <!-- Step 1 -->
+        <g transform="translate(60,120)">
+          <circle r="36" fill="#1cb5b8"/>
+          <text y="6" text-anchor="middle" fill="#0e1d3a" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">01</text>
+        </g>
+        <text x="60" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">Inquiry captured</text>
+        <text x="60" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">Shopify form fires webhook</text>
+
+        <!-- Step 2 -->
+        <g transform="translate(290,120)">
+          <circle r="36" fill="#142a52" stroke="#1cb5b8" stroke-width="2"/>
+          <text y="6" text-anchor="middle" fill="#1cb5b8" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">02</text>
+        </g>
+        <text x="290" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">Product context</text>
+        <text x="290" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">RAG retrieves SKUs &amp; pricing</text>
+
+        <!-- Step 3 -->
+        <g transform="translate(520,120)">
+          <circle r="36" fill="#1cb5b8"/>
+          <text y="6" text-anchor="middle" fill="#0e1d3a" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">03</text>
+        </g>
+        <text x="520" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">AI draft created</text>
+        <text x="520" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">On-brand, personalised</text>
+
+        <!-- Step 4 -->
+        <g transform="translate(750,120)">
+          <circle r="36" fill="#142a52" stroke="#1cb5b8" stroke-width="2"/>
+          <text y="6" text-anchor="middle" fill="#1cb5b8" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">04</text>
+        </g>
+        <text x="750" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">CRM lead logged</text>
+        <text x="750" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">Full inquiry context attached</text>
+
+        <!-- Step 5 -->
+        <g transform="translate(980,120)">
+          <circle r="36" fill="#1cb5b8"/>
+          <text y="6" text-anchor="middle" fill="#0e1d3a" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">05</text>
+        </g>
+        <text x="980" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">Rep reviews &amp; sends</text>
+        <text x="980" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">~60 seconds, human in loop</text>
+
+        <!-- Top labels -->
+        <text x="60" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">CAPTURE</text>
+        <text x="290" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">ENRICH</text>
+        <text x="520" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">DRAFT</text>
+        <text x="750" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">LOG</text>
+        <text x="980" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">REVIEW</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTS ============ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Results</span>
+    <h2 class="section-h">What changed for Chocomize after go-live.</h2>
+    <p class="lede">
+      Within the first week, the sales team's daily admin time was cut in half. By the next
+      peak gifting period, Chocomize handled record inquiry volume with the same headcount —
+      and Q4 went from being the team's most stressful quarter to its most predictable.
+    </p>
+
+    <div class="metrics">
+      <div class="metric">
+        <div class="num">85<span class="unit">%</span></div>
+        <div class="lbl">Reduction in average response time across all inquiry types</div>
+      </div>
+      <div class="metric">
+        <div class="num">&lt;15 <span class="unit">min</span></div>
+        <div class="lbl">New average reply time, 24/7 — including weekends and peak season</div>
+      </div>
+      <div class="metric">
+        <div class="num">10<span class="unit">+ hrs</span></div>
+        <div class="lbl">Saved per sales rep, per week — reinvested in actual selling</div>
+      </div>
+      <div class="metric">
+        <div class="num">0</div>
+        <div class="lbl">Missed leads since the system went live</div>
+      </div>
+    </div>
+
+    <!-- Before/After Comparison -->
+    <div class="ba-grid">
+      <div class="ba-card before">
+        <h3>Before</h3>
+        <ul>
+          <li><span class="icon">×</span><span>4–8 hour response time, 24+ hrs at peak season</span></li>
+          <li><span class="icon">×</span><span>Manual product lookup on every inquiry</span></li>
+          <li><span class="icon">×</span><span>Inconsistent reply quality across reps</span></li>
+          <li><span class="icon">×</span><span>CRM leads entered by hand, often delayed</span></li>
+          <li><span class="icon">×</span><span>~20% of inquiries missed during peak volume</span></li>
+          <li><span class="icon">×</span><span>30–45 minutes per reply, including CRM entry</span></li>
+        </ul>
+      </div>
+      <div class="ba-card after">
+        <h3>After</h3>
+        <ul>
+          <li><span class="icon">✓</span><span>Under 15 minutes, 24/7 — including weekends</span></li>
+          <li><span class="icon">✓</span><span>Product context retrieved automatically (RAG)</span></li>
+          <li><span class="icon">✓</span><span>AI drafts reviewed &amp; approved before sending</span></li>
+          <li><span class="icon">✓</span><span>Every inquiry instantly logged in the CRM</span></li>
+          <li><span class="icon">✓</span><span>Zero missed leads since go-live</span></li>
+          <li><span class="icon">✓</span><span>Under 2 minutes of rep time per inquiry</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <p class="q">"During our last Q4 peak we handled more inquiries than ever — and the team was less stressed than ever. The system just works."</p>
+      <div class="attrib">— Sales Lead, Chocomize</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY THIS MATTERS ============ -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Why this matters</span>
+    <h2 class="section-h">This pattern works for any high-consideration B2B e-commerce business.</h2>
+
+    <div class="why-block">
+      <p>
+        Chocomize is one example, but the operational shape is everywhere: corporate gifting,
+        custom apparel, branded merchandise, wholesale beverage, premium packaging, B2B SaaS
+        with sales-assisted onboarding — anywhere inbound inquiries are <em>complex enough to
+        need a thoughtful reply</em>, but <em>repetitive enough that humans shouldn't be
+        composing every one from scratch.</em>
+      </p>
+      <p>
+        The expensive failure mode is the same in every case: leads sit. Replies slip. Quality
+        drifts. The team feels behind. And the only "fix" anyone has historically proposed is
+        hiring more reps — which is slow, expensive, and doesn't actually solve the underlying
+        workflow problem.
+      </p>
+      <p>
+        AI doesn't replace the rep here. It clears the runway in front of them. The rep still
+        owns judgment and tone. But the lookup, the draft, and the CRM entry — the parts that
+        eat hours and add zero strategic value — are gone.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES DELIVERED ============ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">What we built</span>
+    <h2 class="section-h">Core capabilities delivered.</h2>
+
+    <div class="cap-grid">
+      <div class="cap">
+        <div class="cap-num">01</div>
+        <h4>Real-time inquiry capture</h4>
+        <p>Every Shopify form submission triggers the workflow instantly via webhook — no polling, no manual handoff, no delays.</p>
+      </div>
+      <div class="cap">
+        <div class="cap-num">02</div>
+        <h4>Dynamic product context (RAG)</h4>
+        <p>Relevant product specs, branding options, MOQ thresholds, and pricing tiers are retrieved automatically and injected into the prompt so the draft is grounded — not hallucinated.</p>
+      </div>
+      <div class="cap">
+        <div class="cap-num">03</div>
+        <h4>AI-generated draft replies</h4>
+        <p>A personalised, on-brand response is drafted for each inquiry — bulk order, branding question, delivery timeline, or general product enquiry.</p>
+      </div>
+      <div class="cap">
+        <div class="cap-num">04</div>
+        <h4>Automatic CRM lead creation</h4>
+        <p>Every inquiry creates a fully populated CRM lead — customer message, retrieved product context, and the AI draft attached — before a rep ever opens it.</p>
+      </div>
+      <div class="cap">
+        <div class="cap-num">05</div>
+        <h4>Human-in-the-loop review</h4>
+        <p>Reps review and approve before sending. Full editorial control — without doing any of the upstream legwork.</p>
+      </div>
+      <div class="cap">
+        <div class="cap-num">06</div>
+        <h4>Peak-season resilience</h4>
+        <p>The pipeline scales to any volume with no degradation. 10 inquiries a day or 1,000 — same 15-minute response window.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="narrow">
+    <h2>Got a workflow that's costing you <span class="accent">deals</span>?</h2>
+    <p>
+      If you're losing inbound leads to slow replies, inconsistent messaging, or admin drag —
+      we'll map your highest-leverage automation opportunity in a 90-minute working session,
+      and guarantee at least 17 hours/week of recoverable time across your team. Or it's on us.
+    </p>
+    <a href="https://agilityaipros.com/book" class="btn">Book Your AI Roadmap Session — $997</a>
+    <div class="btn-sub">17-hour time-savings guarantee · 90 minutes · Strategy-first, not a sales call</div>
+  </div>
+</section>
+    ` }} />
   );
 }

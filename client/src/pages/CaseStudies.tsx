@@ -50,7 +50,7 @@ const boutiqueCaseStudies = [
     img: null,
   },
   {
-    slug: 'chocomize',
+    slug: 'cryotherapy-2x-bookings',
     category: 'Lead Nurture · Wellness & Med Spa · Email Automation',
     title: 'Doubling Weekly Booked Consults from the Same Ad Spend',
     outcome: '2x bookings from same ad spend',
@@ -58,11 +58,19 @@ const boutiqueCaseStudies = [
     img: null,
   },
   {
-    slug: 'email-campaign',
+    slug: 'cryotherapy-30k-email-campaign',
     category: 'Email Campaign · Wellness & Med Spa · List Reactivation',
     title: '$30K from a Single Email Campaign',
     outcome: '$30K revenue · 20/20 spots booked',
     description: 'A wellness studio had spent years building a 3,071-contact list that had quietly gone idle. We designed and launched a single seasonal campaign and filled all 20 available spots at $1,500 each within days.',
+    img: null,
+  },
+  {
+    slug: 'chocomize',
+    category: 'AI Automation · E-commerce · Corporate Gifting',
+    title: 'From 4-hour delays to 15-minute replies — at scale',
+    outcome: '85% faster replies · 0 missed leads · 10+ hrs/rep/wk',
+    description: 'Chocomize was losing high-value B2B leads to slow, inconsistent inquiry handling. We designed an end-to-end automation that captures, enriches, drafts, and logs every corporate gifting inquiry — so the sales team focuses on closing, not admin.',
     img: null,
   },
 ];
