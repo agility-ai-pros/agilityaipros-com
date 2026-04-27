@@ -68,26 +68,33 @@ export default function Home() {
     },
   ];
 
-  const caseStudies = [
+  const fintechCaseStudies = [
     {
-      category: 'Stablecoin Platform',
-      title: 'LexiUSD.com',
-      body: 'A fintech startup needed a clearer path forward on platform planning and AI integration. Using AI-supported strategy and development planning, I helped reduce projected development costs by $1.6 million while creating a more practical path to launch.',
-    },
-    {
+      slug: 'gforcetoken',
       category: 'Finance and Deal Flow',
-      title: 'GForceToken.com',
+      title: 'GForceToken',
       body: 'Built around real-world frustration in capital raising and transaction workflows, GForceToken became a live deal registration and NCNDA protection platform with AI-assisted iteration and execution.',
     },
     {
-      category: 'Family Office / Private Capital',
-      title: 'AI Due Diligence System',
-      body: 'I built a multi-source AI research and due diligence workflow using Claude Projects and Manus wide research to support faster analysis across 47+ public sources and help protect a $106 million deal.',
+      slug: 'chocomize',
+      category: 'Lead Nurture · Wellness & Med Spa',
+      title: 'Chocomize',
+      body: 'A California wellness studio was running effective Meta ads but only 18% of leads were booking. We designed a two-stage email nurture system that lifted conversion to 37% without changing ad spend.',
+    },
+  ];
+
+  const boutiqueCaseStudies = [
+    {
+      slug: 'cryotherapy-no-show-reduction',
+      category: 'Workflow Automation · Wellness',
+      title: 'Cryotherapy: 45% No-Show Reduction',
+      body: 'A growing recovery and wellness studio was losing serious revenue to missed appointments. We built a CRM-backed reminder system that cut no-shows from 55% to 30%.',
     },
     {
-      category: 'Aviation Finance',
-      title: 'LegacyAviationFI.com',
-      body: 'A global aviation finance and operations platform was reworked and rebranded in a single day using AI-assisted strategy and build execution.',
+      slug: 'email-campaign',
+      category: 'Email Campaign · Wellness & Med Spa',
+      title: '$30K from a Single Email Campaign',
+      body: 'A wellness studio had spent years building a 3,071-contact list that had quietly gone idle. We designed and launched a single seasonal campaign and filled all 20 available spots at $1,500 each within days.',
     },
   ];
 
@@ -180,29 +187,80 @@ export default function Home() {
           <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: '#0D9488' }}>
             Built With AI. Launched for Real Businesses.
           </h3>
-          <p className="text-lg mb-12 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            Four live projects showcasing what's possible when you combine AI intelligence with strategic execution.
+          <p className="text-lg mb-12 max-w-3xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Live case studies across fintech, ecommerce, and service businesses — what's possible when AI intelligence meets strategic execution.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {caseStudies.map((study, idx) => (
-              <div
-                key={idx}
-                className="p-8 rounded-2xl hover:shadow-lg transition-all"
-                style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
-              >
-                <div
-                  className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
-                  style={{ backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488' }}
-                >
-                  {study.category}
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-3">{study.title}</h3>
-                <p className="text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-                  {study.body}
-                </p>
+          {/* Two-Column Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            {/* LEFT COLUMN: Fintech & Ecommerce */}
+            <div>
+              <h4 className="text-xl font-bold mb-6" style={{ color: '#0D9488' }}>
+                Fintech & Ecommerce
+              </h4>
+              <div className="space-y-6">
+                {fintechCaseStudies.map((study, idx) => (
+                  <a
+                    key={idx}
+                    href={`/case-studies/${study.slug}`}
+                    className="block p-8 rounded-2xl hover:shadow-lg transition-all"
+                    style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
+                  >
+                    <div
+                      className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
+                      style={{ backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488' }}
+                    >
+                      {study.category}
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-3">{study.title}</h3>
+                    <p className="text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
+                      {study.body}
+                    </p>
+                  </a>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* RIGHT COLUMN: Boutique Firms, Med Spas & Clinics */}
+            <div>
+              <h4 className="text-xl font-bold mb-6" style={{ color: '#0D9488' }}>
+                Boutique Firms, Med Spas & Clinics
+              </h4>
+              <div className="space-y-6">
+                {boutiqueCaseStudies.map((study, idx) => (
+                  <a
+                    key={idx}
+                    href={`/case-studies/${study.slug}`}
+                    className="block p-8 rounded-2xl hover:shadow-lg transition-all"
+                    style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
+                  >
+                    <div
+                      className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
+                      style={{ backgroundColor: 'rgba(13,148,136,0.2)', color: '#0D9488' }}
+                    >
+                      {study.category}
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-3">{study.title}</h3>
+                    <p className="text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
+                      {study.body}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* See All Case Studies Link */}
+          <div className="text-center">
+            <a
+              href="/case-studies"
+              className="inline-block text-lg font-bold transition-all"
+              style={{ color: '#0D9488' }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.8')}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
+            >
+              See all 7 case studies →
+            </a>
           </div>
         </div>
       </section>

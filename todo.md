@@ -96,3 +96,12 @@
 - [ ] Add client testimonials section on Home page
 - [ ] Add "For Med Spas" callout section on Automation Offers page
 - [ ] Create Results Dashboard on Home page (clients served, hours saved, revenue identified)
+
+## Phase 12: Portfolio Section Restructuring
+- [x] Restructure Home Portfolio section into two-column vertical layout
+- [x] Left column: Fintech & Ecommerce (GForceToken, Chocomize)
+- [x] Right column: Boutique Firms, Med Spas & Clinics (Cryotherapy, EmailCampaign)
+- [x] Update section subheading to "Live case studies across fintech, ecommerce, and service businesses"
+- [x] Add "See all 7 case studies →" link to /case-studies
+- [x] Ensure mobile stacking (left column above right column)
+- [x] Maintain existing card design, teal tags, typography, and hover behavior
