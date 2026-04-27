@@ -1,5 +1,4 @@
 import { Link } from 'wouter';
-import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 const SCREENSHOT_1 = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_screenshot_1_59f36311.webp';
@@ -9,7 +8,6 @@ const SCREENSHOT_3 = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/c
 export default function LexiUSD() {
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
-      <Navigation />
 
       {/* Hero */}
       <section className="py-20 md:py-32 text-white" style={{ backgroundColor: '#1B3A6B' }}>

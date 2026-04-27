@@ -1,5 +1,4 @@
 import { Link } from 'wouter';
-import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 const CREAM = '#f8f6f1';
@@ -36,7 +35,6 @@ function CheckSection({ title, items }: { title: string; items: string[] }) {
 export default function DueDiligence() {
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: CREAM, color: INK, fontFamily: "'DM Sans', sans-serif" }}>
-      <Navigation />
 
       {/* Hero */}
       <section className="pt-32 pb-12 md:pt-40 md:pb-16 px-4 md:px-8">
