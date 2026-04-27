@@ -106,7 +106,7 @@ export default function Home() {
             Built for boutique firms, med spas and clinics
           </p>
           <p className="text-lg md:text-xl mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            Plus Fintech & Ecommerce
+            Plus fintech & ecommerce
           </p>
           <p className="text-xl md:text-2xl mb-4 leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
             I help you spot where AI can actually save time, improve execution, and sharpen decisions — so you can see more of the right clients without burning out your team. Then I turn that into a clear 90-day roadmap your team or specialists can implement.
