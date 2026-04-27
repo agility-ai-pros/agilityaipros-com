@@ -102,8 +102,11 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-3 leading-tight" style={{ color: '#ffffff' }}>
             Turn AI Into Clear Business Action
           </h1>
-          <p className="text-lg md:text-xl mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
+          <p className="text-lg md:text-xl mb-2 leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
             Built for boutique firms, med spas and clinics
+          </p>
+          <p className="text-lg md:text-xl mb-12 leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Plus Fintech & Ecommerce
           </p>
           <p className="text-xl md:text-2xl mb-4 leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
             I help you spot where AI can actually save time, improve execution, and sharpen decisions — so you can see more of the right clients without burning out your team. Then I turn that into a clear 90-day roadmap your team or specialists can implement.
