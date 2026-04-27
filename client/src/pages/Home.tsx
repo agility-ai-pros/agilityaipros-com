@@ -55,12 +55,14 @@ export default function Home() {
       body: 'I analyze your actual workflows, bottlenecks, and growth goals to identify the highest-leverage AI opportunities for time savings, better decision-making, sharper messaging, and faster execution. You get a prioritized, practical plan — not another generic list of tools.',
     },
     {
-      title: 'Claude Business Setup',
+      title: 'AI Operating System Setup',
       body: 'I help businesses turn Claude into a real operating system for daily work by structuring projects, memory, custom skills, and role-based workflows around how the business actually runs.',
     },
     {
-      title: 'Manus Builds and Guidance',
-      body: 'I use Manus to help build fast-moving assets like websites, research systems, and growth tools, and I help clients understand where Manus can create the most leverage inside their business.',
+      title: 'Custom AI Automations & Builds',
+      body: 'I design and build custom AI automations and growth assets — inquiry handling, lead nurture systems, workflow orchestration, AI-built websites, research tools, and full multi-step automations. Whether it\'s a single workflow fix or a fully orchestrated system, the work is vendor-agnostic, outcome-led, and sequenced through vetted implementation partners for fast measurable wins.',
+      link: '/automation-offers',
+      linkText: 'See Automation Offers →',
     },
     {
       title: 'Multi-LLM Deep Research',
@@ -158,22 +160,33 @@ export default function Home() {
             What I Do
           </h2>
           <p className="text-xl text-center mb-16 max-w-2xl mx-auto" style={{ color: '#4b5563' }}>
-            Four core services, each designed to deliver real, measurable results for your business.
+            How I help businesses turn AI into clear, measurable outcomes.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((service, idx) => (
+            {services.map((service: any, idx) => (
               <div
                 key={idx}
-                className="p-8 rounded-2xl hover:shadow-lg transition-all"
+                className="p-8 rounded-2xl hover:shadow-lg transition-all flex flex-col"
                 style={{ backgroundColor: '#f9fafb', borderLeft: '4px solid #0D9488' }}
               >
                 <h3 className="text-2xl font-bold mb-3" style={{ color: '#1f2937' }}>
                   {service.title}
                 </h3>
-                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
+                <p className="text-lg leading-relaxed flex-grow" style={{ color: '#4b5563' }}>
                   {service.body}
                 </p>
+                {service.link && (
+                  <a
+                    href={service.link}
+                    className="inline-block mt-4 font-bold transition-all"
+                    style={{ color: '#0D9488' }}
+                    onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.8')}
+                    onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
+                  >
+                    {service.linkText}
+                  </a>
+                )}
               </div>
             ))}
           </div>

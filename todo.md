@@ -114,3 +114,12 @@
 - [x] Register all new case study routes in App.tsx
 - [x] Update CaseStudies.tsx index with correct slugs and metadata
 - [x] Test all case study pages display correctly with full HTML content
+
+
+## Phase 14: What I Do Section Update
+- [x] Update section subheading to "How I help businesses turn AI into clear, measurable outcomes."
+- [x] Rename "Claude Business Setup" to "AI Operating System Setup"
+- [x] Replace "Manus Builds and Guidance" with "Custom AI Automations & Builds"
+- [x] Update Custom AI Automations & Builds body copy with expanded offerings
+- [x] Add "See Automation Offers →" link to /automation-offers on the new card
+- [x] Test all links and verify navigation works correctly
