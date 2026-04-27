@@ -86,3 +86,13 @@
 - [x] Changed name from "Patrick Daniel Murphy" to "Patrick Daniel"
 - [x] Updated pricing across all sections ($997 starting price)
 - [x] Updated guarantee to 17+ hours
+
+
+## Phase 11: Case Studies Expansion (Boutique Vertical)
+- [x] Add Cryotherapy case study (45% No-Show Reduction)
+- [x] Add Chocomize case study (Doubling Weekly Booked Consults)
+- [x] Add EmailCampaign case study ($30K from a Single Email Campaign)
+- [ ] Add 4th boutique case study (TBD)
+- [ ] Add client testimonials section on Home page
+- [ ] Add "For Med Spas" callout section on Automation Offers page
+- [ ] Create Results Dashboard on Home page (clients served, hours saved, revenue identified)

@@ -57,6 +57,14 @@ const boutiqueCaseStudies = [
     description: 'A California wellness studio was running effective Meta ads but only 18% of leads were booking. We designed a two-stage email nurture system that lifted conversion to 37% without changing ad spend.',
     img: null,
   },
+  {
+    slug: 'email-campaign',
+    category: 'Email Campaign · Wellness & Med Spa · List Reactivation',
+    title: '$30K from a Single Email Campaign',
+    outcome: '$30K revenue · 20/20 spots booked',
+    description: 'A wellness studio had spent years building a 3,071-contact list that had quietly gone idle. We designed and launched a single seasonal campaign and filled all 20 available spots at $1,500 each within days.',
+    img: null,
+  },
 ];
 
 const CaseStudyCard = ({ cs }: { cs: any }) => (
