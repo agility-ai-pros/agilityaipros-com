@@ -68,9 +68,9 @@ const boutiqueCaseStudies = [
   {
     slug: 'chocomize',
     category: 'AI Automation · E-commerce · Corporate Gifting',
-    title: 'From 4-hour delays to 15-minute replies — at scale',
-    outcome: '85% faster replies · 0 missed leads · 10+ hrs/rep/wk',
-    description: 'Chocomize was losing high-value B2B leads to slow, inconsistent inquiry handling. We designed an end-to-end automation that captures, enriches, drafts, and logs every corporate gifting inquiry — so the sales team focuses on closing, not admin.',
+    title: 'Chocomize',
+    outcome: '85% reduction in response time',
+    description: 'Chocomize was losing high-value B2B leads to slow, inconsistent inquiry handling. We designed an end-to-end automation that captures, enriches, drafts, and logs every corporate gifting inquiry in under 15 minutes.',
     img: null,
   },
 ];

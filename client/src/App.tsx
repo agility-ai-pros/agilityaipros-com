@@ -15,7 +15,8 @@ import Chocomize from "@/pages/CaseStudies/Chocomize";
 import Cryotherapy2xBookings from "@/pages/CaseStudies/Cryotherapy2xBookings";
 import CryotherapyNoShowReduction from "@/pages/CaseStudies/CryotherapyNoShowReduction";
 import Cryotherapy30kEmailCampaign from "@/pages/CaseStudies/Cryotherapy30kEmailCampaign";
-import EmailCampaign from "@/pages/CaseStudies/EmailCampaign";
+import { useEffect } from 'react';
+import { useLocation } from 'wouter';
 import FAQ from "@/pages/FAQ";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -42,7 +43,13 @@ function App() {
             <Route path="/case-studies/cryotherapy-2x-bookings" component={Cryotherapy2xBookings} />
             <Route path="/case-studies/cryotherapy-30k-email-campaign" component={Cryotherapy30kEmailCampaign} />
             <Route path="/case-studies/chocomize" component={Chocomize} />
-            <Route path="/case-studies/email-campaign" component={EmailCampaign} />
+            <Route path="/case-studies/email-campaign" component={() => {
+              const [, navigate] = useLocation();
+              useEffect(() => {
+                window.location.href = '/case-studies/cryotherapy-30k-email-campaign';
+              }, []);
+              return null;
+            }} />
             <Route path="/faq" component={FAQ} />
           </Router>
         </TooltipProvider>

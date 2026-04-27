@@ -128,3 +128,10 @@
 ## Phase 15: Portfolio Section Column Swap
 - [x] Swap Portfolio section columns so Boutique Firms is on left, Fintech is on right
 - [x] Verify column layout displays correctly in browser
+
+
+## Phase 16: Chocomize Card and URL Redirect Fixes
+- [x] Update Chocomize card preview text in CaseStudies.tsx with correct category, title, and description
+- [x] Set up 301 redirect from /case-studies/email-campaign to /case-studies/cryotherapy-30k-email-campaign
+- [x] Test Chocomize card preview displays correctly
+- [x] Test redirect works and eliminates duplicate content
