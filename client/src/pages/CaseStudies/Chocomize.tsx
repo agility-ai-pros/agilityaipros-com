@@ -1,6 +1,12 @@
 import { Link } from 'wouter';
 
+import { useEffect } from 'react';
+
 export default function Chocomize() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}

@@ -1,7 +1,12 @@
 import { Link } from 'wouter';
 import Footer from '@/components/Footer';
+import { useEffect } from 'react';
 
 export default function CryotherapyNoShowReduction() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
 

@@ -1,5 +1,6 @@
 import { Link } from 'wouter';
 import Footer from '@/components/Footer';
+import { useEffect } from 'react';
 
 const CREAM = '#f8f6f1';
 const INK = '#0d0f13';
@@ -33,6 +34,10 @@ function CheckSection({ title, items }: { title: string; items: string[] }) {
 }
 
 export default function DueDiligence() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: CREAM, color: INK, fontFamily: "'DM Sans', sans-serif" }}>
 
