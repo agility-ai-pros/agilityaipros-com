@@ -132,26 +132,7 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      {/* SECTION 1: Fintech & Ecommerce */}
-      <section className="py-20 md:py-32 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1B3A6B' }}>
-              Fintech & Ecommerce
-            </h2>
-            <p className="text-lg" style={{ color: '#6b7280' }}>
-              How AI is reshaping deal flow, capital operations, and digital commerce — from family-office due diligence to e-commerce inquiry handling.
-            </p>
-          </div>
-          <div className="space-y-8">
-            {fintechCaseStudies.map((cs) => (
-              <CaseStudyCard key={cs.slug} cs={cs} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 2: Boutique Firms, Med Spas & Clinics */}
+      {/* SECTION 1: Boutique Firms, Med Spas & Clinics */}
       <section className="py-20 md:py-32 px-4 md:px-8" style={{ backgroundColor: '#f9fafb' }}>
         <div className="max-w-5xl mx-auto">
           <div className="mb-16">
@@ -164,6 +145,25 @@ export default function CaseStudies() {
           </div>
           <div className="space-y-8">
             {boutiqueCaseStudies.map((cs) => (
+              <CaseStudyCard key={cs.slug} cs={cs} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2: Fintech & Ecommerce */}
+      <section className="py-20 md:py-32 px-4 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1B3A6B' }}>
+              Fintech & Ecommerce
+            </h2>
+            <p className="text-lg" style={{ color: '#6b7280' }}>
+              How AI is reshaping deal flow, capital operations, and digital commerce — from family-office due diligence to e-commerce inquiry handling.
+            </p>
+          </div>
+          <div className="space-y-8">
+            {fintechCaseStudies.map((cs) => (
               <CaseStudyCard key={cs.slug} cs={cs} />
             ))}
           </div>
