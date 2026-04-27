@@ -123,3 +123,8 @@
 - [x] Update Custom AI Automations & Builds body copy with expanded offerings
 - [x] Add "See Automation Offers →" link to /automation-offers on the new card
 - [x] Test all links and verify navigation works correctly
+
+
+## Phase 15: Portfolio Section Column Swap
+- [x] Swap Portfolio section columns so Boutique Firms is on left, Fintech is on right
+- [x] Verify column layout displays correctly in browser

@@ -206,13 +206,13 @@ export default function Home() {
 
           {/* Two-Column Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-            {/* LEFT COLUMN: Fintech & Ecommerce */}
+            {/* LEFT COLUMN: Boutique Firms, Med Spas & Clinics */}
             <div>
               <h4 className="text-xl font-bold mb-6" style={{ color: '#0D9488' }}>
-                Fintech & Ecommerce
+                Boutique Firms, Med Spas & Clinics
               </h4>
               <div className="space-y-6">
-                {fintechCaseStudies.map((study, idx) => (
+                {boutiqueCaseStudies.map((study, idx) => (
                   <a
                     key={idx}
                     href={`/case-studies/${study.slug}`}
@@ -234,13 +234,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* RIGHT COLUMN: Boutique Firms, Med Spas & Clinics */}
+            {/* RIGHT COLUMN: Fintech & Ecommerce */}
             <div>
               <h4 className="text-xl font-bold mb-6" style={{ color: '#0D9488' }}>
-                Boutique Firms, Med Spas & Clinics
+                Fintech & Ecommerce
               </h4>
               <div className="space-y-6">
-                {boutiqueCaseStudies.map((study, idx) => (
+                {fintechCaseStudies.map((study, idx) => (
                   <a
                     key={idx}
                     href={`/case-studies/${study.slug}`}
