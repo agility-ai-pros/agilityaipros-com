@@ -1,5 +1,4 @@
 import { Link } from 'wouter';
-import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 const GFORCE_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/gforcetoken_hero_b513eb3b.webp';
@@ -122,7 +121,6 @@ const CaseStudyCard = ({ cs }: { cs: any }) => (
 export default function CaseStudies() {
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
-      <Navigation />
 
       {/* Page hero */}
       <section className="py-20 md:py-32 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
