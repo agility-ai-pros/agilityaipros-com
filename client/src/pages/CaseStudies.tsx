@@ -49,15 +49,14 @@ const boutiqueCaseStudies = [
     description: 'A growing recovery and wellness studio was losing serious revenue to missed appointments. We built a CRM-backed reminder system that cut no-shows from 55% to 30%.',
     img: null,
   },
-  // Placeholder for future case studies
-  // {
-  //   slug: 'cryotherapy-doubled-bookings',
-  //   category: 'Workflow Automation · Wellness',
-  //   title: 'Cryotherapy: Doubled Booked Appointments',
-  //   outcome: 'Doubled bookings from same ad spend',
-  //   description: '',
-  //   img: null,
-  // },
+  {
+    slug: 'chocomize',
+    category: 'Lead Nurture · Wellness & Med Spa · Email Automation',
+    title: 'Doubling Weekly Booked Consults from the Same Ad Spend',
+    outcome: '2x bookings from same ad spend',
+    description: 'A California wellness studio was running effective Meta ads but only 18% of leads were booking. We designed a two-stage email nurture system that lifted conversion to 37% without changing ad spend.',
+    img: null,
+  },
 ];
 
 const CaseStudyCard = ({ cs }: { cs: any }) => (

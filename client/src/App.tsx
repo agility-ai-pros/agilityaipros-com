@@ -11,6 +11,7 @@ import GForceToken from "@/pages/CaseStudies/GForceToken";
 import DueDiligence from "@/pages/CaseStudies/DueDiligence";
 import LegacyAviationFI from "@/pages/CaseStudies/LegacyAviationFI";
 import Cryotherapy from "@/pages/CaseStudies/Cryotherapy";
+import Chocomize from "@/pages/CaseStudies/Chocomize";
 import FAQ from "@/pages/FAQ";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -34,6 +35,7 @@ function App() {
             <Route path="/case-studies/due-diligence" component={DueDiligence} />
             <Route path="/case-studies/legacyaviationfi" component={LegacyAviationFI} />
             <Route path="/case-studies/cryotherapy-no-show-reduction" component={Cryotherapy} />
+            <Route path="/case-studies/chocomize" component={Chocomize} />
             <Route path="/faq" component={FAQ} />
           </Router>
         </TooltipProvider>
