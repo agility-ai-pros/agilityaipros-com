@@ -1,14 +1,12 @@
 import { Link } from 'wouter';
-import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export default function CryotherapyNoShowReduction() {
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
-      <Navigation />
 
-      {/* Hero Section */}
-      <header style={{
+    {/* Hero Section */}
+    <header style={{
         background: 'linear-gradient(180deg, #0e1d3a 0%, #142a52 100%)',
         color: '#ffffff',
         position: 'relative',
