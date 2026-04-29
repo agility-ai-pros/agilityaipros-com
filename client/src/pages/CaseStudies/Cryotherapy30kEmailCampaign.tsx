@@ -266,7 +266,7 @@ export default function CaseStudy() {
       of recoverable time across your team. Or it's on us.
     </p>
     <a href="https://calendly.com/patrickdanielm/ai-roadmap-session" class="btn">Book Your AI Roadmap Session — $997</a>
-    <div class="btn-sub">17-hour time-savings guarantee · 90 minutes · Strategy-first, not a sales call</div>
+    <div class="btn-sub">17-hour time-savings guarantee · Strategy-first, not a sales call</div>
   </div>
 </section>
     ` }} />
