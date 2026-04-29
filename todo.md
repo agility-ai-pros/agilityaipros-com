@@ -135,3 +135,10 @@
 - [x] Set up 301 redirect from /case-studies/email-campaign to /case-studies/cryotherapy-30k-email-campaign
 - [x] Test Chocomize card preview displays correctly
 - [x] Test redirect works and eliminates duplicate content
+
+
+## Phase 17: Booking Link & CTA Updates
+- [x] Swap all 8 case study booking links from agilityaipros.com/book to calendly.com/patrickdanielm/ai-roadmap-session
+- [x] Update CTA copy on 4 new case studies to remove "90-minute" (Chocomize, Cryotherapy 2x Bookings, Cryotherapy No-Show Reduction, Cryotherapy 30K Email Campaign)
+- [x] Add Calendly CTA button to homepage hero alongside WhatsApp ("Book Your AI Roadmap Session — $997")
+- [x] Test all links and CTAs in browser

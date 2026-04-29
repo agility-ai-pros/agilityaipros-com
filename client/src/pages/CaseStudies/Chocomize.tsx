@@ -305,10 +305,10 @@ export default function CaseStudy() {
     <h2>Got a workflow that's costing you <span class="accent">deals</span>?</h2>
     <p>
       If you're losing inbound leads to slow replies, inconsistent messaging, or admin drag —
-      we'll map your highest-leverage automation opportunity in a 90-minute working session,
+      we'll map your highest-leverage automation opportunity in a working session,
       and guarantee at least 17 hours/week of recoverable time across your team. Or it's on us.
     </p>
-    <a href="https://agilityaipros.com/book" class="btn">Book Your AI Roadmap Session — $997</a>
+    <a href="https://calendly.com/patrickdanielm/ai-roadmap-session" class="btn">Book Your AI Roadmap Session — $997</a>
     <div class="btn-sub">17-hour time-savings guarantee · 90 minutes · Strategy-first, not a sales call</div>
   </div>
 </section>

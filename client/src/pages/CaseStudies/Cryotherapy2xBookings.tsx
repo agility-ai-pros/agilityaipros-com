@@ -262,12 +262,12 @@ export default function CaseStudy() {
   <div class="narrow">
     <h2>Stop blaming the <span class="accent">ads</span>. Fix what happens after the click.</h2>
     <p>
-      In a 90-minute working session, we'll map your lead-to-consult funnel, identify exactly
+      In a working session, we'll map your lead-to-consult funnel, identify exactly
       where leads are going cold, and lay out the highest-leverage nurture system for your
       practice. We'll guarantee at least 17 hours/week of recoverable time across your team.
       Or it's on us.
     </p>
-    <a href="https://agilityaipros.com/book" class="btn">Book Your AI Roadmap Session — $997</a>
+    <a href="https://calendly.com/patrickdanielm/ai-roadmap-session" class="btn">Book Your AI Roadmap Session — $997</a>
     <div class="btn-sub">17-hour time-savings guarantee · 90 minutes · Strategy-first, not a sales call</div>
   </div>
 </section>

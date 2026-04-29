@@ -130,7 +130,7 @@ export default function Home() {
           {/* Primary & Secondary CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a
-              href={whatsappLink}
+              href="https://calendly.com/patrickdanielm/ai-roadmap-session"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 text-white rounded-lg font-bold text-lg transition-all"
@@ -138,16 +138,18 @@ export default function Home() {
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0f766e')}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0D9488')}
             >
-              Get Your AI Roadmap
+              Book Your AI Roadmap Session — $997
             </a>
             <a
-              href="#case-studies"
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-lg font-bold text-lg transition-all"
               style={{ border: '2px solid white', color: 'white', cursor: 'pointer' }}
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.1)')}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
             >
-              View Case Studies
+              Connect on WhatsApp
             </a>
           </div>
         </div>

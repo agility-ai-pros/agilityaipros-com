@@ -260,12 +260,12 @@ export default function CaseStudy() {
   <div class="narrow">
     <h2>Sitting on a list you haven't worked? <span class="accent">That's revenue waiting.</span></h2>
     <p>
-      In a 90-minute working session, we'll audit the dormant list you've been ignoring,
+      In a working session, we'll audit the dormant list you've been ignoring,
       identify the highest-leverage seasonal campaign for your practice, and lay out a
       reactivation cadence you can run for years. We'll guarantee at least 17 hours/week
       of recoverable time across your team. Or it's on us.
     </p>
-    <a href="https://agilityaipros.com/book" class="btn">Book Your AI Roadmap Session — $997</a>
+    <a href="https://calendly.com/patrickdanielm/ai-roadmap-session" class="btn">Book Your AI Roadmap Session — $997</a>
     <div class="btn-sub">17-hour time-savings guarantee · 90 minutes · Strategy-first, not a sales call</div>
   </div>
 </section>

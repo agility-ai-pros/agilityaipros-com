@@ -497,7 +497,7 @@ export default function EmailCampaign() {
           <p className="text-lg mb-8 leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
             In a 90-minute working session, we'll audit the dormant list you've been ignoring, identify the highest-leverage seasonal campaign for your practice, and lay out a reactivation cadence you can run for years. We'll guarantee at least 17 hours/week of recoverable time across your team. Or it's on us.
           </p>
-          <a href="https://agilityaipros.com/book" className="inline-block px-8 py-4 rounded-lg font-bold text-base transition-all hover:shadow-lg hover:-translate-y-0.5" style={{
+          <a href="https://calendly.com/patrickdanielm/ai-roadmap-session" className="inline-block px-8 py-4 rounded-lg font-bold text-base transition-all hover:shadow-lg hover:-translate-y-0.5" style={{
             background: '#1cb5b8',
             color: '#0e1d3a'
           }}>

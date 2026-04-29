@@ -348,11 +348,11 @@ export default function CaseStudy() {
   <div class="narrow">
     <h2>If your calendar is bleeding <span class="accent">no-shows</span>, we can stop it.</h2>
     <p>
-      In a 90-minute working session, we'll map your booking lifecycle, identify the
+      In a working session, we'll map your booking lifecycle, identify the
       highest-leverage automation in your workflow, and guarantee at least 17 hours/week of
       recoverable time across your team. Or it's on us.
     </p>
-    <a href="https://agilityaipros.com/book" class="btn">Book Your AI Roadmap Session — $997</a>
+    <a href="https://calendly.com/patrickdanielm/ai-roadmap-session" class="btn">Book Your AI Roadmap Session — $997</a>
     <div class="btn-sub">17-hour time-savings guarantee · 90 minutes · Strategy-first, not a sales call</div>
   </div>
 </section>
