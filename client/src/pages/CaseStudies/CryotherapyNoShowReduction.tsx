@@ -1,14 +1,6 @@
 import { useEffect } from 'react';
-import { Link } from 'wouter';
 
-export default function CaseStudy() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return (
-    <div dangerouslySetInnerHTML={{ __html: `
-<style>
+const styles = `
   :root {
     --navy: #0e1d3a;
     --navy-2: #142a52;
@@ -385,71 +377,46 @@ export default function CaseStudy() {
     .cap-grid { grid-template-columns: 1fr; }
     section { padding: 60px 0; }
   }
-</style>
-<!-- ============ HERO ============ -->
-<header class="hero">
+`;
+
+const htmlContent = `<div class="hero">
   <div class="wrap">
-    <div class="crumbs">
-      <a href="/case-studies">Case Studies</a> &nbsp;/&nbsp; Reducing No-Shows by 45%
-    </div>
-    <span class="label">Case Study</span>
-    <div><span class="cat-tags">Workflow Automation · Wellness &amp; Med Spa · Multi-channel Reminders</span></div>
-
+    <div class="crumbs"><a href="/case-studies">CASE STUDIES</a> / Reducing No-Shows by 45%</div>
+    <div class="label">CASE STUDY</div>
+    <div class="cat-tags">WORKFLOW AUTOMATION · WELLNESS & MED SPA · MULTI-CHANNEL REMINDERS</div>
     <h1 class="hero-h1">Cutting no-shows from 55% to 30% — a <span class="accent">45% reduction</span> at a California wellness studio.</h1>
-    <p class="hero-sub">
-      A growing recovery and wellness studio was losing serious revenue to missed appointments —
-      more than half of every booking was a no-show. We mapped the workflow, designed the
-      automation architecture, and brought in our specialist implementation team to build a
-      CRM-backed reminder system that keeps clients informed, the front desk in the loop,
-      and empty slots refilled.
-    </p>
-
+    <p class="hero-sub">A growing recovery and wellness studio was losing serious revenue to missed appointments — more than half of every booking was a no-show. We mapped the workflow, designed the automation architecture, and brought in our specialist implementation team to build a CRM-backed reminder system that keeps clients informed, the front desk in the loop, and empty slots refilled.</p>
     <div class="client-pill">
-      <span class="dot">UC</span>
-      <span>Client: <strong>US Cryotherapy</strong> — Walnut Creek, California (recovery &amp; wellness facility)</span>
+      <div class="dot">US</div>
+      <span><strong>Client: US Cryotherapy</strong> — Walnut Creek, California (recovery & wellness facility)</span>
     </div>
-
     <div class="meta-row">
       <div class="meta-cell">
-        <div class="meta-label">Industry</div>
+        <div class="meta-label">INDUSTRY</div>
         <div class="meta-value">Wellness / Recovery / Med Spa</div>
       </div>
       <div class="meta-cell">
-        <div class="meta-label">Challenge</div>
+        <div class="meta-label">CHALLENGE</div>
         <div class="meta-value">55% no-show rate eroding revenue</div>
       </div>
       <div class="meta-cell">
-        <div class="meta-label">AI Role</div>
+        <div class="meta-label">AI ROLE</div>
         <div class="meta-value">Automated multi-channel reminders + status routing</div>
       </div>
       <div class="meta-cell">
-        <div class="meta-label">Result</div>
+        <div class="meta-label">RESULT</div>
         <div class="meta-value">45% fewer no-shows · 8 weeks to impact</div>
       </div>
     </div>
   </div>
-</header>
+</div>
 
-<!-- ============ THE PROBLEM ============ -->
 <section>
-  <div class="wrap">
-    <span class="eyebrow">The Problem</span>
+  <div class="narrow">
+    <div class="eyebrow">The Problem</div>
     <h2 class="section-h">More than half of every booking was disappearing.</h2>
-    <p class="lede">
-      The studio was steadily growing its client roster, running real marketing, and getting
-      real bookings. The problem wasn't demand — it was follow-through. Roughly 55% of booked
-      appointments were ending in no-shows. That's not a soft number; it's lost session revenue
-      every single day, plus idle staff time, plus the trickle-down effect on retention when
-      clients lose momentum.
-    </p>
-    <p class="lede">
-      When we diagnosed the workflow, the root cause was structural: there was no centralized
-      CRM tracking who had booked what, no automated reminders going out before sessions, and
-      no system flagging missed appointments so the front desk could rebook the slot. Every
-      reminder was either manual or non-existent. At a single-location wellness studio with
-      a growing roster, that doesn't scale.
-    </p>
-
+    <p class="lede">The studio was steadily growing its client roster, running real marketing, and getting real bookings. The problem wasn't demand — it was follow-through. Roughly 55% of booked appointments were ending in no-shows. That's not a soft number; it's lost session revenue every single day, plus idle staff time, plus the trickle-down effect on retention when clients lose momentum.</p>
+    <p class="lede">When we diagnosed the workflow, the root cause was structural: there was no centralized CRM tracking who had booked what, no automated reminders going out before sessions, and no system flagging missed appointments so the front desk could rebook the slot. Every reminder was either manual or non-existent. At a single-location wellness studio with a growing roster, that doesn't scale.</p>
     <div class="metrics">
       <div class="metric">
         <div class="num">55<span class="unit">%</span></div>
@@ -471,98 +438,89 @@ export default function CaseStudy() {
   </div>
 </section>
 
-<!-- ============ THE SOLUTION ============ -->
 <section class="alt">
-  <div class="wrap">
-    <span class="eyebrow">The Solution</span>
+  <div class="narrow">
+    <div class="eyebrow">The Solution</div>
     <h2 class="section-h">A CRM-backed reminder system with humans in the loop where it counts.</h2>
-    <p class="lede">
-      We designed an end-to-end booking lifecycle with the CRM at the center. Every booking —
-      whether it came from the POS, the website, or a manual entry — was automatically synced
-      into the CRM with a clear status. From there, the system ran two parallel jobs: nudging
-      the client to actually show up, and looping in staff the moment something looked off.
-    </p>
-    <p class="lede">
-      The point wasn't to remove humans from the workflow — it was to remove humans from the
-      busywork. Reminders go out automatically. Status changes are tracked automatically.
-      Empty slots get flagged automatically. But the moment a client looks at risk of missing,
-      a real person gets the alert and decides what to do. That's the line we held: automation
-      handles the predictable part, humans handle the judgment part.
-    </p>
-
-    <!-- Workflow visualization -->
+    <p class="lede">We designed an end-to-end booking lifecycle with the CRM at the center. Every booking — whether it came from the POS, the website, or a manual entry — was automatically synced into the CRM with a clear status. From there, the system ran two parallel jobs: nudging the client to actually show up, and looping in staff the moment something looked off.</p>
+    <p class="lede">The point wasn't to remove humans from the workflow — it was to remove humans from the busywork. Reminders go out automatically. Status changes are tracked automatically. Empty slots get flagged automatically. But the moment a client looks at risk of missing, a real person gets the alert and decides what to do. That's the line we held: automation handles the predictable part, humans handle the judgment part.</p>
     <div class="diagram-card">
       <div class="d-eyebrow">How it flows</div>
-      <h3 class="d-title">Booking → Reminder → Show-up (or rebook)</h3>
-      <svg viewBox="0 0 1040 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow diagram">
-        <line x1="60" y1="120" x2="980" y2="120" stroke="rgba(28,181,184,0.35)" stroke-width="2" stroke-dasharray="4 6"/>
-
-        <g transform="translate(60,120)">
-          <circle r="36" fill="#1cb5b8"/>
-          <text y="6" text-anchor="middle" fill="#0e1d3a" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">01</text>
+      <div class="d-title">Booking → Reminder → Show-up (or rebook)</div>
+      <svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>
+            .step-num { font-size: 12px; font-weight: 700; fill: #0e1d3a; }
+            .step-label { font-size: 14px; fill: #ffffff; font-weight: 500; }
+            .step-desc { font-size: 12px; fill: rgba(255,255,255,0.7); }
+            .arrow { stroke: rgba(28,181,184,0.4); stroke-width: 2; fill: none; }
+          </style>
+        </defs>
+        <g>
+          <!-- Step 1 -->
+          <circle cx="80" cy="100" r="35" fill="rgba(28,181,184,0.2)" stroke="#1cb5b8" stroke-width="2"/>
+          <text class="step-num" x="80" y="105" text-anchor="middle">01</text>
+          <text class="step-label" x="80" y="145" text-anchor="middle">Booking captured</text>
+          <text class="step-desc" x="80" y="160" text-anchor="middle">POS or online → CRM</text>
+          
+          <!-- Arrow 1 -->
+          <path class="arrow" d="M 115 100 L 165 100" marker-end="url(#arrowhead)"/>
+          
+          <!-- Step 2 -->
+          <circle cx="220" cy="100" r="35" fill="rgba(28,181,184,0.2)" stroke="#1cb5b8" stroke-width="2"/>
+          <text class="step-num" x="220" y="105" text-anchor="middle">02</text>
+          <text class="step-label" x="220" y="145" text-anchor="middle">Reminders sent</text>
+          <text class="step-desc" x="220" y="160" text-anchor="middle">Email + SMS, multi-touch</text>
+          
+          <!-- Arrow 2 -->
+          <path class="arrow" d="M 255 100 L 305 100" marker-end="url(#arrowhead)"/>
+          
+          <!-- Step 3 -->
+          <circle cx="360" cy="100" r="35" fill="rgba(28,181,184,0.2)" stroke="#1cb5b8" stroke-width="2"/>
+          <text class="step-num" x="360" y="105" text-anchor="middle">03</text>
+          <text class="step-label" x="360" y="145" text-anchor="middle">Status detected</text>
+          <text class="step-desc" x="360" y="160" text-anchor="middle">Confirmed · cancelled · no-show</text>
+          
+          <!-- Arrow 3 -->
+          <path class="arrow" d="M 395 100 L 445 100" marker-end="url(#arrowhead)"/>
+          
+          <!-- Step 4 -->
+          <circle cx="500" cy="100" r="35" fill="rgba(28,181,184,0.2)" stroke="#1cb5b8" stroke-width="2"/>
+          <text class="step-num" x="500" y="105" text-anchor="middle">04</text>
+          <text class="step-label" x="500" y="145" text-anchor="middle">Staff alerted</text>
+          <text class="step-desc" x="500" y="160" text-anchor="middle">At-risk & missed flagged</text>
+          
+          <!-- Arrow 4 -->
+          <path class="arrow" d="M 535 100 L 585 100" marker-end="url(#arrowhead)"/>
+          
+          <!-- Step 5 -->
+          <circle cx="640" cy="100" r="35" fill="rgba(28,181,184,0.2)" stroke="#1cb5b8" stroke-width="2"/>
+          <text class="step-num" x="640" y="105" text-anchor="middle">05</text>
+          <text class="step-label" x="640" y="145" text-anchor="middle">Rebook sequence</text>
+          <text class="step-desc" x="640" y="160" text-anchor="middle">Auto-recovery + human follow</text>
         </g>
-        <text x="60" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">Booking captured</text>
-        <text x="60" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">POS or online → CRM 'Booked'</text>
-
-        <g transform="translate(290,120)">
-          <circle r="36" fill="#142a52" stroke="#1cb5b8" stroke-width="2"/>
-          <text y="6" text-anchor="middle" fill="#1cb5b8" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">02</text>
-        </g>
-        <text x="290" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">Reminders sent</text>
-        <text x="290" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">Email + SMS, multi-touch</text>
-
-        <g transform="translate(520,120)">
-          <circle r="36" fill="#1cb5b8"/>
-          <text y="6" text-anchor="middle" fill="#0e1d3a" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">03</text>
-        </g>
-        <text x="520" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">Status detected</text>
-        <text x="520" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">Confirmed · cancelled · no-show</text>
-
-        <g transform="translate(750,120)">
-          <circle r="36" fill="#142a52" stroke="#1cb5b8" stroke-width="2"/>
-          <text y="6" text-anchor="middle" fill="#1cb5b8" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">04</text>
-        </g>
-        <text x="750" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">Staff alerted</text>
-        <text x="750" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">At-risk &amp; missed flagged</text>
-
-        <g transform="translate(980,120)">
-          <circle r="36" fill="#1cb5b8"/>
-          <text y="6" text-anchor="middle" fill="#0e1d3a" font-family="DM Sans, sans-serif" font-weight="700" font-size="16">05</text>
-        </g>
-        <text x="980" y="195" text-anchor="middle" fill="white" font-family="DM Sans" font-size="13" font-weight="700">Rebook sequence</text>
-        <text x="980" y="215" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Sans" font-size="11">Auto-recovery + human follow</text>
-
-        <text x="60" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">CAPTURE</text>
-        <text x="290" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">NUDGE</text>
-        <text x="520" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">DETECT</text>
-        <text x="750" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">ESCALATE</text>
-        <text x="980" y="65" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="DM Sans" font-size="10" letter-spacing="2">RECOVER</text>
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#1cb5b8"/>
+          </marker>
+        </defs>
       </svg>
     </div>
   </div>
 </section>
 
-<!-- ============ RESULTS ============ -->
 <section>
-  <div class="wrap">
-    <span class="eyebrow">Results</span>
+  <div class="narrow">
+    <div class="eyebrow">Results</div>
     <h2 class="section-h">8 weeks in, no-shows had dropped from 55% to 30%.</h2>
-    <p class="lede">
-      The headline is the no-show rate falling by 45% in relative terms — from a 55% miss
-      rate down to 30%. But the operational story is just as important: the front desk stopped
-      spending its day chasing reminders and started spending it on actual customer service.
-      Empty slots got refilled faster. Clients felt cared for, not pestered. And the studio
-      had, for the first time, a real-time view of which appointments were on track and which
-      ones needed a human touch.
-    </p>
-
+    <p class="lede">The headline is the no-show rate falling by 45% in relative terms — from a 55% miss rate down to 30%. But the operational story is just as important: the front desk stopped spending its day chasing reminders and started spending it on actual customer service. Empty slots got refilled faster. Clients felt cared for, not pestered. And the studio had, for the first time, a real-time view of which appointments were on track and which ones needed a human touch.</p>
     <div class="metrics">
       <div class="metric">
         <div class="num">45<span class="unit">%</span></div>
         <div class="lbl">Reduction in no-shows (55% → 30%) within 8 weeks of go-live</div>
       </div>
       <div class="metric">
-        <div class="num">8 <span class="unit">weeks</span></div>
+        <div class="num">8<span class="unit"> weeks</span></div>
         <div class="lbl">From kickoff to measurable impact on no-show rates</div>
       </div>
       <div class="metric">
@@ -570,122 +528,108 @@ export default function CaseStudy() {
         <div class="lbl">Of bookings now flowing into the CRM with a tracked status</div>
       </div>
       <div class="metric">
-        <div class="num">2 <span class="unit">channels</span></div>
+        <div class="num">2<span class="unit"> channels</span></div>
         <div class="lbl">Email + SMS reminders, with internal Slack/email alerts to staff</div>
       </div>
     </div>
-
-    <!-- Visual: 55% vs 30% bar comparison -->
     <div class="compare-card">
-      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 24px;">
-        <div>
-          <div style="font-size: 11px; color: var(--ink-3); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;">No-show rate</div>
-          <div style="font-size: 22px; font-weight: 700; color: var(--ink);">Before vs. After Automation</div>
-        </div>
-        <div style="font-size: 13px; color: var(--ink-3);">8-week measurement window</div>
-      </div>
-
-      <svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="No-show comparison chart">
-        <!-- Y axis label -->
-        <text x="20" y="28" fill="#5a6a8a" font-family="DM Sans" font-size="11">% of bookings</text>
-
-        <!-- Reference grid lines -->
-        <line x1="80" y1="40" x2="780" y2="40" stroke="#eef1f6" stroke-width="1"/>
-        <line x1="80" y1="90" x2="780" y2="90" stroke="#eef1f6" stroke-width="1"/>
-        <line x1="80" y1="140" x2="780" y2="140" stroke="#eef1f6" stroke-width="1"/>
-        <line x1="80" y1="180" x2="780" y2="180" stroke="#0e1d3a" stroke-width="1.5"/>
-
-        <text x="70" y="44" text-anchor="end" fill="#5a6a8a" font-family="DM Sans" font-size="10">60%</text>
-        <text x="70" y="94" text-anchor="end" fill="#5a6a8a" font-family="DM Sans" font-size="10">40%</text>
-        <text x="70" y="144" text-anchor="end" fill="#5a6a8a" font-family="DM Sans" font-size="10">20%</text>
-        <text x="70" y="184" text-anchor="end" fill="#5a6a8a" font-family="DM Sans" font-size="10">0%</text>
-
-        <!-- Before bar (55%) -->
-        <rect x="200" y="50" width="160" height="130" fill="#dc2626" rx="6"/>
-        <text x="280" y="42" text-anchor="middle" fill="#0e1d3a" font-family="DM Sans" font-size="22" font-weight="700">55%</text>
-        <text x="280" y="200" text-anchor="middle" fill="#5a6a8a" font-family="DM Sans" font-size="13" font-weight="500">Before</text>
-
-        <!-- Arrow showing reduction -->
-        <line x1="395" y1="115" x2="475" y2="115" stroke="#1cb5b8" stroke-width="2" stroke-dasharray="4 4"/>
-        <polygon points="475,115 467,110 467,120" fill="#1cb5b8"/>
-        <text x="435" y="105" text-anchor="middle" fill="#1cb5b8" font-family="DM Sans" font-size="13" font-weight="700">−45%</text>
-
-        <!-- After bar (30%) -->
-        <rect x="510" y="115" width="160" height="65" fill="#1cb5b8" rx="6"/>
-        <text x="590" y="107" text-anchor="middle" fill="#0e1d3a" font-family="DM Sans" font-size="22" font-weight="700">30%</text>
-        <text x="590" y="200" text-anchor="middle" fill="#5a6a8a" font-family="DM Sans" font-size="13" font-weight="500">After</text>
+      <h3 style="text-align: center; margin: 0 0 24px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-3);">No-show rate — Before vs. After Automation</h3>
+      <p style="text-align: center; font-size: 12px; color: var(--ink-3); margin: 0;">8-week measurement window</p>
+      <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>
+            .bar-bg { fill: #f0f4f8; }
+            .bar-before { fill: #dc2626; }
+            .bar-after { fill: #16a34a; }
+            .bar-label { font-size: 14px; font-weight: 700; fill: #0e1d3a; }
+            .bar-pct { font-size: 28px; font-weight: 700; fill: #0e1d3a; }
+            .bar-desc { font-size: 12px; fill: var(--ink-3); }
+            .axis-label { font-size: 12px; fill: var(--ink-3); }
+          </style>
+        </defs>
+        <!-- Y-axis labels -->
+        <text class="axis-label" x="30" y="25">% of bookings</text>
+        <text class="axis-label" x="50" y="55">60%</text>
+        <text class="axis-label" x="50" y="115">40%</text>
+        <text class="axis-label" x="50" y="175">20%</text>
+        <text class="axis-label" x="60" y="235">0%</text>
+        
+        <!-- Grid lines -->
+        <line x1="80" y1="50" x2="580" y2="50" stroke="#e1e7f0" stroke-width="1"/>
+        <line x1="80" y1="110" x2="580" y2="110" stroke="#e1e7f0" stroke-width="1"/>
+        <line x1="80" y1="170" x2="580" y2="170" stroke="#e1e7f0" stroke-width="1"/>
+        <line x1="80" y1="230" x2="580" y2="230" stroke="#e1e7f0" stroke-width="1"/>
+        
+        <!-- Before bar -->
+        <rect class="bar-bg" x="150" y="50" width="80" height="180"/>
+        <rect class="bar-before" x="150" y="50" width="80" height="165"/>
+        <text class="bar-pct" x="190" y="140" text-anchor="middle">55%</text>
+        <text class="bar-label" x="190" y="260" text-anchor="middle">Before</text>
+        
+        <!-- Arrow and reduction -->
+        <g>
+          <path d="M 280 140 L 320 140" stroke="#1cb5b8" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+          <text class="bar-pct" x="300" y="115" text-anchor="middle" fill="#1cb5b8">−45%</text>
+        </g>
+        
+        <!-- After bar -->
+        <rect class="bar-bg" x="370" y="50" width="80" height="180"/>
+        <rect class="bar-after" x="370" y="50" width="80" height="54"/>
+        <text class="bar-pct" x="410" y="90" text-anchor="middle">30%</text>
+        <text class="bar-label" x="410" y="260" text-anchor="middle">After</text>
+        
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#1cb5b8"/>
+          </marker>
+        </defs>
       </svg>
     </div>
-
-    <!-- Before/After Comparison -->
     <div class="ba-grid">
       <div class="ba-card before">
         <h3>Before</h3>
         <ul>
-          <li><span class="icon">×</span><span>55% of booked appointments ending in no-shows</span></li>
-          <li><span class="icon">×</span><span>No centralized CRM — booking data scattered across systems</span></li>
-          <li><span class="icon">×</span><span>Reminders sent manually, when at all</span></li>
-          <li><span class="icon">×</span><span>Missed appointments quietly went unrecovered</span></li>
-          <li><span class="icon">×</span><span>Front desk burning hours on manual follow-up</span></li>
-          <li><span class="icon">×</span><span>No visibility into upcoming vs. completed appointments</span></li>
+          <li><span class="icon">×</span>55% of booked appointments ending in no-shows</li>
+          <li><span class="icon">×</span>No centralized CRM — booking data scattered across systems</li>
+          <li><span class="icon">×</span>Reminders sent manually, when at all</li>
+          <li><span class="icon">×</span>Missed appointments quietly went unrecovered</li>
+          <li><span class="icon">×</span>Front desk burning hours on manual follow-up</li>
+          <li><span class="icon">×</span>No visibility into upcoming vs. completed appointments</li>
         </ul>
       </div>
       <div class="ba-card after">
         <h3>After</h3>
         <ul>
-          <li><span class="icon">✓</span><span>30% no-show rate — a 45% relative reduction in 8 weeks</span></li>
-          <li><span class="icon">✓</span><span>Single CRM source of truth, status auto-updated end-to-end</span></li>
-          <li><span class="icon">✓</span><span>Email + SMS reminders sent automatically before each session</span></li>
-          <li><span class="icon">✓</span><span>Missed appointments trigger an automated rebook sequence</span></li>
-          <li><span class="icon">✓</span><span>Staff alerted only when a real human decision is needed</span></li>
-          <li><span class="icon">✓</span><span>Daily visibility into the studio's full appointment book</span></li>
+          <li><span class="icon">✓</span>30% no-show rate — a 45% relative reduction in 8 weeks</li>
+          <li><span class="icon">✓</span>Single CRM source of truth, status auto-updated end-to-end</li>
+          <li><span class="icon">✓</span>Email + SMS reminders sent automatically before each session</li>
+          <li><span class="icon">✓</span>Missed appointments trigger an automated rebook sequence</li>
+          <li><span class="icon">✓</span>Staff alerted only when a real human decision is needed</li>
+          <li><span class="icon">✓</span>Daily visibility into the studio's full appointment book</li>
         </ul>
       </div>
     </div>
-
     <div class="quote-block">
       <p class="q">"After implementing the new follow-up system, more clients are showing up and actually completing the session. Our team is less stressed about empty slots and more driven to serve."</p>
-      <div class="attrib">— Tim, Owner · US Cryotherapy, Walnut Creek</div>
+      <p class="attrib">— Tim, Owner · US Cryotherapy, Walnut Creek</p>
     </div>
   </div>
 </section>
 
-<!-- ============ WHY THIS MATTERS ============ -->
 <section class="alt">
-  <div class="wrap">
-    <span class="eyebrow">Why this matters</span>
+  <div class="narrow">
+    <div class="eyebrow">Why this matters</div>
     <h2 class="section-h">This pattern works for any appointment-driven service business.</h2>
-
-    <div class="why-block">
-      <p>
-        US Cryotherapy is one example, but the operational shape is everywhere: med spas,
-        cosmetic practices, dental offices, chiropractors, physical therapy clinics, recovery
-        studios, hair and beauty salons, IV bars, infusion clinics — anywhere the business
-        runs on booked sessions and the cost of a no-show is the price of a session plus the
-        wasted staff time around it.
-      </p>
-      <p>
-        The default "fix" most owners try is hiring someone to babysit the calendar. That
-        works until volume grows, the person gets sick, or two locations turn into three.
-        It's a workflow problem, not a headcount problem.
-      </p>
-      <p>
-        The real lift comes from putting the CRM at the center, automating the repeatable
-        nudges, and reserving human time for the moments where judgment actually matters —
-        deciding which at-risk client gets a personal call, which gap in the calendar gets
-        filled with a waitlist offer, which lapsed client deserves a re-engagement. That's
-        where the strategist mindset earns its keep, and that's the work we orchestrate.
-      </p>
-    </div>
+    <p class="lede">US Cryotherapy is one example, but the operational shape is everywhere: med spas, cosmetic practices, dental offices, chiropractors, physical therapy clinics, recovery studios, hair and beauty salons, IV bars, infusion clinics — anywhere the business runs on booked sessions and the cost of a no-show is the price of a session plus the wasted staff time around it.</p>
+    <p class="lede">The default "fix" most owners try is hiring someone to babysit the calendar. That works until volume grows, the person gets sick, or two locations turn into three. It's a workflow problem, not a headcount problem.</p>
+    <p class="lede">The real lift comes from putting the CRM at the center, automating the repeatable nudges, and reserving human time for the moments where judgment actually matters — deciding which at-risk client gets a personal call, which gap in the calendar gets filled with a waitlist offer, which lapsed client deserves a re-engagement. That's where the strategist mindset earns its keep, and that's the work we orchestrate.</p>
   </div>
 </section>
 
-<!-- ============ CAPABILITIES DELIVERED ============ -->
 <section>
-  <div class="wrap">
-    <span class="eyebrow">What we built</span>
+  <div class="narrow">
+    <div class="eyebrow">What we built</div>
     <h2 class="section-h">Core capabilities delivered.</h2>
-
     <div class="cap-grid">
       <div class="cap">
         <div class="cap-num">01</div>
@@ -721,19 +665,24 @@ export default function CaseStudy() {
   </div>
 </section>
 
-<!-- ============ CTA ============ -->
 <section class="cta">
   <div class="narrow">
-    <h2>If your calendar is bleeding <span class="accent">no-shows</span>, we can stop it.</h2>
-    <p>
-      In a working session, we'll map your booking lifecycle, identify the
-      highest-leverage automation in your workflow, and guarantee at least 17 hours/week of
-      recoverable time across your team. Or it's on us.
-    </p>
+    <h2>If your calendar is bleeding no-shows, we can stop it.</h2>
+    <p>In a working session, we'll map your booking lifecycle, identify the highest-leverage automation in your workflow, and guarantee at least 17 hours/week of recoverable time across your team. Or it's on us.</p>
     <a href="https://calendly.com/patrickdanielm/ai-roadmap-session" class="btn">Book Your AI Roadmap Session — $997</a>
     <div class="btn-sub">17-hour time-savings guarantee · Strategy-first, not a sales call</div>
   </div>
-</section>
-    ` }} />
+</section>`;
+
+export default function CaseStudy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <>
+      <style>{styles}</style>
+      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    </>
   );
 }
