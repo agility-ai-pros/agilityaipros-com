@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm install && pnpm exec vite build && pnpm exec node scripts/generate-meta-html.mjs",
+  "outputDirectory": "dist/public",
+  "redirects": [
+    { "source": "/services", "destination": "/ai-roadmap", "statusCode": 301 },
+    { "source": "/who-i-serve", "destination": "/about", "statusCode": 301 },
+    { "source": "/contact", "destination": "/ai-roadmap", "statusCode": 301 }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
