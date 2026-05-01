@@ -7,11 +7,18 @@ export default function Footer() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/services', label: 'Services' },
-    { href: '/case-studies', label: 'Case Studies' },
-    { href: '/who-i-serve', label: 'Who I Serve' },
     { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/ai-roadmap', label: 'AI Roadmap' },
+    { href: '/automation-offers', label: 'Automation Offers' },
+    { href: '/case-studies', label: 'Case Studies' },
+    { href: '/faq', label: 'FAQ' },
+  ];
+
+  const serviceLinks = [
+    { href: '/ai-roadmap', label: 'AI Roadmaps and Strategy' },
+    { href: '/', label: 'AI Operating System Setup' },
+    { href: '/automation-offers', label: 'Custom AI Automations & Builds' },
+    { href: '/', label: 'Multi-LLM Deep Research' },
   ];
 
   return (
@@ -51,26 +58,49 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4 text-sm uppercase tracking-wide" style={{color: 'white'}}>Services</h4>
             <div className="space-y-3">
-              <a href="/services" className="block text-sm hover:underline" style={{color: 'rgba(255,255,255,0.7)'}}>AI Roadmap Session — $997</a>
-              <a href="/services" className="block text-sm hover:underline" style={{color: 'rgba(255,255,255,0.7)'}}>Claude Business Setup</a>
-              <a href="/services" className="block text-sm hover:underline" style={{color: 'rgba(255,255,255,0.7)'}}>Manus AI Builds &amp; Training</a>
+              {serviceLinks.map((link) => (
+                <Link key={link.href} href={link.href}>
+                  <span
+                    className="block cursor-pointer text-sm transition-colors"
+                    style={{
+                      color: hoveredLink === link.href ? '#0D9488' : 'rgba(255,255,255,0.7)',
+                    }}
+                    onMouseEnter={() => setHoveredLink(link.href)}
+                    onMouseLeave={() => setHoveredLink(null)}
+                  >
+                    {link.label}
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
 
           {/* Connect */}
           <div>
             <h4 className="font-bold mb-4 text-sm uppercase tracking-wide" style={{color: 'white'}}>Connect</h4>
-            <a
-              href="https://www.linkedin.com/in/patrickdanielm"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition-colors mb-6"
-              style={{color: 'rgba(255,255,255,0.7)', cursor: 'pointer'}}
-            >
-              <Linkedin size={18} />
-              <span className="text-sm">LinkedIn</span>
-            </a>
-            <p className="text-sm" style={{color: 'rgba(255,255,255,0.7)'}}>I respond within 24 hours.</p>
+            <div className="space-y-3">
+              <a
+                href="https://www.linkedin.com/in/patrickdanielm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 transition-colors"
+                style={{color: 'rgba(255,255,255,0.7)', cursor: 'pointer'}}
+              >
+                <Linkedin size={18} />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+              <br />
+              <a
+                href="https://wa.me/15615630947"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm transition-colors hover:text-teal-400"
+                style={{color: 'rgba(255,255,255,0.7)'}}
+              >
+                Contact
+              </a>
+            </div>
+            <p className="text-sm mt-4" style={{color: 'rgba(255,255,255,0.7)'}}>I respond within 24 hours.</p>
           </div>
         </div>
 
