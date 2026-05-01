@@ -89,6 +89,10 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   body {
     @apply bg-background text-foreground font-sans;
   }
