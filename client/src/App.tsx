@@ -21,6 +21,7 @@ import FAQ from "@/pages/FAQ";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { Router, Route } from "wouter";
+import Footer from "@/components/Footer";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
               return null;
             }} />
             <Route path="/faq" component={FAQ} />
+            <Footer />
           </Router>
         </TooltipProvider>
       </ThemeProvider>

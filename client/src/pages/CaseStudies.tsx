@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import Footer from '@/components/Footer';
+
 
 const GFORCE_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/gforcetoken_hero_b513eb3b.webp';
 const LEXIUSD_IMG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_2026-03-11_18-10-56_2875_139dcaf2.webp';
@@ -208,7 +208,7 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }
