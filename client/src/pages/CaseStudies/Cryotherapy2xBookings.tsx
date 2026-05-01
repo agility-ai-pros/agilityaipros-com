@@ -36,6 +36,8 @@ const styles = `
     position: relative;
     overflow: hidden;
     padding: 0 0 80px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
   .hero::after {
     content: "";
