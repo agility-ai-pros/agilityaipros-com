@@ -4,7 +4,7 @@ export default function AutomationOffers() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#ffffff' }}>
       {/* ===== HERO SECTION ===== */}
-      <section id="hero" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B' }}>
+      <section id="hero" className="py-12 md:py-20 px-4" style={{ backgroundColor: '#1B3A6B' }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{ color: '#ffffff' }}>
             Automation That Removes Bottlenecks
@@ -40,7 +40,7 @@ export default function AutomationOffers() {
       </section>
 
       {/* ===== SECTION 1: INTRO ===== */}
-      <section className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-12 md:py-20 px-4" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: '#1B3A6B' }}>
             From AI ideas to working systems
@@ -57,7 +57,7 @@ export default function AutomationOffers() {
       </section>
 
       {/* ===== SECTION 2: WHAT WE AUTOMATE ===== */}
-      <section className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
+      <section className="py-12 md:py-20 px-4" style={{ backgroundColor: '#f9fafb' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#1B3A6B' }}>
             What automation can handle
@@ -99,7 +99,7 @@ export default function AutomationOffers() {
       </section>
 
       {/* ===== SECTION 3: BEST-FIT CLIENTS ===== */}
-      <section className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-12 md:py-20 px-4" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: '#1B3A6B' }}>
             Best for lean teams that need leverage
@@ -116,7 +116,7 @@ export default function AutomationOffers() {
       </section>
 
       {/* ===== SECTION 4: HOW IT WORKS ===== */}
-      <section className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
+      <section className="py-12 md:py-20 px-4" style={{ backgroundColor: '#f9fafb' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12" style={{ color: '#1B3A6B' }}>
             A simple implementation path
@@ -151,7 +151,7 @@ export default function AutomationOffers() {
       </section>
 
       {/* ===== SECTION 5: EXAMPLE WORKFLOWS ===== */}
-      <section id="example-workflows" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
+      <section id="example-workflows" className="py-12 md:py-20 px-4" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12" style={{ color: '#1B3A6B' }}>
             Examples of what this can look like
@@ -179,7 +179,7 @@ export default function AutomationOffers() {
       </section>
 
       {/* ===== SECTION 6: STRATEGY-LED IMPLEMENTATION ===== */}
-      <section className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
+      <section className="py-12 md:py-20 px-4" style={{ backgroundColor: '#f9fafb' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: '#1B3A6B' }}>
             Strategy-led, implementation-supported
@@ -196,7 +196,7 @@ export default function AutomationOffers() {
       </section>
 
       {/* ===== SECTION 7: WHY THIS MATTERS ===== */}
-      <section className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
+      <section className="py-10 md:py-16 px-4" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: '#1B3A6B' }}>
             Why businesses come to this work
@@ -213,7 +213,7 @@ export default function AutomationOffers() {
       </section>
 
       {/* ===== SECTION 8: FINAL CTA ===== */}
-      <section className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+      <section className="py-12 md:py-20 px-4" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Start with the highest-value bottleneck

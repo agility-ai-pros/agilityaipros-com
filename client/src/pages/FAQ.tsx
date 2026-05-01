@@ -74,7 +74,7 @@ export default function FAQ() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="py-20 md:py-32 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+      <section className="py-12 md:py-20 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Frequently Asked Questions</h1>
           <p className="text-xl md:text-2xl" style={{ color: 'rgba(255,255,255,0.9)' }}>
@@ -84,7 +84,7 @@ export default function FAQ() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-32 px-4 md:px-8">
+      <section className="py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
@@ -125,7 +125,7 @@ export default function FAQ() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24 px-4 md:px-8" style={{ backgroundColor: '#f9fafb' }}>
+      <section className="py-10 md:py-16 px-4 md:px-8" style={{ backgroundColor: '#f9fafb' }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#1B3A6B' }}>
             Still have questions?

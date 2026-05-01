@@ -148,7 +148,7 @@ export default function CaseStudies() {
       </section>
 
       {/* SECTION 1: Boutique Firms, Med Spas & Clinics */}
-      <section className="py-20 md:py-32 px-4 md:px-8" style={{ backgroundColor: '#f9fafb' }}>
+      <section className="py-12 md:py-20 px-4 md:px-8" style={{ backgroundColor: '#f9fafb' }}>
         <div className="max-w-5xl mx-auto">
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1B3A6B' }}>
@@ -167,7 +167,7 @@ export default function CaseStudies() {
       </section>
 
       {/* SECTION 2: Fintech & Ecommerce */}
-      <section className="py-20 md:py-32 px-4 md:px-8">
+      <section className="py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1B3A6B' }}>
@@ -186,7 +186,7 @@ export default function CaseStudies() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 md:py-24 px-4 md:px-8 text-center" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+      <section className="py-10 md:py-16 px-4 md:px-8 text-center" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to see what's possible for your business?

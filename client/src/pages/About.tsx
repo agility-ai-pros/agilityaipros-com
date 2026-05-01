@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="py-20 md:py-32 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+      <section className="py-12 md:py-20 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">About Patrick Daniel</h1>
           <p className="text-xl md:text-2xl" style={{ color: 'rgba(255,255,255,0.9)' }}>
@@ -12,7 +12,7 @@ export default function About() {
       </section>
 
       {/* Main Content */}
-      <section className="py-20 md:py-32 px-4 md:px-8">
+      <section className="py-12 md:py-20 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Photo & Bio Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-16">
@@ -79,7 +79,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24 px-4 md:px-8" style={{ backgroundColor: '#f9fafb' }}>
+      <section className="py-10 md:py-16 px-4 md:px-8" style={{ backgroundColor: '#f9fafb' }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#1B3A6B' }}>
             Ready to turn AI into clear business action?

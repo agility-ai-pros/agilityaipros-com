@@ -16,7 +16,7 @@ export default function Services() {
       </div>
 
       {/* Services Hero */}
-      <section className="navy-section text-center py-12 md:py-20">
+      <section className="navy-section text-centerpy-12 md:py-200">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Three Flagship Services</h1>
           <p className="text-white/90 text-xl max-w-2xl mx-auto">
@@ -26,7 +26,7 @@ export default function Services() {
       </section>
 
       {/* Service 1: AI Roadmap Session */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-10 md:py-16">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
             {/* Left Column */}
@@ -102,7 +102,7 @@ export default function Services() {
       <div className="w-full" style={{height: '2px', backgroundColor: '#e5e7eb'}} />
 
       {/* Service 2: Claude Business Setup */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-10 md:py-16">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
             {/* Left Column */}
@@ -202,7 +202,7 @@ export default function Services() {
       <div className="w-full" style={{height: '2px', backgroundColor: '#e5e7eb'}} />
 
       {/* Service 3: Manus AI Builds & Training */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-10 md:py-16">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
             {/* Left Column */}

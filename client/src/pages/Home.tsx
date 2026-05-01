@@ -103,7 +103,7 @@ export default function Home() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#ffffff' }}>
       {/* ===== 1. HERO SECTION ===== */}
-      <section id="home" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B' }}>
+      <section id="home" className="py-12 md:py-20 px-4" style={{ backgroundColor: '#1B3A6B' }}>
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg md:text-xl font-semibold mb-4 tracking-wide" style={{ color: 'rgba(255,255,255,0.9)' }}>
             Agility AI Pros
@@ -156,7 +156,7 @@ export default function Home() {
       </section>
 
       {/* ===== 2. SERVICES SECTION ===== */}
-      <section id="services" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#ffffff' }}>
+      <section id="services" className="py-12 md:py-20 px-4" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center" style={{ color: '#1B3A6B' }}>
             What I Do
@@ -196,7 +196,7 @@ export default function Home() {
       </section>
 
       {/* ===== 3. CASE STUDIES SECTION ===== */}
-      <section id="case-studies" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+      <section id="case-studies" className="py-12 md:py-20 px-4" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Portfolio</h2>
           <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: '#0D9488' }}>
@@ -281,7 +281,7 @@ export default function Home() {
       </section>
 
       {/* ===== 4. FAQ SECTION ===== */}
-      <section id="faq" className="py-20 md:py-32 px-4" style={{ backgroundColor: '#f9fafb' }}>
+      <section id="faq" className="py-12 md:py-20 px-4" style={{ backgroundColor: '#f9fafb' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center" style={{ color: '#1B3A6B' }}>
             Common Questions
@@ -342,7 +342,7 @@ export default function Home() {
       </section>
 
       {/* ===== 5. FINAL CTA SECTION ===== */}
-      <section className="py-16 md:py-24 px-4 text-center" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
+      <section className="py-10 md:py-16 px-4 text-center" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Turn AI Into Action?</h2>
           <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.9)' }}>
