@@ -1,3 +1,4 @@
+import PageMeta from '@/components/PageMeta';
 import { Link } from 'wouter';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
@@ -12,6 +13,14 @@ export default function GForceToken() {
   }, []);
 
   return (
+    <>
+    <PageMeta
+      title="G-Force Token Platform — Case Study | Agility AI Pros"
+      description="How AI-powered development and strategy helped launch the G-Force Token platform with full tokenomics, a four-step onboarding flow, and investor-ready content."
+      path="/case-studies/gforcetoken"
+      image="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/gforcetoken_hero_b513eb3b.webp"
+      type="article"
+    />
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
 
       {/* Hero */}
@@ -249,5 +258,6 @@ export default function GForceToken() {
 
       <Footer />
     </div>
+    </>
   );
 }

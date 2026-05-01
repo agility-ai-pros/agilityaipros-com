@@ -1,3 +1,4 @@
+import PageMeta from '@/components/PageMeta';
 import { Link } from 'wouter';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
@@ -39,6 +40,13 @@ export default function DueDiligence() {
   }, []);
 
   return (
+    <>
+    <PageMeta
+      title="AI Due Diligence Report — Case Study | Agility AI Pros"
+      description="How Patrick Daniel used multi-LLM deep research to produce a comprehensive due diligence report for a capital-intensive investment decision in under 48 hours."
+      path="/case-studies/due-diligence"
+      type="article"
+    />
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: CREAM, color: INK, fontFamily: "'DM Sans', sans-serif" }}>
 
       {/* Hero */}
@@ -328,5 +336,6 @@ export default function DueDiligence() {
 
       <Footer />
     </div>
+    </>
   );
 }

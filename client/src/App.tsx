@@ -16,7 +16,7 @@ import Cryotherapy2xBookings from "@/pages/CaseStudies/Cryotherapy2xBookings";
 import CryotherapyNoShowReduction from "@/pages/CaseStudies/CryotherapyNoShowReduction";
 import Cryotherapy30kEmailCampaign from "@/pages/CaseStudies/Cryotherapy30kEmailCampaign";
 import { useEffect } from 'react';
-import { useLocation } from 'wouter';
+import { useLocation, Redirect } from 'wouter';
 import FAQ from "@/pages/FAQ";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -85,6 +85,10 @@ function App() {
               return null;
             }} />
             <Route path="/faq" component={FAQ} />
+            {/* Client-side redirects for deleted orphan routes */}
+            <Route path="/services"><Redirect to="/ai-roadmap" /></Route>
+            <Route path="/who-i-serve"><Redirect to="/about" /></Route>
+            <Route path="/contact"><Redirect to="/ai-roadmap" /></Route>
             <Route component={NotFound} />
             </Switch>
             <Footer />

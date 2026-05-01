@@ -1,5 +1,13 @@
+import PageMeta from '@/components/PageMeta';
+
 export default function About() {
   return (
+    <>
+    <PageMeta
+      title="About Patrick Daniel — Agility AI Pros"
+      description="Patrick Daniel is a South Florida AI consultant who helps businesses implement AI tools, automations, and strategies that save time and drive measurable ROI."
+      path="/about"
+    />
     <div className="min-h-screen bg-white">
       {/* Hero */}
       <section className="py-12 md:py-20 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
@@ -99,5 +107,6 @@ export default function About() {
         </div>
       </section>
     </div>
+    </>
   );
 }

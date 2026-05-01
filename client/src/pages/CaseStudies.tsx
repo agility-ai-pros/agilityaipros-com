@@ -1,3 +1,4 @@
+import PageMeta from '@/components/PageMeta';
 import { Link } from 'wouter';
 
 
@@ -135,6 +136,14 @@ const CaseStudyCard = ({ cs }: { cs: any }) => (
 
 export default function CaseStudies() {
   return (
+    <>
+    <PageMeta
+      title="Case Studies — Agility AI Pros"
+      description="Real results from real businesses. See how Patrick Daniel has helped companies in wellness, fintech, e-commerce, and aviation use AI to grow revenue and save time."
+      path="/case-studies"
+      image="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/gforcetoken_hero_b513eb3b.webp"
+      type="website"
+    />
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
 
       {/* Page hero */}
@@ -210,5 +219,6 @@ export default function CaseStudies() {
 
 
     </div>
+    </>
   );
 }

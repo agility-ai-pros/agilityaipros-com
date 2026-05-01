@@ -1,5 +1,13 @@
+import PageMeta from '@/components/PageMeta';
 export default function AIRoadmap() {
   return (
+    <>
+    <PageMeta
+      title="AI Roadmap Session — Agility AI Pros"
+      description="Get a custom AI Roadmap for your business in one 90-minute session. Patrick Daniel maps your workflows, identifies your top AI opportunities, and delivers a clear action plan."
+      path="/ai-roadmap"
+      type="website"
+    />
     <div className="min-h-screen bg-white">
       {/* Hero */}
       <section className="py-12 md:py-20 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
@@ -101,5 +109,6 @@ export default function AIRoadmap() {
         </div>
       </section>
     </div>
+    </>
   );
 }

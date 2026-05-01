@@ -1,3 +1,4 @@
+import PageMeta from '@/components/PageMeta';
 import { useEffect } from 'react';
 
 const styles = `
@@ -651,8 +652,16 @@ export default function CaseStudy() {
 
   return (
     <>
+    <PageMeta
+      title="Cryotherapy 2x Bookings — Case Study | Agility AI Pros"
+      description="How AI-driven marketing automation doubled monthly bookings for a US Cryotherapy franchise using targeted follow-up sequences and smart scheduling."
+      path="/case-studies/cryotherapy-2x-bookings"
+      type="article"
+    />
+    <>
       <style>{styles}</style>
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    </>
     </>
   );
 }

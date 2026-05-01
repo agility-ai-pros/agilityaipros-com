@@ -1,3 +1,4 @@
+import PageMeta from '@/components/PageMeta';
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
@@ -72,6 +73,13 @@ export default function FAQ() {
   ];
 
   return (
+    <>
+    <PageMeta
+      title="FAQ — Agility AI Pros"
+      description="Answers to the most common questions about AI consulting, AI audits, automation builds, and working with Patrick Daniel at Agility AI Pros."
+      path="/faq"
+      type="website"
+    />
     <div className="min-h-screen bg-white">
       {/* Hero */}
       <section className="py-12 md:py-20 px-4 md:px-8" style={{ backgroundColor: '#1B3A6B', color: 'white' }}>
@@ -145,5 +153,6 @@ export default function FAQ() {
         </div>
       </section>
     </div>
+    </>
   );
 }

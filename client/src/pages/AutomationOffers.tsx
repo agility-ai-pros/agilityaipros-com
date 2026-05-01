@@ -1,7 +1,15 @@
+import PageMeta from '@/components/PageMeta';
 export default function AutomationOffers() {
   const whatsappLink = 'https://wa.me/15615630947?text=Hi%20Patrick%2C%20I%27d%20like%20to%20book%20an%20Automation%20Audit.';
 
   return (
+    <>
+    <PageMeta
+      title="AI Automation Offers — Agility AI Pros"
+      description="Custom AI automations built for your business. From lead follow-up to workflow automation, Patrick Daniel delivers done-for-you AI systems that save time and reduce costs."
+      path="/automation-offers"
+      type="website"
+    />
     <div className="min-h-screen" style={{ backgroundColor: '#ffffff' }}>
       {/* ===== HERO SECTION ===== */}
       <section id="hero" className="py-12 md:py-20 px-4" style={{ backgroundColor: '#1B3A6B' }}>
@@ -235,5 +243,6 @@ export default function AutomationOffers() {
         </div>
       </section>
     </div>
+    </>
   );
 }

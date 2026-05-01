@@ -1,3 +1,4 @@
+import PageMeta from '@/components/PageMeta';
 import { Link } from 'wouter';
 import Footer from '@/components/Footer';
 import { useEffect } from 'react';
@@ -12,6 +13,14 @@ export default function LexiUSD() {
   }, []);
 
   return (
+    <>
+    <PageMeta
+      title="LexiUSD Stablecoin Platform — Case Study | Agility AI Pros"
+      description="How Patrick Daniel built the LexiUSD stablecoin platform using AI — including tokenomics, fintech infrastructure, and a full website ready for 2026 launch."
+      path="/case-studies/lexiusd"
+      image="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/lexiusd_screenshot_1_59f36311.webp"
+      type="article"
+    />
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
 
       {/* Hero */}
@@ -130,5 +139,6 @@ export default function LexiUSD() {
 
       <Footer />
     </div>
+    </>
   );
 }

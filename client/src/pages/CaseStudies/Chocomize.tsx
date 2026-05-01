@@ -1,3 +1,4 @@
+import PageMeta from '@/components/PageMeta';
 import { useEffect } from 'react';
 
 const styles = `
@@ -692,8 +693,16 @@ export default function CaseStudy() {
 
   return (
     <>
+    <PageMeta
+      title="Chocomize E-commerce AI — Case Study | Agility AI Pros"
+      description="How AI-powered product descriptions, SEO copy, and automation helped Chocomize scale their custom chocolate e-commerce store and reduce manual work."
+      path="/case-studies/chocomize"
+      type="article"
+    />
+    <>
       <style>{styles}</style>
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    </>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import PageMeta from '@/components/PageMeta';
 
 export default function Home() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
@@ -101,6 +102,12 @@ export default function Home() {
   ];
 
   return (
+    <>
+    <PageMeta
+      title="AI Consulting for South Florida Businesses — Agility AI Pros"
+      description="Patrick Daniel helps South Florida businesses save 5+ hours a week with AI. AI audits, automations, Manus AI websites, and multi-LLM research — results guaranteed."
+      path="/"
+    />
     <div className="min-h-screen" style={{ backgroundColor: '#ffffff' }}>
       {/* ===== 1. HERO SECTION ===== */}
       <section id="home" className="py-12 md:py-20 px-4" style={{ backgroundColor: '#1B3A6B' }}>
@@ -367,5 +374,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

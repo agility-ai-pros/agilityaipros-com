@@ -142,3 +142,22 @@
 - [x] Update CTA copy on 4 new case studies to remove "90-minute" (Chocomize, Cryotherapy 2x Bookings, Cryotherapy No-Show Reduction, Cryotherapy 30K Email Campaign)
 - [x] Add Calendly CTA button to homepage hero alongside WhatsApp ("Book Your AI Roadmap Session — $997")
 - [x] Test all links and CTAs in browser
+
+
+## Phase 18: SEO, Meta Tags, and Navigation Cleanup
+- [x] Remove orphan routes (/services, /who-i-serve, /contact) via wouter Switch + NotFound catch-all
+- [x] Update footer NAVIGATION, SERVICES, and CONNECT columns to match header nav and homepage services
+- [x] Fix scroll-to-top on route navigation with ScrollReset component
+- [x] Reduce section padding on all case study detail pages (80px desktop / 48px mobile)
+- [x] Add active nav link indicator (teal underline + font-weight 600) using wouter useLocation
+- [x] Create robots.txt and sitemap.xml in client/public/
+- [x] Add server-side 301 redirects in Express for orphan routes (work on localhost only)
+- [x] Add client-side Redirect routes in App.tsx for /services, /who-i-serve, /contact
+- [x] Install react-helmet-async and add HelmetProvider to main.tsx
+- [x] Create PageMeta component at client/src/components/PageMeta.tsx
+- [x] Add PageMeta to all 14 pages (Home, About, AIRoadmap, AutomationOffers, CaseStudies, FAQ, LexiUSD, GForceToken, DueDiligence, LegacyAviationFI, CryotherapyNoShowReduction, Cryotherapy2xBookings, Cryotherapy30kEmailCampaign, Chocomize)
+- [x] Remove static OG tags from client/index.html (replaced with bare title tag)
+- [x] Fix CryotherapyNoShowReduction.tsx JSX syntax error (verified parse OK with Babel)
+- [x] Verify all four case study pages (Chocomize, Cryotherapy2xBookings, Cryotherapy30kEmailCampaign, CryotherapyNoShowReduction) parse correctly
+- [x] Verify OG/Twitter meta tags render correctly on Home and case study pages
+- [x] Verify client-side redirects work (/services → /ai-roadmap)
