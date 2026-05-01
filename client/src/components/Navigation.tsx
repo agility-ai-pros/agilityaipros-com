@@ -22,10 +22,10 @@ export default function Navigation() {
   return (
     <nav className="sticky top-0 z-50 bg-white" style={{borderBottom: '1px solid #e5e7eb'}}>
       <div className="container">
-        <div className="flex items-center justify-between h-16 md:h-20 overflow-visible">
+        <div className="flex items-center justify-between h-14 md:h-16 overflow-visible">
           {/* Logo - Brain Icon with Text */}
           <Link href="/">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/39988e50-1da3-11f1-b583-373c1aaf1f7a_9c284c6b.png" alt="Agility AI Pros" className="flex-shrink-0" style={{height: '60px', width: 'auto', cursor: 'pointer'}} />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/39988e50-1da3-11f1-b583-373c1aaf1f7a_9c284c6b.png" alt="Agility AI Pros" className="flex-shrink-0" style={{height: '45px', width: 'auto', cursor: 'pointer'}} />
           </Link>
 
           {/* Desktop Navigation */}
