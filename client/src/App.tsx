@@ -23,6 +23,36 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { Router, Route } from "wouter";
 import Footer from "@/components/Footer";
 
+// Disable browser's automatic scroll restoration so it doesn't fight our scroll-to-top logic
+if (typeof window !== 'undefined' && 'scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual';
+}
+
+/**
+ * ScrollReset fires window.scrollTo(0, 0) on every route change.
+ *
+ * IMPORTANT: wouter v3's useLocation() returns a TUPLE: [locationString, setLocationFn].
+ * The first element is a plain string (the current path), NOT an object with a .pathname.
+ * Writing `const { pathname } = useLocation()` would give undefined and the effect
+ * would never re-fire. The correct destructuring is `const [location] = useLocation()`.
+ *
+ * This component must be mounted inside <Router> so it has access to wouter's context.
+ * It handles all navigation including browser back/forward (wouter listens to popstate).
+ * For in-page hash navigation, we skip the scroll so the browser can scroll to the anchor.
+ */
+function ScrollReset() {
+  // location is a plain string like "/about" or "/case-studies/chocomize"
+  const [location] = useLocation();
+
+  useEffect(() => {
+    // Skip scroll reset for hash navigation (in-page anchors)
+    if (window.location.hash) return;
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+}
+
 function App() {
   return (
     <ErrorBoundary>
@@ -30,6 +60,8 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router>
+            {/* ScrollReset must be inside Router to access wouter context */}
+            <ScrollReset />
             <Navigation />
             <Route path="/" component={Home} />
             <Route path="/about" component={About} />
@@ -45,7 +77,6 @@ function App() {
             <Route path="/case-studies/cryotherapy-30k-email-campaign" component={Cryotherapy30kEmailCampaign} />
             <Route path="/case-studies/chocomize" component={Chocomize} />
             <Route path="/case-studies/email-campaign" component={() => {
-              const [, navigate] = useLocation();
               useEffect(() => {
                 window.location.href = '/case-studies/cryotherapy-30k-email-campaign';
               }, []);

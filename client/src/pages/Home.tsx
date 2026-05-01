@@ -183,6 +183,7 @@ export default function Home() {
                     href={service.link}
                     className="inline-block mt-4 font-bold transition-all"
                     style={{ color: '#0D9488' }}
+                    onClick={() => window.scrollTo(0, 0)}
                     onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.8')}
                     onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
                   >
@@ -220,6 +221,7 @@ export default function Home() {
                     href={`/case-studies/${study.slug}`}
                     className="block p-8 rounded-2xl hover:shadow-lg transition-all"
                     style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     <div
                       className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
@@ -248,6 +250,7 @@ export default function Home() {
                     href={`/case-studies/${study.slug}`}
                     className="block p-8 rounded-2xl hover:shadow-lg transition-all"
                     style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     <div
                       className="inline-block px-4 py-2 rounded-full text-xs font-bold mb-4 uppercase tracking-wide"
@@ -271,6 +274,7 @@ export default function Home() {
               href="/case-studies"
               className="inline-block text-lg font-bold transition-all"
               style={{ color: '#0D9488' }}
+              onClick={() => window.scrollTo(0, 0)}
               onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.8')}
               onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
             >
@@ -334,6 +338,7 @@ export default function Home() {
               href="/faq"
               className="inline-block px-8 py-4 text-white rounded-lg font-bold text-lg"
               style={{ backgroundColor: '#0D9488', cursor: 'pointer' }}
+              onClick={() => window.scrollTo(0, 0)}
             >
               View Full FAQ
             </a>
