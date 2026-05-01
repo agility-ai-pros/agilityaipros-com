@@ -192,7 +192,7 @@ export default function CryotherapyNoShowReduction() {
       </header>
 
       {/* Problem Section */}
-      <section style={{ padding: '90px 0' }}>
+      <section style={{ padding: '80px 0' }}>
         <div style={{ maxWidth: '860px', margin: '0 auto', padding: '0 28px' }}>
           <div style={{
             display: 'inline-block',
@@ -237,7 +237,7 @@ export default function CryotherapyNoShowReduction() {
       </section>
 
       {/* Solution Section */}
-      <section style={{ padding: '90px 0', background: '#f7f9fc' }}>
+      <section style={{ padding: '80px 0', background: '#f7f9fc' }}>
         <div style={{ maxWidth: '860px', margin: '0 auto', padding: '0 28px' }}>
           <div style={{
             display: 'inline-block',
@@ -391,7 +391,7 @@ export default function CryotherapyNoShowReduction() {
       </section>
 
       {/* Why This Matters Section */}
-      <section style={{ padding: '90px 0' }}>
+      <section style={{ padding: '80px 0' }}>
         <div style={{ maxWidth: '860px', margin: '0 auto', padding: '0 28px' }}>
           <div style={{
             display: 'inline-block',
@@ -444,7 +444,7 @@ export default function CryotherapyNoShowReduction() {
       </section>
 
       {/* Quote Section */}
-      <section style={{ padding: '90px 0', background: '#f7f9fc' }}>
+      <section style={{ padding: '80px 0', background: '#f7f9fc' }}>
         <div style={{ maxWidth: '860px', margin: '0 auto', padding: '0 28px' }}>
           <div style={{
             margin: '56px 0 0',
@@ -478,7 +478,7 @@ export default function CryotherapyNoShowReduction() {
         background: 'linear-gradient(180deg, #142a52 0%, #0e1d3a 100%)',
         color: '#ffffff',
         textAlign: 'center',
-        padding: '90px 24px',
+        padding: '80px 24px',
       }}>
         <div style={{ maxWidth: '620px', margin: '0 auto' }}>
           <h2 style={{

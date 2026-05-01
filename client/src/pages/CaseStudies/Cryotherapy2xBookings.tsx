@@ -134,7 +134,7 @@ const styles = `
   }
   .meta-value { font-size: 15px; color: var(--white); font-weight: 500; }
   /* ---------- SECTIONS ---------- */
-  section:not([aria-label*="Notifications"]) { padding: 64px 0; }
+  section:not([aria-label*="Notifications"]) { padding: 80px 0; }
   section.alt { background: var(--bg-soft); }
   h2.section-h {
     font-size: 38px;
@@ -335,7 +335,7 @@ const styles = `
     background: linear-gradient(180deg, var(--navy-2) 0%, var(--navy) 100%);
     color: var(--white);
     text-align: center;
-    padding: 90px 24px;
+    padding: 80px 24px;
   }
   .cta h2 {
     font-size: 38px;
@@ -376,7 +376,7 @@ const styles = `
     .metrics { grid-template-columns: repeat(2, 1fr); }
     .ba-grid { grid-template-columns: 1fr; }
     .cap-grid { grid-template-columns: 1fr; }
-    section:not([aria-label*="Notifications"]) { padding: 40px 0; }
+    section:not([aria-label*="Notifications"]) { padding: 48px 0; }
   }
 `;
 

@@ -20,8 +20,9 @@ import { useLocation } from 'wouter';
 import FAQ from "@/pages/FAQ";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "./components/ErrorBoundary";
-import { Router, Route } from "wouter";
+import { Router, Route, Switch } from "wouter";
 import Footer from "@/components/Footer";
+import NotFound from "@/pages/NotFound";
 
 // Disable browser's automatic scroll restoration so it doesn't fight our scroll-to-top logic
 if (typeof window !== 'undefined' && 'scrollRestoration' in window.history) {
@@ -63,6 +64,7 @@ function App() {
             {/* ScrollReset must be inside Router to access wouter context */}
             <ScrollReset />
             <Navigation />
+            <Switch>
             <Route path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/ai-roadmap" component={AIRoadmap} />
@@ -83,6 +85,8 @@ function App() {
               return null;
             }} />
             <Route path="/faq" component={FAQ} />
+            <Route component={NotFound} />
+            </Switch>
             <Footer />
           </Router>
         </TooltipProvider>
