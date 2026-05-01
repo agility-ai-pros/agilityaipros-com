@@ -133,7 +133,7 @@ const styles = `
   }
   .meta-value { font-size: 15px; color: var(--white); font-weight: 500; }
   /* ---------- SECTIONS ---------- */
-  section { padding: 90px 0; }
+  section:not([aria-label*="Notifications"]) { padding: 90px 0; }
   section.alt { background: var(--bg-soft); }
   h2.section-h {
     font-size: 38px;
@@ -375,7 +375,7 @@ const styles = `
     .metrics { grid-template-columns: repeat(2, 1fr); }
     .ba-grid { grid-template-columns: 1fr; }
     .cap-grid { grid-template-columns: 1fr; }
-    section { padding: 60px 0; }
+    section:not([aria-label*="Notifications"]) { padding: 60px 0; }
   }
 `;
 
