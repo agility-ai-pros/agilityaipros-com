@@ -35,7 +35,7 @@ const styles = `
     color: var(--white);
     position: relative;
     overflow: hidden;
-    padding: 0 0 80px;
+    padding: 32px 0 80px;
   }
   .hero::after {
     content: "";
