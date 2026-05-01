@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /services
+Disallow: /who-i-serve
+Disallow: /contact
+Sitemap: https://agilityaipros.com/sitemap.xml

@@ -43,6 +43,11 @@ async function startServer() {
       createContext,
     })
   );
+  // 301 redirects for deleted orphan routes — must be before static/Vite middleware
+  app.get('/services', (_req, res) => res.redirect(301, '/ai-roadmap'));
+  app.get('/who-i-serve', (_req, res) => res.redirect(301, '/about'));
+  app.get('/contact', (_req, res) => res.redirect(301, '/ai-roadmap'));
+
   // development mode uses Vite, production mode uses static files
   if (process.env.NODE_ENV === "development") {
     await setupVite(app, server);
