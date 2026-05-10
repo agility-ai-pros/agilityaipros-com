@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const BOOKING_LINK = 'https://calendly.com/patrickdanielm/ai-roadmap-session-clone';
+const BOOKING_LINK = 'https://calendly.com/patrickdanielm/shopify-ai-roadmap';
 
 // Seven AI employee definitions
 const AI_EMPLOYEES = [
@@ -191,7 +191,7 @@ export default function HireYourAIEmployees() {
                 </a>
                 <span style={{ fontSize: '0.875rem', color: 'rgba(248,249,250,0.45)' }}>
                   Prefer DMs?{' '}
-                  <a href="https://x.com" target="_blank" rel="noopener noreferrer" style={{ color: '#9B72CF', textDecoration: 'underline' }}>
+                  <a href="https://x.com/patrickdanielal" target="_blank" rel="noopener noreferrer" style={{ color: '#9B72CF', textDecoration: 'underline' }}>
                     Message 'EMPLOYEE' on X
                   </a>
                 </span>
@@ -452,7 +452,7 @@ export default function HireYourAIEmployees() {
           </p>
           <p style={{ marginTop: '8px', fontSize: '0.875rem', color: 'rgba(248,249,250,0.4)' }}>
             Or{' '}
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer" style={{ color: '#9B72CF', textDecoration: 'underline' }}>
+            <a href="https://x.com/patrickdanielal" target="_blank" rel="noopener noreferrer" style={{ color: '#9B72CF', textDecoration: 'underline' }}>
               DM 'EMPLOYEE' on X
             </a>
           </p>

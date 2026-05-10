@@ -177,3 +177,8 @@
 - [x] Add route to generate-meta-html.mjs post-build script
 - [x] Add route to sitemap.xml
 - [x] Replace [PAYPAL_LINK] with Calendly URL: https://calendly.com/patrickdanielm/ai-roadmap-session-clone (Calendly handles PayPal payment natively)
+
+## Phase 21: /hire-your-ai-employees Follow-up
+- [x] Update Calendly slug from ai-roadmap-session-clone to shopify-ai-roadmap
+- [x] Add /hire-your-ai-employees to footer Services column
+- [x] Wire X DM links to https://x.com/patrickdanielal
