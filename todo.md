@@ -182,3 +182,8 @@
 - [x] Update Calendly slug from ai-roadmap-session-clone to shopify-ai-roadmap
 - [x] Add /hire-your-ai-employees to footer Services column
 - [x] Wire X DM links to https://x.com/patrickdanielal
+
+## Phase 22: Footer Cleanup
+- [x] Replace footer placeholder links (AI Operating System Setup → /automation-offers, Multi-LLM Deep Research → /automation-offers)
+- [x] Add X/@patrickdanielal to footer Connect column
+- [x] Confirm Calendly link https://calendly.com/patrickdanielm/shopify-ai-roadmap is live (confirmed by user)

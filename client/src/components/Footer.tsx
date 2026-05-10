@@ -17,9 +17,9 @@ export default function Footer() {
   const serviceLinks = [
     { href: '/ai-roadmap', label: 'AI Roadmaps and Strategy' },
     { href: '/hire-your-ai-employees', label: 'Shopify AI Roadmap — $197' },
-    { href: '/', label: 'AI Operating System Setup' },
+    { href: '/automation-offers', label: 'AI Operating System Setup' },
     { href: '/automation-offers', label: 'Custom AI Automations & Builds' },
-    { href: '/', label: 'Multi-LLM Deep Research' },
+    { href: '/automation-offers', label: 'Multi-LLM Deep Research' },
   ];
 
   return (
@@ -91,6 +91,15 @@ export default function Footer() {
                 <span className="text-sm">LinkedIn</span>
               </a>
               <br />
+              <a
+                href="https://x.com/patrickdanielal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm transition-colors hover:text-teal-400"
+                style={{color: 'rgba(255,255,255,0.7)'}}
+              >
+                X — @patrickdanielal
+              </a>
               <a
                 href="https://wa.me/15615630947"
                 target="_blank"
