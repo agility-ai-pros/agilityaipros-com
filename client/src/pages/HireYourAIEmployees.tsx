@@ -70,12 +70,18 @@ const HOW_IT_WORKS = [
   },
   {
     step: '03',
+    title: 'Complete your pre-session form',
+    desc: 'A 2-minute form appears right after you book. Your store URL, revenue range, and biggest bottleneck. It\'s how I show up to the call already knowing your store — not learning it on your clock.',
+    icon: '📋',
+  },
+  {
+    step: '04',
     title: 'I review your store',
     desc: 'Before we talk, I look at your actual PDPs, policies, and catalog. Your session is specific to your store, not a template.',
     icon: '🔍',
   },
   {
-    step: '04',
+    step: '05',
     title: 'You get your roadmap',
     desc: '45-minute working session. You leave with a prioritized AI employee plan and a 30-day roadmap doc.',
     icon: '🗺️',
