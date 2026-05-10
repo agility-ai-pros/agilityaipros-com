@@ -170,3 +170,10 @@
 - [x] Verify Issue 1 with: curl -s https://agilityaipros.com/ai-roadmap | grep -E "og:title|og:description" — verified in dist/public/ai-roadmap/index.html has page-specific tags
 - [x] Verify Issue 2 with: redirect HTML files generated for /services, /who-i-serve, /contact, /case-studies/email-campaign
 - [x] Verify Issue 3 by visiting each route — confirmed in browser console: color rgb(13,148,136), fontWeight 600, borderBottom 2px solid teal
+
+## Phase 20: /hire-your-ai-employees Landing Page
+- [x] Create HireYourAIEmployees.tsx with all 7 sections (hero, what we cover, how it works, who it's for, what you get, about, final CTA)
+- [x] Register route /hire-your-ai-employees in App.tsx
+- [x] Add route to generate-meta-html.mjs post-build script
+- [x] Add route to sitemap.xml
+- [ ] Replace [PAYPAL_LINK] and [CALENDLY_LINK] with live URLs before publishing

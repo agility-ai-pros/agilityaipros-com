@@ -23,6 +23,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { Router, Route, Switch } from "wouter";
 import Footer from "@/components/Footer";
 import NotFound from "@/pages/NotFound";
+import HireYourAIEmployees from "@/pages/HireYourAIEmployees";
 
 // Disable browser's automatic scroll restoration so it doesn't fight our scroll-to-top logic
 if (typeof window !== 'undefined' && 'scrollRestoration' in window.history) {
@@ -85,6 +86,7 @@ function App() {
               return null;
             }} />
             <Route path="/faq" component={FAQ} />
+            <Route path="/hire-your-ai-employees" component={HireYourAIEmployees} />
             {/* Client-side redirects for deleted orphan routes */}
             <Route path="/services"><Redirect to="/ai-roadmap" /></Route>
             <Route path="/who-i-serve"><Redirect to="/about" /></Route>

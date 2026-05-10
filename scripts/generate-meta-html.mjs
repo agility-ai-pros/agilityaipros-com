@@ -70,6 +70,11 @@ const ROUTES = [
     type: 'website',
   },
   {
+    path: '/hire-your-ai-employees',
+    title: 'Hire Your AI Employees — Shopify AI Roadmap Session | Agility AI Pros',
+    description: 'Install AI employees in your Shopify store. One 45-minute session maps out Athena, Hermes, Themis, Odysseus, Apollo, Iris & Thales for your specific store. $197. No retainer.',
+  },
+  {
     path: '/faq',
     title: 'FAQ — Agility AI Pros',
     description: 'Answers to common questions about AI Roadmap sessions, automation offers, implementation, and what to expect when working with Agility AI Pros.',
