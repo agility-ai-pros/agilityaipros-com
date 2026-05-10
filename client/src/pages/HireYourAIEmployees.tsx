@@ -253,7 +253,7 @@ export default function HireYourAIEmployees() {
       `}</style>
 
       {/* ── 1. HERO ─────────────────────────────────────────────── */}
-      <section style={{ background: 'linear-gradient(135deg, #0F1117 0%, #1a1d2e 60%, #0F1117 100%)', paddingTop: '80px', paddingBottom: '80px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+      <section style={{ background: 'linear-gradient(135deg, #0F1117 0%, #1a1d2e 60%, #0F1117 100%)', paddingTop: '40px', paddingBottom: '80px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="hae-container">
           <div className="hae-hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
             {/* Left */}
@@ -261,7 +261,7 @@ export default function HireYourAIEmployees() {
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663309158428/cnrafRbpmoLfeKqyJTjWuU/shopify-logo-green_8e9b6275.png"
                 alt="Shopify"
-                style={{ width: '40px', height: '40px', objectFit: 'contain', marginBottom: '12px', display: 'block' }}
+                style={{ width: '40px', height: '40px', objectFit: 'contain', marginBottom: '12px', display: 'block', margin: '0 auto 12px' }}
               />
               <span className="hae-label">Shopify AI Roadmap Session</span>
               <h1 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 900, lineHeight: 1.1, margin: '0 0 20px', color: '#F8F9FA' }}>
