@@ -1,9 +1,6 @@
-// Replace [PAYPAL_LINK] and [CALENDLY_LINK] with live URLs before publishing
-
 import { useEffect } from 'react';
 
-const PAYPAL_LINK = '[PAYPAL_LINK]';
-// CALENDLY_LINK is intentionally NOT exposed on this page — only accessible post-payment
+const BOOKING_LINK = 'https://calendly.com/patrickdanielm/ai-roadmap-session-clone';
 
 // Seven AI employee definitions
 const AI_EMPLOYEES = [
@@ -61,15 +58,15 @@ const AI_EMPLOYEES = [
 const HOW_IT_WORKS = [
   {
     step: '01',
-    title: 'Pay $197 via PayPal',
-    desc: 'Secure checkout. One-time. No subscription.',
-    icon: '💳',
+    title: 'Click "Book for $197"',
+    desc: 'You\'ll land on a Calendly booking page — pick a time that works for you.',
+    icon: '📅',
   },
   {
     step: '02',
-    title: 'Book your 45-minute call',
-    desc: 'After payment, you\'ll be redirected to pick a time on Calendly.',
-    icon: '📅',
+    title: 'Pay $197 via PayPal',
+    desc: 'Payment is collected securely inside Calendly. One-time. No subscription. Your slot is confirmed instantly.',
+    icon: '💳',
   },
   {
     step: '03',
@@ -184,7 +181,7 @@ export default function HireYourAIEmployees() {
                 If you read the May 2026 AI Employees guide, this is where you turn the playbook into action.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'flex-start' }}>
-                <a href={PAYPAL_LINK} className="hae-btn-primary">
+                <a href={BOOKING_LINK} className="hae-btn-primary">
                   Book for $197
                 </a>
                 <span style={{ fontSize: '0.875rem', color: 'rgba(248,249,250,0.45)' }}>
@@ -396,11 +393,11 @@ export default function HireYourAIEmployees() {
             ))}
           </ul>
           <div style={{ textAlign: 'center' }}>
-            <a href={PAYPAL_LINK} className="hae-btn-primary" style={{ fontSize: '1.15rem', padding: '18px 48px' }}>
+            <a href={BOOKING_LINK} className="hae-btn-primary" style={{ fontSize: '1.15rem', padding: '18px 48px' }}>
               Book for $197
             </a>
             <p style={{ marginTop: '12px', fontSize: '0.85rem', color: 'rgba(248,249,250,0.4)' }}>
-              Secure payment via PayPal. After checkout, you'll select your call time on Calendly.
+              Payment collected securely via PayPal inside Calendly. Your slot is confirmed the moment you pay.
             </p>
           </div>
         </div>
@@ -442,11 +439,11 @@ export default function HireYourAIEmployees() {
           <p style={{ fontSize: '1rem', color: 'rgba(248,249,250,0.55)', marginBottom: '36px', lineHeight: 1.6 }}>
             One session. One roadmap. Seven AI employees, prioritized for your specific store.
           </p>
-          <a href={PAYPAL_LINK} className="hae-btn-primary" style={{ fontSize: '1.2rem', padding: '20px 56px' }}>
+          <a href={BOOKING_LINK} className="hae-btn-primary" style={{ fontSize: '1.2rem', padding: '20px 56px' }}>
             Book for $197
           </a>
           <p style={{ marginTop: '14px', fontSize: '0.85rem', color: 'rgba(248,249,250,0.35)' }}>
-            Secure checkout via PayPal → book your call time on Calendly.
+            Pick your time on Calendly. Pay $197 via PayPal. Confirmed instantly.
           </p>
           <p style={{ marginTop: '8px', fontSize: '0.875rem', color: 'rgba(248,249,250,0.4)' }}>
             Or{' '}

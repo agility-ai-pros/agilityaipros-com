@@ -176,4 +176,4 @@
 - [x] Register route /hire-your-ai-employees in App.tsx
 - [x] Add route to generate-meta-html.mjs post-build script
 - [x] Add route to sitemap.xml
-- [ ] Replace [PAYPAL_LINK] and [CALENDLY_LINK] with live URLs before publishing
+- [x] Replace [PAYPAL_LINK] with Calendly URL: https://calendly.com/patrickdanielm/ai-roadmap-session-clone (Calendly handles PayPal payment natively)
