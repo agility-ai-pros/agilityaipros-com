@@ -242,15 +242,15 @@ export default function HireYourAIEmployees() {
           .hae-section { padding: 56px 0; }
           .hae-grid-3 { grid-template-columns: 1fr !important; }
           .hae-grid-2 { grid-template-columns: 1fr !important; }
-          .hae-grid-4 { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+          .hae-grid-4 { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; }
           .hae-hero-grid { grid-template-columns: 1fr !important; }
           .hae-employee-grid { grid-template-columns: repeat(2, 1fr) !important; }
-          .hae-grid-4 .hae-card { padding: 16px 14px !important; }
-          .hae-grid-4 .hae-card > div:first-child { margin-bottom: 8px !important; }
+          .hae-grid-4 .hae-card { padding: 20px !important; }
+          .hae-grid-4 .hae-card > div:first-child { margin-bottom: 6px !important; }
           .hae-step-card { height: auto !important; min-height: 0 !important; }
         }
         @media (max-width: 480px) {
-          .hae-grid-4 { grid-template-columns: 1fr 1fr !important; }
+          .hae-grid-4 { grid-template-columns: 1fr !important; }
           .hae-employee-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
