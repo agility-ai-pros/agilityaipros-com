@@ -400,9 +400,9 @@ export default function HireYourAIEmployees() {
           <span className="hae-label">The Process</span>
           <h2 className="hae-h2">How It Works</h2>
           <div className="hae-divider" />
-          <div className="hae-grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
+          <div className="hae-grid-4" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
             {HOW_IT_WORKS.map((step, i) => (
-              <div key={step.step} style={{ position: 'relative' }}>
+              <div key={step.step} style={{ position: 'relative', flex: '0 0 calc(20% - 16px)', minWidth: '160px', maxWidth: '220px' }}>
                 {/* Connector line */}
                 {i < HOW_IT_WORKS.length - 1 && (
                   <div style={{ position: 'absolute', top: '28px', left: 'calc(100% - 10px)', width: '20px', height: '2px', background: 'rgba(149,191,71,0.3)', zIndex: 1 }} className="hae-connector" />
