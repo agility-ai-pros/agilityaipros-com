@@ -39,7 +39,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-sm uppercase tracking-wide" style={{color: 'white'}}>Navigation</h4>
             <div className="space-y-3">
               {navLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
+                <Link key={link.label} href={link.href}>
                   <span
                     className="block cursor-pointer text-sm transition-colors"
                     style={{
@@ -60,7 +60,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-sm uppercase tracking-wide" style={{color: 'white'}}>Services</h4>
             <div className="space-y-3">
               {serviceLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
+                <Link key={link.label} href={link.href}>
                   <span
                     className="block cursor-pointer text-sm transition-colors"
                     style={{
