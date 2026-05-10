@@ -3,88 +3,171 @@ import { useEffect } from 'react';
 const BOOKING_LINK = 'https://calendly.com/patrickdanielm/shopify-ai-roadmap';
 
 // Seven AI employee definitions
+// SVG icon components — 28×28 viewBox, 1.5px stroke, no fill
+const IconPen = ({ color }: { color: string }) => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 5l4 4L9 23H5v-4L19 5z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M16 8l4 4" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+const IconBolt = ({ color }: { color: string }) => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 3L6 16h8l-2 9 12-13h-8l2-9z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+const IconScale = ({ color }: { color: string }) => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 4v20M4 24h20" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M7 10l-4 8h8L7 10zM21 10l-4 8h8l-4-8z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+const IconCompass = ({ color }: { color: string }) => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="10" stroke={color} strokeWidth="1.5"/>
+    <path d="M18 10l-3 7-4 2 3-7 4-2z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+const IconGrid = ({ color }: { color: string }) => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4" y="4" width="8" height="8" rx="1" stroke={color} strokeWidth="1.5"/>
+    <rect x="16" y="4" width="8" height="8" rx="1" stroke={color} strokeWidth="1.5"/>
+    <rect x="4" y="16" width="8" height="8" rx="1" stroke={color} strokeWidth="1.5"/>
+    <rect x="16" y="16" width="8" height="8" rx="1" stroke={color} strokeWidth="1.5"/>
+  </svg>
+);
+const IconChat = ({ color }: { color: string }) => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 6h18a1 1 0 011 1v12a1 1 0 01-1 1H9l-5 4V7a1 1 0 011-1z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M9 11h10M9 15h6" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+const IconChart = ({ color }: { color: string }) => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 22h20" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M7 22V14M12 22V10M17 22V16M22 22V7" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+
 const AI_EMPLOYEES = [
   {
     name: 'Athena',
     role: 'Brand Voice',
-    icon: '🦉',
+    Icon: IconPen,
     color: '#9B72CF',
     desc: 'Consistent tone across every PDP, email, and collection page',
   },
   {
     name: 'Hermes',
     role: 'Product Sourcing',
-    icon: '⚡',
+    Icon: IconBolt,
     color: '#95BF47',
     desc: 'Supplier research and product sourcing workflows',
   },
   {
     name: 'Themis',
     role: 'Policy & Trust',
-    icon: '⚖️',
+    Icon: IconScale,
     color: '#9B72CF',
     desc: 'Policy-aligned copy so marketing never contradicts your promises',
   },
   {
     name: 'Odysseus',
     role: 'Dealer Outreach',
-    icon: '🧭',
+    Icon: IconCompass,
     color: '#95BF47',
     desc: 'Application strategy for brands that don\'t openly list programs',
   },
   {
     name: 'Apollo',
     role: 'Catalog Audit',
-    icon: '☀️',
+    Icon: IconGrid,
     color: '#9B72CF',
     desc: 'What to keep, cut, and elevate in your product catalog',
   },
   {
     name: 'Iris',
     role: 'Pre-Purchase FAQ',
-    icon: '🌈',
+    Icon: IconChat,
     color: '#95BF47',
     desc: 'FAQ flows on your highest-ticket pages to reduce drop-off',
   },
   {
     name: 'Thales',
     role: 'Analytics → Action',
-    icon: '📐',
+    Icon: IconChart,
     color: '#9B72CF',
     desc: 'Decision loop so data drives the next move',
   },
 ];
 
+// Step SVG icons
+const IconCalendar = ({ color }: { color: string }) => (
+  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="3" y="5" width="20" height="18" rx="2" stroke={color} strokeWidth="1.5"/>
+    <path d="M3 10h20" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M8 3v4M18 3v4" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+    <circle cx="9" cy="15" r="1" fill={color}/>
+    <circle cx="13" cy="15" r="1" fill={color}/>
+    <circle cx="17" cy="15" r="1" fill={color}/>
+  </svg>
+);
+const IconCard = ({ color }: { color: string }) => (
+  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="3" y="7" width="20" height="13" rx="2" stroke={color} strokeWidth="1.5"/>
+    <path d="M3 11h20" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M7 16h4" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+const IconClipboard = ({ color }: { color: string }) => (
+  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="5" y="4" width="16" height="19" rx="2" stroke={color} strokeWidth="1.5"/>
+    <path d="M9 4V6a1 1 0 001 1h6a1 1 0 001-1V4" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M9 12h8M9 16h5" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+const IconSearch = ({ color }: { color: string }) => (
+  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="11" cy="11" r="7" stroke={color} strokeWidth="1.5"/>
+    <path d="M16.5 16.5l5 5" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+const IconMap = ({ color }: { color: string }) => (
+  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 5l7 3 6-3 7 3v14l-7-3-6 3-7-3V5z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M10 8v13M16 5v13" stroke={color} strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+
 const HOW_IT_WORKS = [
   {
     step: '01',
     title: 'Click "Book for $197"',
-    desc: 'You\'ll land on a Calendly booking page — pick a time that works for you.',
-    icon: '📅',
+    desc: 'You\'ll land on a Calendly booking page \u2014 pick a time that works for you.',
+    StepIcon: IconCalendar,
   },
   {
     step: '02',
     title: 'Pay $197 via PayPal',
     desc: 'Payment is collected securely inside Calendly. One-time. No subscription. Your slot is confirmed instantly.',
-    icon: '💳',
+    StepIcon: IconCard,
   },
   {
     step: '03',
     title: 'Complete your pre-session form',
-    desc: 'A 2-minute form appears right after you book. Your store URL, revenue range, and biggest bottleneck. It\'s how I show up to the call already knowing your store — not learning it on your clock.',
-    icon: '📋',
+    desc: 'A 2-minute form appears right after you book. Your store URL, revenue range, and biggest bottleneck. It\'s how I show up to the call already knowing your store \u2014 not learning it on your clock.',
+    StepIcon: IconClipboard,
   },
   {
     step: '04',
     title: 'I review your store',
     desc: 'Before we talk, I look at your actual PDPs, policies, and catalog. Your session is specific to your store, not a template.',
-    icon: '🔍',
+    StepIcon: IconSearch,
   },
   {
     step: '05',
     title: 'You get your roadmap',
     desc: '45-minute working session. You leave with a prioritized AI employee plan and a 30-day roadmap doc.',
-    icon: '🗺️',
+    StepIcon: IconMap,
   },
 ];
 
@@ -219,7 +302,7 @@ export default function HireYourAIEmployees() {
                       gridColumn: i === 6 ? '2' : undefined, // center the 7th card
                     }}
                   >
-                    <div style={{ fontSize: '1.8rem', marginBottom: '6px' }}>{emp.icon}</div>
+                    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '8px' }}><emp.Icon color={emp.color} /></div>
                     <div style={{ fontWeight: 700, fontSize: '0.9rem', color: emp.color, marginBottom: '2px' }}>{emp.name}</div>
                     <div style={{ fontSize: '0.7rem', color: 'rgba(248,249,250,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>{emp.role}</div>
                   </div>
@@ -245,7 +328,7 @@ export default function HireYourAIEmployees() {
             {/* Column 1 */}
             <div className="hae-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '1.4rem' }}>🦉⚖️</span>
+                <span style={{ display: 'flex', gap: '4px' }}><IconPen color="#9B72CF" /><IconScale color="#9B72CF" /></span>
                 <div>
                   <div style={{ fontWeight: 700, color: '#9B72CF', fontSize: '0.95rem' }}>Athena & Themis</div>
                   <div style={{ fontSize: '0.75rem', color: 'rgba(248,249,250,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Brand and Trust</div>
@@ -267,7 +350,7 @@ export default function HireYourAIEmployees() {
             {/* Column 2 */}
             <div className="hae-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '1.4rem' }}>⚡🧭</span>
+                <span style={{ display: 'flex', gap: '4px' }}><IconBolt color="#95BF47" /><IconCompass color="#95BF47" /></span>
                 <div>
                   <div style={{ fontWeight: 700, color: '#95BF47', fontSize: '0.95rem' }}>Hermes & Odysseus</div>
                   <div style={{ fontSize: '0.75rem', color: 'rgba(248,249,250,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Products and Partners</div>
@@ -289,7 +372,7 @@ export default function HireYourAIEmployees() {
             {/* Column 3 */}
             <div className="hae-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-                <span style={{ fontSize: '1.4rem' }}>☀️🌈📐</span>
+                <span style={{ display: 'flex', gap: '4px' }}><IconGrid color="#9B72CF" /><IconChat color="#95BF47" /><IconChart color="#9B72CF" /></span>
                 <div>
                   <div style={{ fontWeight: 700, color: '#9B72CF', fontSize: '0.95rem' }}>Apollo, Iris & Thales</div>
                   <div style={{ fontSize: '0.75rem', color: 'rgba(248,249,250,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Store Performance</div>
@@ -330,7 +413,7 @@ export default function HireYourAIEmployees() {
                       STEP {step.step}
                     </span>
                   </div>
-                  <div style={{ fontSize: '1.6rem', marginBottom: '10px' }}>{step.icon}</div>
+                  <div style={{ marginBottom: '10px' }}><step.StepIcon color="#95BF47" /></div>
                   <div style={{ fontWeight: 700, fontSize: '1rem', color: '#F8F9FA', marginBottom: '8px', lineHeight: 1.3 }}>{step.title}</div>
                   <div style={{ fontSize: '0.875rem', color: 'rgba(248,249,250,0.6)', lineHeight: 1.6 }}>{step.desc}</div>
                 </div>
@@ -350,7 +433,7 @@ export default function HireYourAIEmployees() {
             {/* Ideal fit */}
             <div className="hae-card" style={{ borderColor: 'rgba(149,191,71,0.25)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
-                <span style={{ fontSize: '1.2rem' }}>✅</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}><circle cx="10" cy="10" r="8" stroke="#95BF47" strokeWidth="1.5"/><path d="M6 10l3 3 5-5" stroke="#95BF47" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 <span style={{ fontWeight: 700, color: '#95BF47', fontSize: '1rem' }}>This is for you if…</span>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -370,7 +453,7 @@ export default function HireYourAIEmployees() {
             {/* Not a fit */}
             <div className="hae-card" style={{ borderColor: 'rgba(239,68,68,0.2)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
-                <span style={{ fontSize: '1.2rem' }}>🚫</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}><circle cx="10" cy="10" r="8" stroke="#ef4444" strokeWidth="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ef4444" strokeWidth="1.5" strokeLinecap="round"/></svg>
                 <span style={{ fontWeight: 700, color: '#ef4444', fontSize: '1rem' }}>Not a fit if…</span>
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
