@@ -242,12 +242,15 @@ export default function HireYourAIEmployees() {
           .hae-section { padding: 56px 0; }
           .hae-grid-3 { grid-template-columns: 1fr !important; }
           .hae-grid-2 { grid-template-columns: 1fr !important; }
-          .hae-grid-4 { grid-template-columns: 1fr 1fr !important; }
+          .hae-grid-4 { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
           .hae-hero-grid { grid-template-columns: 1fr !important; }
           .hae-employee-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .hae-grid-4 .hae-card { padding: 16px 14px !important; }
+          .hae-grid-4 .hae-card > div:first-child { margin-bottom: 8px !important; }
+          .hae-step-card { height: auto !important; min-height: 0 !important; }
         }
         @media (max-width: 480px) {
-          .hae-grid-4 { grid-template-columns: 1fr !important; }
+          .hae-grid-4 { grid-template-columns: 1fr 1fr !important; }
           .hae-employee-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
@@ -407,7 +410,7 @@ export default function HireYourAIEmployees() {
                 {i < HOW_IT_WORKS.length - 1 && (
                   <div style={{ position: 'absolute', top: '28px', left: 'calc(100% - 10px)', width: '20px', height: '2px', background: 'rgba(149,191,71,0.3)', zIndex: 1 }} className="hae-connector" />
                 )}
-                <div className="hae-card" style={{ height: '100%' }}>
+                <div className="hae-card hae-step-card">
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                     <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#95BF47', letterSpacing: '0.1em', background: 'rgba(149,191,71,0.12)', padding: '3px 8px', borderRadius: '4px' }}>
                       STEP {step.step}
